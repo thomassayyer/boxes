@@ -1,0 +1,221 @@
+\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests}{}\section{Référence de la classe Boxes.\+Tests.\+Shell\+View\+Model\+Tests}
+\label{class_boxes_1_1_tests_1_1_shell_view_model_tests}\index{Boxes.\+Tests.\+Shell\+View\+Model\+Tests@{Boxes.\+Tests.\+Shell\+View\+Model\+Tests}}
+
+
+Effectue les tests unitaires qui concernent le Shell\+View\+Model.  
+
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_aa92aa42e4d785935fac8f9661a81fec9}{Tests\+Initialize} ()
+\begin{DoxyCompactList}\small\item\em Effectue les initialisations qui doivent être exécutées avant chaque test. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_add870a32e8df2f26e484a4c3ca93ca7e}{Tests\+Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue les opérations qui doivent être exécutées après chaque test. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a405a7fc3e95313c7a15161e4ea211778}{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Is\+Back\+Button\+Visible\+Message} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur navigue vers la page du shell, le view model de cette dernière reçoit les message de type Is\+Back\+Button\+Visible\+Message. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a86fafe83f9e6924180e5017673f4ee19}{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Shell\+Title\+Message} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur navigue vers la page du shell, le view model de cette dernière reçoit les message de type Shell\+Title\+Message. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_ad2366c7a2e965ce09e61029325572a25}{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+User\+Name\+Like\+In\+Local\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur navigue vers la page du shell, la propriété {\ttfamily Current\+User\+Name} du view model de cette dernière est bien le nom et prénom de l\textquotesingle{}utilisateur connecté sur \hyperlink{namespace_boxes}{Boxes}. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a855d6d814d441bb6f2ef80f1e76723e9}{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+Page\+Is\+Home} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur navigue vers la page du shell, la page actuellement affichée (dans le shell) est la page d\textquotesingle{}accueil. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a0cb0374023b579915ff7b8dbaab50368}{Go\+Back\+Command\+\_\+\+Back\+To\+Previous\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur veut retourner en arrière et qu\textquotesingle{}il fait appel à la commande de retour arrière, la page actuellement affichée est \char`\"{}\+Root\+Page\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a63775bfa95676344108cf99d5ad0b7be}{Navigate\+To\+Home\+Command\+\_\+\+Go\+To\+Home\+Page\+\_\+\+Current\+Page\+Is\+Home} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur clique sur le bouton pour aller sur la page d\textquotesingle{}accueil, la page actuellement affichée (dans le shell) est bien celle-\/ci. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a7e9fbccaebbd355c5b3a7c4980608f12}{Navigate\+To\+Discover\+Command\+\_\+\+Go\+To\+Discover\+Page\+\_\+\+Current\+Page\+Is\+Discover} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur clique sur le bouton pour aller sur la page \char`\"{}\+Découvrir\char`\"{}, la page actuellement affichée (dans le shell) est bien celle-\/ci. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a69ae404dec735ee3cc8173beec9402ac}{Navigate\+To\+My\+Boxes\+Command\+\_\+\+Go\+To\+My\+Boxes\+Page\+\_\+\+Current\+Page\+Is\+My\+Boxes} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur clique sur le bouton pour aller sur la page \char`\"{}\+Mes boites\char`\"{}, la page actuellement affichée (dans le shell) est bien celle-\/ci. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a295ae7768ea8d81a65f65c08e1f7f6f9}{Signout\+Command\+\_\+\+User\+Signout\+\_\+\+User\+Not\+In\+Local\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur se déconnecte, ce dernier n\textquotesingle{}est plus dans le conteneur de paramètres d\textquotesingle{}application. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a507ede74db925d1da3eda9cbc77582cc}{Signout\+Command\+\_\+\+User\+Signout\+\_\+\+Current\+Page\+Is\+Login} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur se déconnecte, la page actuellement affichée est la page de connexion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service}{Fake\+Navigation\+Service} \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_ad61de5963310e8d3de06995d7186e5b5}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation fictif. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_localization_service}{Fake\+Localization\+Service} \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a38e6b16988831f70b14ba1f9890ba708}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de localization. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_storage_service}{Fake\+Storage\+Service} \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a522dc3fa1aceb357d0e3c133d27f11b5}{storage\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de stockage local. \end{DoxyCompactList}\item 
+Shell\+View\+Model \hyperlink{class_boxes_1_1_tests_1_1_shell_view_model_tests_a1789e91b13033d118335621e54940a16}{shell\+View\+Model}
+\begin{DoxyCompactList}\small\item\em Stock le view model du shell (ici le view model à tester). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Effectue les tests unitaires qui concernent le Shell\+View\+Model. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Go\+Back\+Command\+\_\+\+Back\+To\+Previous\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page@{Go\+Back\+Command\+\_\+\+Back\+To\+Previous\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page}}
+\index{Go\+Back\+Command\+\_\+\+Back\+To\+Previous\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page@{Go\+Back\+Command\+\_\+\+Back\+To\+Previous\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Go\+Back\+Command\+\_\+\+Back\+To\+Previous\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page()}{GoBackCommand_BackToPreviousPage_CurrentPageIsRootPage()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Go\+Back\+Command\+\_\+\+Back\+To\+Previous\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a0cb0374023b579915ff7b8dbaab50368}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a0cb0374023b579915ff7b8dbaab50368}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur veut retourner en arrière et qu\textquotesingle{}il fait appel à la commande de retour arrière, la page actuellement affichée est \char`\"{}\+Root\+Page\char`\"{}. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+Page\+Is\+Home@{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+Page\+Is\+Home}}
+\index{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+Page\+Is\+Home@{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+Page\+Is\+Home}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+Page\+Is\+Home()}{Initialize_NavigationToShell_CurrentPageIsHome()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+Page\+Is\+Home (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a855d6d814d441bb6f2ef80f1e76723e9}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a855d6d814d441bb6f2ef80f1e76723e9}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur navigue vers la page du shell, la page actuellement affichée (dans le shell) est la page d\textquotesingle{}accueil. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+User\+Name\+Like\+In\+Local\+Settings@{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+User\+Name\+Like\+In\+Local\+Settings}}
+\index{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+User\+Name\+Like\+In\+Local\+Settings@{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+User\+Name\+Like\+In\+Local\+Settings}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+User\+Name\+Like\+In\+Local\+Settings()}{Initialize_NavigationToShell_CurrentUserNameLikeInLocalSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Current\+User\+Name\+Like\+In\+Local\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_ad2366c7a2e965ce09e61029325572a25}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_ad2366c7a2e965ce09e61029325572a25}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur navigue vers la page du shell, la propriété {\ttfamily Current\+User\+Name} du view model de cette dernière est bien le nom et prénom de l\textquotesingle{}utilisateur connecté sur \hyperlink{namespace_boxes}{Boxes}. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Is\+Back\+Button\+Visible\+Message@{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Is\+Back\+Button\+Visible\+Message}}
+\index{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Is\+Back\+Button\+Visible\+Message@{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Is\+Back\+Button\+Visible\+Message}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Is\+Back\+Button\+Visible\+Message()}{Initialize_NavigationToShell_HandlesIsBackButtonVisibleMessage()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Is\+Back\+Button\+Visible\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a405a7fc3e95313c7a15161e4ea211778}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a405a7fc3e95313c7a15161e4ea211778}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur navigue vers la page du shell, le view model de cette dernière reçoit les message de type Is\+Back\+Button\+Visible\+Message. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Shell\+Title\+Message@{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Shell\+Title\+Message}}
+\index{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Shell\+Title\+Message@{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Shell\+Title\+Message}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Shell\+Title\+Message()}{Initialize_NavigationToShell_HandlesShellTitleMessage()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Initialize\+\_\+\+Navigation\+To\+Shell\+\_\+\+Handles\+Shell\+Title\+Message (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a86fafe83f9e6924180e5017673f4ee19}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a86fafe83f9e6924180e5017673f4ee19}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur navigue vers la page du shell, le view model de cette dernière reçoit les message de type Shell\+Title\+Message. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Navigate\+To\+Discover\+Command\+\_\+\+Go\+To\+Discover\+Page\+\_\+\+Current\+Page\+Is\+Discover@{Navigate\+To\+Discover\+Command\+\_\+\+Go\+To\+Discover\+Page\+\_\+\+Current\+Page\+Is\+Discover}}
+\index{Navigate\+To\+Discover\+Command\+\_\+\+Go\+To\+Discover\+Page\+\_\+\+Current\+Page\+Is\+Discover@{Navigate\+To\+Discover\+Command\+\_\+\+Go\+To\+Discover\+Page\+\_\+\+Current\+Page\+Is\+Discover}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Navigate\+To\+Discover\+Command\+\_\+\+Go\+To\+Discover\+Page\+\_\+\+Current\+Page\+Is\+Discover()}{NavigateToDiscoverCommand_GoToDiscoverPage_CurrentPageIsDiscover()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Navigate\+To\+Discover\+Command\+\_\+\+Go\+To\+Discover\+Page\+\_\+\+Current\+Page\+Is\+Discover (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a7e9fbccaebbd355c5b3a7c4980608f12}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a7e9fbccaebbd355c5b3a7c4980608f12}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur clique sur le bouton pour aller sur la page \char`\"{}\+Découvrir\char`\"{}, la page actuellement affichée (dans le shell) est bien celle-\/ci. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Navigate\+To\+Home\+Command\+\_\+\+Go\+To\+Home\+Page\+\_\+\+Current\+Page\+Is\+Home@{Navigate\+To\+Home\+Command\+\_\+\+Go\+To\+Home\+Page\+\_\+\+Current\+Page\+Is\+Home}}
+\index{Navigate\+To\+Home\+Command\+\_\+\+Go\+To\+Home\+Page\+\_\+\+Current\+Page\+Is\+Home@{Navigate\+To\+Home\+Command\+\_\+\+Go\+To\+Home\+Page\+\_\+\+Current\+Page\+Is\+Home}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Navigate\+To\+Home\+Command\+\_\+\+Go\+To\+Home\+Page\+\_\+\+Current\+Page\+Is\+Home()}{NavigateToHomeCommand_GoToHomePage_CurrentPageIsHome()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Navigate\+To\+Home\+Command\+\_\+\+Go\+To\+Home\+Page\+\_\+\+Current\+Page\+Is\+Home (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a63775bfa95676344108cf99d5ad0b7be}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a63775bfa95676344108cf99d5ad0b7be}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur clique sur le bouton pour aller sur la page d\textquotesingle{}accueil, la page actuellement affichée (dans le shell) est bien celle-\/ci. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Navigate\+To\+My\+Boxes\+Command\+\_\+\+Go\+To\+My\+Boxes\+Page\+\_\+\+Current\+Page\+Is\+My\+Boxes@{Navigate\+To\+My\+Boxes\+Command\+\_\+\+Go\+To\+My\+Boxes\+Page\+\_\+\+Current\+Page\+Is\+My\+Boxes}}
+\index{Navigate\+To\+My\+Boxes\+Command\+\_\+\+Go\+To\+My\+Boxes\+Page\+\_\+\+Current\+Page\+Is\+My\+Boxes@{Navigate\+To\+My\+Boxes\+Command\+\_\+\+Go\+To\+My\+Boxes\+Page\+\_\+\+Current\+Page\+Is\+My\+Boxes}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Navigate\+To\+My\+Boxes\+Command\+\_\+\+Go\+To\+My\+Boxes\+Page\+\_\+\+Current\+Page\+Is\+My\+Boxes()}{NavigateToMyBoxesCommand_GoToMyBoxesPage_CurrentPageIsMyBoxes()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Navigate\+To\+My\+Boxes\+Command\+\_\+\+Go\+To\+My\+Boxes\+Page\+\_\+\+Current\+Page\+Is\+My\+Boxes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a69ae404dec735ee3cc8173beec9402ac}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a69ae404dec735ee3cc8173beec9402ac}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur clique sur le bouton pour aller sur la page \char`\"{}\+Mes boites\char`\"{}, la page actuellement affichée (dans le shell) est bien celle-\/ci. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Signout\+Command\+\_\+\+User\+Signout\+\_\+\+Current\+Page\+Is\+Login@{Signout\+Command\+\_\+\+User\+Signout\+\_\+\+Current\+Page\+Is\+Login}}
+\index{Signout\+Command\+\_\+\+User\+Signout\+\_\+\+Current\+Page\+Is\+Login@{Signout\+Command\+\_\+\+User\+Signout\+\_\+\+Current\+Page\+Is\+Login}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Signout\+Command\+\_\+\+User\+Signout\+\_\+\+Current\+Page\+Is\+Login()}{SignoutCommand_UserSignout_CurrentPageIsLogin()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Signout\+Command\+\_\+\+User\+Signout\+\_\+\+Current\+Page\+Is\+Login (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a507ede74db925d1da3eda9cbc77582cc}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a507ede74db925d1da3eda9cbc77582cc}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur se déconnecte, la page actuellement affichée est la page de connexion. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Signout\+Command\+\_\+\+User\+Signout\+\_\+\+User\+Not\+In\+Local\+Settings@{Signout\+Command\+\_\+\+User\+Signout\+\_\+\+User\+Not\+In\+Local\+Settings}}
+\index{Signout\+Command\+\_\+\+User\+Signout\+\_\+\+User\+Not\+In\+Local\+Settings@{Signout\+Command\+\_\+\+User\+Signout\+\_\+\+User\+Not\+In\+Local\+Settings}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Signout\+Command\+\_\+\+User\+Signout\+\_\+\+User\+Not\+In\+Local\+Settings()}{SignoutCommand_UserSignout_UserNotInLocalSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Signout\+Command\+\_\+\+User\+Signout\+\_\+\+User\+Not\+In\+Local\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a295ae7768ea8d81a65f65c08e1f7f6f9}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a295ae7768ea8d81a65f65c08e1f7f6f9}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur se déconnecte, ce dernier n\textquotesingle{}est plus dans le conteneur de paramètres d\textquotesingle{}application. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Tests\+Cleanup@{Tests\+Cleanup}}
+\index{Tests\+Cleanup@{Tests\+Cleanup}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Cleanup()}{TestsCleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Tests\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_add870a32e8df2f26e484a4c3ca93ca7e}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_add870a32e8df2f26e484a4c3ca93ca7e}
+
+
+Effectue les opérations qui doivent être exécutées après chaque test. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!Tests\+Initialize@{Tests\+Initialize}}
+\index{Tests\+Initialize@{Tests\+Initialize}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Initialize()}{TestsInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+Tests\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_aa92aa42e4d785935fac8f9661a81fec9}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_aa92aa42e4d785935fac8f9661a81fec9}
+
+
+Effectue les initialisations qui doivent être exécutées avant chaque test. 
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Localization\+Service} Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a38e6b16988831f70b14ba1f9890ba708}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a38e6b16988831f70b14ba1f9890ba708}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de localization. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Navigation\+Service} Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_ad61de5963310e8d3de06995d7186e5b5}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_ad61de5963310e8d3de06995d7186e5b5}
+
+
+Stock le service de navigation fictif. 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!shell\+View\+Model@{shell\+View\+Model}}
+\index{shell\+View\+Model@{shell\+View\+Model}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{shell\+View\+Model}{shellViewModel}}]{\setlength{\rightskip}{0pt plus 5cm}Shell\+View\+Model Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+shell\+View\+Model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a1789e91b13033d118335621e54940a16}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a1789e91b13033d118335621e54940a16}
+
+
+Stock le view model du shell (ici le view model à tester). 
+
+\index{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}!storage\+Service@{storage\+Service}}
+\index{storage\+Service@{storage\+Service}!Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Shell\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{storage\+Service}{storageService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Storage\+Service} Boxes.\+Tests.\+Shell\+View\+Model\+Tests.\+storage\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_shell_view_model_tests_a522dc3fa1aceb357d0e3c133d27f11b5}{}\label{class_boxes_1_1_tests_1_1_shell_view_model_tests_a522dc3fa1aceb357d0e3c133d27f11b5}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de stockage local. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes.\+Tests/\hyperlink{_shell_view_model_tests_8cs}{Shell\+View\+Model\+Tests.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,320 @@
+\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model}{}\section{Référence de la classe Boxes.\+View\+Models.\+Post\+View\+Model}
+\label{class_boxes_1_1_view_models_1_1_post_view_model}\index{Boxes.\+View\+Models.\+Post\+View\+Model@{Boxes.\+View\+Models.\+Post\+View\+Model}}
+
+
+View model de la page d\textquotesingle{}un post.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+View\+Models.\+Post\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_view_models_1_1_post_view_model}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_add75fd3783e75abcdd4dff1e42863c19}{Post\+View\+Model} (\hyperlink{interface_boxes_1_1_services_1_1_post_1_1_i_post_service}{I\+Post\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a429fe7a882ebbfe77a34a61455d57bae}{post\+Service}, \hyperlink{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service}{I\+Comment\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_acc5fcad092fad7381a4c3af8395a4603}{comment\+Service}, \hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}{I\+Storage\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a1e927d657f4db7956ceaa5ff9d31f2ff}{storage\+Service})
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré qui initialize les propriétés du view model. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a78674d635b7d60b434063e28c999188c}{Initialize} (\hyperlink{class_boxes_1_1_models_1_1_post}{Post} post)
+\begin{DoxyCompactList}\small\item\em Effectue les initialisation pour chaque navigation qui se fait vers la page d\textquotesingle{}un post. \end{DoxyCompactList}\item 
+override void \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a76a15d6ed8c055d72c786b117081ba18}{Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue les opération qui s\textquotesingle{}effectue à chaque fois que l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}un post. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a3c98327f7674f9f8cce196006962d775}{Is\+Loading}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Est-\/ce qu\textquotesingle{}un chargement s\textquotesingle{}opère ? \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_ac67d855603160541cad73f0969374e34}{Is\+Commenting}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Est-\/ce qu\textquotesingle{}un commentaire est en cours de création ? \end{DoxyCompactList}\item 
+int \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a7f2adb3a5ef1d304b927373802ad0093}{Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Id du post. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_ab5837b34c294e08284f848eec3fb4998}{Content}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Contenu du post. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_models_1_1_user}{User} \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a15d5aaeac36ca691fe320b6abd9e278d}{Author}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Auteur du post. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_models_1_1_box}{Box} \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a4914850f18b637c7b94c176b5de6543a}{Box}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Boite associée au post. \end{DoxyCompactList}\item 
+Date\+Time \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a8209232998d5fc35e9f1ec3198efd0d4}{Created\+At}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Date de création du post. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \hyperlink{class_boxes_1_1_models_1_1_comment}{Comment} $>$ \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a2072fc7bf6be05be6f79ac11f6398350}{Comments}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commentaires associés au post. \end{DoxyCompactList}\item 
+Relay\+Command$<$ string $>$ \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_ac3f6e6b6da43952f994401063ff450e1}{Create\+Comment\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande de création d\textquotesingle{}un commentaire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+async void \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a3ceff0a86b3a432381812b4c7d9ea47b}{Reload\+Comments} ()
+\begin{DoxyCompactList}\small\item\em Recharge les commentaires. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_adeb6ebc237236f8b369a9b6d3f759597}{Can\+Create\+Comment\+Execute} (string comment\+Content)
+\begin{DoxyCompactList}\small\item\em Détermine si la commande de création d\textquotesingle{}un commentaire peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+async void \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_ad25bcaaa06f623070320755a2d28404c}{Create\+Comment} (string comment\+Content)
+\begin{DoxyCompactList}\small\item\em Enregistre un nouveau commentaire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_boxes_1_1_services_1_1_post_1_1_i_post_service}{I\+Post\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a429fe7a882ebbfe77a34a61455d57bae}{post\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_post}{Models.\+Post} \end{DoxyCompactList}\item 
+\hyperlink{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service}{I\+Comment\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_acc5fcad092fad7381a4c3af8395a4603}{comment\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Comment \end{DoxyCompactList}\item 
+\hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}{I\+Storage\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a1e927d657f4db7956ceaa5ff9d31f2ff}{storage\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de stockage local. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a13b8a9424a41561b7fa8eca8fc73a0ad}{is\+Loading}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Is\+Loading}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a06f6200613d692348207b39b079e62d8}{is\+Commenting}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Is\+Commenting}. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a0482a2e9d39016182354f88d1eb1d115}{content}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Content}. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_models_1_1_user}{User} \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a636f0295b5a4ba46bc159d5b347dda3c}{author}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Author}. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_models_1_1_box}{Box} \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a1beb2defa66dccf16c92b47013305205}{box}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Box}. \end{DoxyCompactList}\item 
+Date\+Time \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a4fe5c87ad1587445397b366715866491}{created\+At}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Created\+At}. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \hyperlink{class_boxes_1_1_models_1_1_comment}{Comment} $>$ \hyperlink{class_boxes_1_1_view_models_1_1_post_view_model_a3a9891cf2783a87c3c8357b31f96b911}{comments}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Comments}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+View model de la page d\textquotesingle{}un post. 
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Post\+View\+Model@{Post\+View\+Model}}
+\index{Post\+View\+Model@{Post\+View\+Model}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Post\+View\+Model(\+I\+Post\+Service post\+Service, I\+Comment\+Service comment\+Service, I\+Storage\+Service storage\+Service)}{PostViewModel(IPostService postService, ICommentService commentService, IStorageService storageService)}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+View\+Models.\+Post\+View\+Model.\+Post\+View\+Model (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Post\+Service}}]{post\+Service, }
+\item[{{\bf I\+Comment\+Service}}]{comment\+Service, }
+\item[{{\bf I\+Storage\+Service}}]{storage\+Service}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_add75fd3783e75abcdd4dff1e42863c19}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_add75fd3783e75abcdd4dff1e42863c19}
+
+
+Constructeur paramétré qui initialize les propriétés du view model. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em post\+Service} & Instance du service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Post. \\
+\hline
+{\em comment\+Service} & Instance du service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Comment. \\
+\hline
+{\em storage\+Service} & Instance du service d\textquotesingle{}accès aux données de stockage local. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Can\+Create\+Comment\+Execute@{Can\+Create\+Comment\+Execute}}
+\index{Can\+Create\+Comment\+Execute@{Can\+Create\+Comment\+Execute}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Can\+Create\+Comment\+Execute(string comment\+Content)}{CanCreateCommentExecute(string commentContent)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Post\+View\+Model.\+Can\+Create\+Comment\+Execute (
+\begin{DoxyParamCaption}
+\item[{string}]{comment\+Content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_adeb6ebc237236f8b369a9b6d3f759597}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_adeb6ebc237236f8b369a9b6d3f759597}
+
+
+Détermine si la commande de création d\textquotesingle{}un commentaire peut s\textquotesingle{}exécuter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em comment\+Content} & Contenu du champ commentaire. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Est-\/ce que la commande de création d\textquotesingle{}un commentaire peut s\textquotesingle{}exécuter ? 
+\end{DoxyReturn}
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Cleanup()}{Cleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Boxes.\+View\+Models.\+Post\+View\+Model.\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a76a15d6ed8c055d72c786b117081ba18}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a76a15d6ed8c055d72c786b117081ba18}
+
+
+Effectue les opération qui s\textquotesingle{}effectue à chaque fois que l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}un post. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Create\+Comment@{Create\+Comment}}
+\index{Create\+Comment@{Create\+Comment}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Create\+Comment(string comment\+Content)}{CreateComment(string commentContent)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Boxes.\+View\+Models.\+Post\+View\+Model.\+Create\+Comment (
+\begin{DoxyParamCaption}
+\item[{string}]{comment\+Content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_ad25bcaaa06f623070320755a2d28404c}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_ad25bcaaa06f623070320755a2d28404c}
+
+
+Enregistre un nouveau commentaire. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Initialize(\+Post post)}{Initialize(Post post)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Post\+View\+Model.\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Post}}]{post}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a78674d635b7d60b434063e28c999188c}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a78674d635b7d60b434063e28c999188c}
+
+
+Effectue les initialisation pour chaque navigation qui se fait vers la page d\textquotesingle{}un post. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em post} & Post à afficher. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Reload\+Comments@{Reload\+Comments}}
+\index{Reload\+Comments@{Reload\+Comments}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Reload\+Comments()}{ReloadComments()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Boxes.\+View\+Models.\+Post\+View\+Model.\+Reload\+Comments (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a3ceff0a86b3a432381812b4c7d9ea47b}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a3ceff0a86b3a432381812b4c7d9ea47b}
+
+
+Recharge les commentaires. 
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!author@{author}}
+\index{author@{author}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{author}{author}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User} Boxes.\+View\+Models.\+Post\+View\+Model.\+author\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a636f0295b5a4ba46bc159d5b347dda3c}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a636f0295b5a4ba46bc159d5b347dda3c}
+
+
+Stock la valeur de la propriété {\ttfamily Author}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!box@{box}}
+\index{box@{box}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{box}{box}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Box} Boxes.\+View\+Models.\+Post\+View\+Model.\+box\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a1beb2defa66dccf16c92b47013305205}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a1beb2defa66dccf16c92b47013305205}
+
+
+Stock la valeur de la propriété {\ttfamily Box}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!comments@{comments}}
+\index{comments@{comments}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{comments}{comments}}]{\setlength{\rightskip}{0pt plus 5cm}Observable\+Collection$<${\bf Comment}$>$ Boxes.\+View\+Models.\+Post\+View\+Model.\+comments\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a3a9891cf2783a87c3c8357b31f96b911}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a3a9891cf2783a87c3c8357b31f96b911}
+
+
+Stock la valeur de la propriété {\ttfamily Comments}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!comment\+Service@{comment\+Service}}
+\index{comment\+Service@{comment\+Service}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{comment\+Service}{commentService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Comment\+Service} Boxes.\+View\+Models.\+Post\+View\+Model.\+comment\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_acc5fcad092fad7381a4c3af8395a4603}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_acc5fcad092fad7381a4c3af8395a4603}
+
+
+Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Comment 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!content@{content}}
+\index{content@{content}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{content}{content}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Post\+View\+Model.\+content\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a0482a2e9d39016182354f88d1eb1d115}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a0482a2e9d39016182354f88d1eb1d115}
+
+
+Stock la valeur de la propriété {\ttfamily Content}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!created\+At@{created\+At}}
+\index{created\+At@{created\+At}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{created\+At}{createdAt}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+Time Boxes.\+View\+Models.\+Post\+View\+Model.\+created\+At\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a4fe5c87ad1587445397b366715866491}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a4fe5c87ad1587445397b366715866491}
+
+
+Stock la valeur de la propriété {\ttfamily Created\+At}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!is\+Commenting@{is\+Commenting}}
+\index{is\+Commenting@{is\+Commenting}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{is\+Commenting}{isCommenting}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Post\+View\+Model.\+is\+Commenting\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a06f6200613d692348207b39b079e62d8}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a06f6200613d692348207b39b079e62d8}
+
+
+Stock la valeur de la propriété {\ttfamily Is\+Commenting}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!is\+Loading@{is\+Loading}}
+\index{is\+Loading@{is\+Loading}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{is\+Loading}{isLoading}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Post\+View\+Model.\+is\+Loading\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a13b8a9424a41561b7fa8eca8fc73a0ad}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a13b8a9424a41561b7fa8eca8fc73a0ad}
+
+
+Stock la valeur de la propriété {\ttfamily Is\+Loading}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!post\+Service@{post\+Service}}
+\index{post\+Service@{post\+Service}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{post\+Service}{postService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Post\+Service} Boxes.\+View\+Models.\+Post\+View\+Model.\+post\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a429fe7a882ebbfe77a34a61455d57bae}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a429fe7a882ebbfe77a34a61455d57bae}
+
+
+Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_post}{Models.\+Post} 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!storage\+Service@{storage\+Service}}
+\index{storage\+Service@{storage\+Service}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{storage\+Service}{storageService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Storage\+Service} Boxes.\+View\+Models.\+Post\+View\+Model.\+storage\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a1e927d657f4db7956ceaa5ff9d31f2ff}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a1e927d657f4db7956ceaa5ff9d31f2ff}
+
+
+Stock le service d\textquotesingle{}accès aux données de stockage local. 
+
+
+
+\subsection{Documentation des propriétés}
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Author@{Author}}
+\index{Author@{Author}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Author}{Author}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User} Boxes.\+View\+Models.\+Post\+View\+Model.\+Author\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a15d5aaeac36ca691fe320b6abd9e278d}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a15d5aaeac36ca691fe320b6abd9e278d}
+
+
+Auteur du post. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Box@{Box}}
+\index{Box@{Box}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Box}{Box}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Box} Boxes.\+View\+Models.\+Post\+View\+Model.\+Box\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a4914850f18b637c7b94c176b5de6543a}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a4914850f18b637c7b94c176b5de6543a}
+
+
+Boite associée au post. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Comments@{Comments}}
+\index{Comments@{Comments}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Comments}{Comments}}]{\setlength{\rightskip}{0pt plus 5cm}Observable\+Collection$<${\bf Comment}$>$ Boxes.\+View\+Models.\+Post\+View\+Model.\+Comments\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a2072fc7bf6be05be6f79ac11f6398350}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a2072fc7bf6be05be6f79ac11f6398350}
+
+
+Commentaires associés au post. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Content@{Content}}
+\index{Content@{Content}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Content}{Content}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Post\+View\+Model.\+Content\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_ab5837b34c294e08284f848eec3fb4998}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_ab5837b34c294e08284f848eec3fb4998}
+
+
+Contenu du post. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Create\+Comment\+Command@{Create\+Comment\+Command}}
+\index{Create\+Comment\+Command@{Create\+Comment\+Command}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Create\+Comment\+Command}{CreateCommentCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command$<$string$>$ Boxes.\+View\+Models.\+Post\+View\+Model.\+Create\+Comment\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_ac3f6e6b6da43952f994401063ff450e1}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_ac3f6e6b6da43952f994401063ff450e1}
+
+
+Commande de création d\textquotesingle{}un commentaire. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Created\+At@{Created\+At}}
+\index{Created\+At@{Created\+At}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Created\+At}{CreatedAt}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+Time Boxes.\+View\+Models.\+Post\+View\+Model.\+Created\+At\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a8209232998d5fc35e9f1ec3198efd0d4}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a8209232998d5fc35e9f1ec3198efd0d4}
+
+
+Date de création du post. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Id@{Id}}
+\index{Id@{Id}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Id}{Id}}]{\setlength{\rightskip}{0pt plus 5cm}int Boxes.\+View\+Models.\+Post\+View\+Model.\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a7f2adb3a5ef1d304b927373802ad0093}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a7f2adb3a5ef1d304b927373802ad0093}
+
+
+Id du post. 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Is\+Commenting@{Is\+Commenting}}
+\index{Is\+Commenting@{Is\+Commenting}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Is\+Commenting}{IsCommenting}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Post\+View\+Model.\+Is\+Commenting\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_ac67d855603160541cad73f0969374e34}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_ac67d855603160541cad73f0969374e34}
+
+
+Est-\/ce qu\textquotesingle{}un commentaire est en cours de création ? 
+
+\index{Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}!Is\+Loading@{Is\+Loading}}
+\index{Is\+Loading@{Is\+Loading}!Boxes\+::\+View\+Models\+::\+Post\+View\+Model@{Boxes\+::\+View\+Models\+::\+Post\+View\+Model}}
+\subsubsection[{\texorpdfstring{Is\+Loading}{IsLoading}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Post\+View\+Model.\+Is\+Loading\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_post_view_model_a3c98327f7674f9f8cce196006962d775}{}\label{class_boxes_1_1_view_models_1_1_post_view_model_a3c98327f7674f9f8cce196006962d775}
+
+
+Est-\/ce qu\textquotesingle{}un chargement s\textquotesingle{}opère ? 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+View\+Models/\hyperlink{_post_view_model_8cs}{Post\+View\+Model.\+cs}\end{DoxyCompactItemize}

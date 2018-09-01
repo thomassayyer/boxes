@@ -1,0 +1,172 @@
+\hypertarget{class_boxes_1_1_services_1_1_box_1_1_design_box_service}{}\section{Référence de la classe Boxes.\+Services.\+Box.\+Design\+Box\+Service}
+\label{class_boxes_1_1_services_1_1_box_1_1_design_box_service}\index{Boxes.\+Services.\+Box.\+Design\+Box\+Service@{Boxes.\+Services.\+Box.\+Design\+Box\+Service}}
+
+
+Service d\textquotesingle{}accès aux données de design de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box}.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Services.\+Box.\+Design\+Box\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_services_1_1_box_1_1_design_box_service}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box} $>$ \hyperlink{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a6bc334ac212ab2ff7d5428c68bbf6307}{Create\+Async} (\hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box} box)
+\item 
+Task \hyperlink{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a35f886f31e9a7149f2c66ed391526a77}{Attach\+User\+Async} (\hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box} box, \hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User} user)
+\item 
+Task$<$ List$<$ \hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box} $>$ $>$ \hyperlink{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a12e7904b334a2c867644d0aec7ab16d3}{Get\+By\+User\+Async} (\hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User} user)
+\begin{DoxyCompactList}\small\item\em Récupère toutes les boites auxquelles un utilisateur s\textquotesingle{}est abonné et/ou celles qu\textquotesingle{}il a créées.  \end{DoxyCompactList}\item 
+Task$<$ List$<$ \hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box} $>$ $>$ \hyperlink{class_boxes_1_1_services_1_1_box_1_1_design_box_service_ab7ca221e2a93ceea5e0671790f81baef}{Get\+Top\+Async} ()
+\begin{DoxyCompactList}\small\item\em Récupère les boites les plus populaires c-\/à-\/d. les 10 boites ayant le plus d\textquotesingle{}abonnés.  \end{DoxyCompactList}\item 
+Task$<$ List$<$ \hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box} $>$ $>$ \hyperlink{class_boxes_1_1_services_1_1_box_1_1_design_box_service_acccdb71b925edff731149761bc9273d5}{Get\+Search\+Results\+Async} (string terms)
+\begin{DoxyCompactList}\small\item\em Récupère le résultat d\textquotesingle{}une recherche sur des boites.  \end{DoxyCompactList}\item 
+Task$<$ \hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box} $>$ \hyperlink{class_boxes_1_1_services_1_1_box_1_1_design_box_service_af25d2545a1e48435314ad51ea59543a4}{Update\+Async} (\hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box} box)
+\item 
+Task \hyperlink{class_boxes_1_1_services_1_1_box_1_1_design_box_service_ab875aa0bdcf1be02e8fe377e83fb68d8}{Detach\+User\+Async} (\hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box} box, \hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User} user)
+\item 
+Task \hyperlink{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a652cd05fbd8c183e45139670533a7f8d}{Delete\+Async} (\hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box} box)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Service d\textquotesingle{}accès aux données de design de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box}. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}!Attach\+User\+Async@{Attach\+User\+Async}}
+\index{Attach\+User\+Async@{Attach\+User\+Async}!Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}}
+\subsubsection[{\texorpdfstring{Attach\+User\+Async(\+Models.\+Box box, Models.\+User user)}{AttachUserAsync(Models.Box box, Models.User user)}}]{\setlength{\rightskip}{0pt plus 5cm}Task Boxes.\+Services.\+Box.\+Design\+Box\+Service.\+Attach\+User\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+Box}}]{box, }
+\item[{{\bf Models.\+User}}]{user}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a35f886f31e9a7149f2c66ed391526a77}{}\label{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a35f886f31e9a7149f2c66ed391526a77}
+Enregistre un utilisateur à la liste des abonnés d\textquotesingle{}une boite.  
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Implemented\+Exception} & Levée pour chaque appel à cette méthode en mode design. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service_a55e99b6b477c99d2d650d8525146a919}{Boxes.\+Services.\+Box.\+I\+Box\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}!Create\+Async@{Create\+Async}}
+\index{Create\+Async@{Create\+Async}!Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}}
+\subsubsection[{\texorpdfstring{Create\+Async(\+Models.\+Box box)}{CreateAsync(Models.Box box)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<${\bf Models.\+Box}$>$ Boxes.\+Services.\+Box.\+Design\+Box\+Service.\+Create\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+Box}}]{box}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a6bc334ac212ab2ff7d5428c68bbf6307}{}\label{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a6bc334ac212ab2ff7d5428c68bbf6307}
+Enregistre une nouvelle boite.  
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Implemented\+Exception} & Levée pour chaque appel à cette méthode en mode design. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service_adc238288afe6f877fa39cc6bd1acb01a}{Boxes.\+Services.\+Box.\+I\+Box\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}!Delete\+Async@{Delete\+Async}}
+\index{Delete\+Async@{Delete\+Async}!Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}}
+\subsubsection[{\texorpdfstring{Delete\+Async(\+Models.\+Box box)}{DeleteAsync(Models.Box box)}}]{\setlength{\rightskip}{0pt plus 5cm}Task Boxes.\+Services.\+Box.\+Design\+Box\+Service.\+Delete\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+Box}}]{box}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a652cd05fbd8c183e45139670533a7f8d}{}\label{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a652cd05fbd8c183e45139670533a7f8d}
+Supprime la boite en paramètre.  
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Implemented\+Exception} & Levée pour chaque appel à cette méthode en mode design. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service_a9389dc7e0db5c6042a5c60bf20874a3c}{Boxes.\+Services.\+Box.\+I\+Box\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}!Detach\+User\+Async@{Detach\+User\+Async}}
+\index{Detach\+User\+Async@{Detach\+User\+Async}!Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}}
+\subsubsection[{\texorpdfstring{Detach\+User\+Async(\+Models.\+Box box, Models.\+User user)}{DetachUserAsync(Models.Box box, Models.User user)}}]{\setlength{\rightskip}{0pt plus 5cm}Task Boxes.\+Services.\+Box.\+Design\+Box\+Service.\+Detach\+User\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+Box}}]{box, }
+\item[{{\bf Models.\+User}}]{user}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_box_1_1_design_box_service_ab875aa0bdcf1be02e8fe377e83fb68d8}{}\label{class_boxes_1_1_services_1_1_box_1_1_design_box_service_ab875aa0bdcf1be02e8fe377e83fb68d8}
+Supprime un utilisateur de la liste des abonnés d\textquotesingle{}une boite.  
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Implemented\+Exception} & Levée pour chaque appel à cette méthode en mode design. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service_a280988e4102350d8c6b452a29f0d45dc}{Boxes.\+Services.\+Box.\+I\+Box\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}!Get\+By\+User\+Async@{Get\+By\+User\+Async}}
+\index{Get\+By\+User\+Async@{Get\+By\+User\+Async}!Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}}
+\subsubsection[{\texorpdfstring{Get\+By\+User\+Async(\+Models.\+User user)}{GetByUserAsync(Models.User user)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<$List$<${\bf Models.\+Box}$>$ $>$ Boxes.\+Services.\+Box.\+Design\+Box\+Service.\+Get\+By\+User\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+User}}]{user}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a12e7904b334a2c867644d0aec7ab16d3}{}\label{class_boxes_1_1_services_1_1_box_1_1_design_box_service_a12e7904b334a2c867644d0aec7ab16d3}
+
+
+Récupère toutes les boites auxquelles un utilisateur s\textquotesingle{}est abonné et/ou celles qu\textquotesingle{}il a créées.  
+
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service_aebd2c3458738bdd399110bfd1ef62cea}{Boxes.\+Services.\+Box.\+I\+Box\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}!Get\+Search\+Results\+Async@{Get\+Search\+Results\+Async}}
+\index{Get\+Search\+Results\+Async@{Get\+Search\+Results\+Async}!Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}}
+\subsubsection[{\texorpdfstring{Get\+Search\+Results\+Async(string terms)}{GetSearchResultsAsync(string terms)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<$List$<${\bf Models.\+Box}$>$ $>$ Boxes.\+Services.\+Box.\+Design\+Box\+Service.\+Get\+Search\+Results\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{terms}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_box_1_1_design_box_service_acccdb71b925edff731149761bc9273d5}{}\label{class_boxes_1_1_services_1_1_box_1_1_design_box_service_acccdb71b925edff731149761bc9273d5}
+
+
+Récupère le résultat d\textquotesingle{}une recherche sur des boites.  
+
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service_aae23fbf0a9889b22a09806f9410dc421}{Boxes.\+Services.\+Box.\+I\+Box\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}!Get\+Top\+Async@{Get\+Top\+Async}}
+\index{Get\+Top\+Async@{Get\+Top\+Async}!Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}}
+\subsubsection[{\texorpdfstring{Get\+Top\+Async()}{GetTopAsync()}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<$List$<${\bf Models.\+Box}$>$ $>$ Boxes.\+Services.\+Box.\+Design\+Box\+Service.\+Get\+Top\+Async (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_box_1_1_design_box_service_ab7ca221e2a93ceea5e0671790f81baef}{}\label{class_boxes_1_1_services_1_1_box_1_1_design_box_service_ab7ca221e2a93ceea5e0671790f81baef}
+
+
+Récupère les boites les plus populaires c-\/à-\/d. les 10 boites ayant le plus d\textquotesingle{}abonnés.  
+
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service_a32c793ab9911846581f0d76409b7fb60}{Boxes.\+Services.\+Box.\+I\+Box\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}!Update\+Async@{Update\+Async}}
+\index{Update\+Async@{Update\+Async}!Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service@{Boxes\+::\+Services\+::\+Box\+::\+Design\+Box\+Service}}
+\subsubsection[{\texorpdfstring{Update\+Async(\+Models.\+Box box)}{UpdateAsync(Models.Box box)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<${\bf Models.\+Box}$>$ Boxes.\+Services.\+Box.\+Design\+Box\+Service.\+Update\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+Box}}]{box}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_box_1_1_design_box_service_af25d2545a1e48435314ad51ea59543a4}{}\label{class_boxes_1_1_services_1_1_box_1_1_design_box_service_af25d2545a1e48435314ad51ea59543a4}
+Modifie la boite en paramètre.  
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Implemented\+Exception} & Levée pour chaque appel à cette méthode en mode design. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service_ae96c252d960cb8f981c766350e950472}{Boxes.\+Services.\+Box.\+I\+Box\+Service}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+Services/\+Box/\hyperlink{_design_box_service_8cs}{Design\+Box\+Service.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{class_boxes_1_1_services_1_1_comment_1_1_comment_service}{}\section{Référence de la classe Boxes.\+Services.\+Comment.\+Comment\+Service}
+\label{class_boxes_1_1_services_1_1_comment_1_1_comment_service}\index{Boxes.\+Services.\+Comment.\+Comment\+Service@{Boxes.\+Services.\+Comment.\+Comment\+Service}}
+
+
+Service d\textquotesingle{}accès aux données de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_comment}{Models.\+Comment}.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Services.\+Comment.\+Comment\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_services_1_1_comment_1_1_comment_service}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ \hyperlink{class_boxes_1_1_models_1_1_comment}{Models.\+Comment} $>$ \hyperlink{class_boxes_1_1_services_1_1_comment_1_1_comment_service_adffedabf789162e69424662fe12c74d1}{Create\+Async} (\hyperlink{class_boxes_1_1_models_1_1_comment}{Models.\+Comment} comment)
+\item 
+async Task$<$ List$<$ \hyperlink{class_boxes_1_1_models_1_1_comment}{Models.\+Comment} $>$ $>$ \hyperlink{class_boxes_1_1_services_1_1_comment_1_1_comment_service_a0335da3b3e22c9a7f96ef0fc0f2a9a40}{Get\+By\+Post\+Async} (\hyperlink{class_boxes_1_1_models_1_1_post}{Models.\+Post} post)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Service d\textquotesingle{}accès aux données de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_comment}{Models.\+Comment}. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Services\+::\+Comment\+::\+Comment\+Service@{Boxes\+::\+Services\+::\+Comment\+::\+Comment\+Service}!Create\+Async@{Create\+Async}}
+\index{Create\+Async@{Create\+Async}!Boxes\+::\+Services\+::\+Comment\+::\+Comment\+Service@{Boxes\+::\+Services\+::\+Comment\+::\+Comment\+Service}}
+\subsubsection[{\texorpdfstring{Create\+Async(\+Models.\+Comment comment)}{CreateAsync(Models.Comment comment)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<${\bf Models.\+Comment}$>$ Boxes.\+Services.\+Comment.\+Comment\+Service.\+Create\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+Comment}}]{comment}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_comment_1_1_comment_service_adffedabf789162e69424662fe12c74d1}{}\label{class_boxes_1_1_services_1_1_comment_1_1_comment_service_adffedabf789162e69424662fe12c74d1}
+Enregistre un nouveau commentaire.  
+\begin{DoxyExceptions}{Exceptions}
+{\em Web\+Service\+Exception} & Levée si le web service n\textquotesingle{}est pas en mesure de nous délivrer le commentaire créé ou que ce dernier renvoi un code d\textquotesingle{}erreur (500, 503, 404, ...). \\
+\hline
+\end{DoxyExceptions}
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service_a12facb39d0bff06586f111fa6d0f302a}{Boxes.\+Services.\+Comment.\+I\+Comment\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Comment\+::\+Comment\+Service@{Boxes\+::\+Services\+::\+Comment\+::\+Comment\+Service}!Get\+By\+Post\+Async@{Get\+By\+Post\+Async}}
+\index{Get\+By\+Post\+Async@{Get\+By\+Post\+Async}!Boxes\+::\+Services\+::\+Comment\+::\+Comment\+Service@{Boxes\+::\+Services\+::\+Comment\+::\+Comment\+Service}}
+\subsubsection[{\texorpdfstring{Get\+By\+Post\+Async(\+Models.\+Post post)}{GetByPostAsync(Models.Post post)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$List$<${\bf Models.\+Comment}$>$ $>$ Boxes.\+Services.\+Comment.\+Comment\+Service.\+Get\+By\+Post\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+Post}}]{post}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_comment_1_1_comment_service_a0335da3b3e22c9a7f96ef0fc0f2a9a40}{}\label{class_boxes_1_1_services_1_1_comment_1_1_comment_service_a0335da3b3e22c9a7f96ef0fc0f2a9a40}
+Récupère les commentaire d\textquotesingle{}un post.  
+\begin{DoxyExceptions}{Exceptions}
+{\em Web\+Service\+Exception} & Levée si le web service n\textquotesingle{}est pas en mesure de nous délivrer les commentaires du post ou que ce dernier renvoi un code d\textquotesingle{}erreur (500, 503, 404, ...). \\
+\hline
+\end{DoxyExceptions}
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service_ad375a764e72487c3665ffcaeb7176d2f}{Boxes.\+Services.\+Comment.\+I\+Comment\+Service}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+Services/\+Comment/\hyperlink{_comment_service_8cs}{Comment\+Service.\+cs}\end{DoxyCompactItemize}

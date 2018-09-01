@@ -1,0 +1,9 @@
+var searchData=
+[
+  ['deleteasync',['DeleteAsync',['../class_boxes_1_1_services_1_1_box_1_1_box_service.html#a16d678fa58baae07fbb4d548b149c278',1,'Boxes.Services.Box.BoxService.DeleteAsync()'],['../class_boxes_1_1_services_1_1_box_1_1_design_box_service.html#a652cd05fbd8c183e45139670533a7f8d',1,'Boxes.Services.Box.DesignBoxService.DeleteAsync()'],['../interface_boxes_1_1_services_1_1_box_1_1_i_box_service.html#a9389dc7e0db5c6042a5c60bf20874a3c',1,'Boxes.Services.Box.IBoxService.DeleteAsync()'],['../class_boxes_1_1_services_1_1_http_service.html#ac710b86113bdd643909d124f6cd10637',1,'Boxes.Services.HttpService.DeleteAsync()']]],
+  ['deletebox',['DeleteBox',['../class_boxes_1_1_view_models_1_1_box_view_model.html#a14df8064b707b4fb149140d0c36bd6d4',1,'Boxes::ViewModels::BoxViewModel']]],
+  ['designstorageservice',['DesignStorageService',['../class_boxes_1_1_services_1_1_storage_1_1_design_storage_service.html#a6dc72623a7623a0844a127673b89528b',1,'Boxes::Services::Storage::DesignStorageService']]],
+  ['detachuserasync',['DetachUserAsync',['../class_boxes_1_1_services_1_1_box_1_1_box_service.html#a0e27813284c325af2a7ea267c34a8d95',1,'Boxes.Services.Box.BoxService.DetachUserAsync()'],['../class_boxes_1_1_services_1_1_box_1_1_design_box_service.html#ab875aa0bdcf1be02e8fe377e83fb68d8',1,'Boxes.Services.Box.DesignBoxService.DetachUserAsync()'],['../interface_boxes_1_1_services_1_1_box_1_1_i_box_service.html#a280988e4102350d8c6b452a29f0d45dc',1,'Boxes.Services.Box.IBoxService.DetachUserAsync()']]],
+  ['discoverpage',['DiscoverPage',['../class_boxes_1_1_views_1_1_discover_page.html#aebc5e2b68f1a2453fc944c8294357cda',1,'Boxes::Views::DiscoverPage']]],
+  ['discoverviewmodel',['DiscoverViewModel',['../class_boxes_1_1_view_models_1_1_discover_view_model.html#ae702aa7d97660570ac5febc56b780eb9',1,'Boxes::ViewModels::DiscoverViewModel']]]
+];

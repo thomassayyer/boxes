@@ -1,0 +1,12 @@
+App.xbf
+Auxiliary\Resources\Styles\SplitViewStyles.xbf
+Views\BoxPage.xbf
+Views\CreateBoxPage.xbf
+Views\DiscoverPage.xbf
+Views\EditBoxPage.xbf
+Views\HomePage.xbf
+Views\LoginPage.xbf
+Views\MyBoxesPage.xbf
+Views\PostPage.xbf
+Views\RegisterPage.xbf
+Views\Shell.xbf

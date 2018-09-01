@@ -1,0 +1,196 @@
+\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests}{}\section{Référence de la classe Boxes.\+Tests.\+Home\+View\+Model\+Tests}
+\label{class_boxes_1_1_tests_1_1_home_view_model_tests}\index{Boxes.\+Tests.\+Home\+View\+Model\+Tests@{Boxes.\+Tests.\+Home\+View\+Model\+Tests}}
+
+
+Effectue les tests unitaires relatifs au view model Home\+View\+Model.  
+
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_a9961c9ccfb49e506ee4c3e9f625386e1}{Tests\+Initialize} ()
+\begin{DoxyCompactList}\small\item\em Effectue les initialisation qui doivent s\textquotesingle{}exécuter avant chaque test. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_a2b014e6e0e790f691c0bf6e939e6ad34}{Tests\+Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue les nettoyages de variables devant être faits après l\textquotesingle{}exécution de chaque test. \end{DoxyCompactList}\item 
+async Task \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_a4a49b19e1b9bd1feb12cf22e22fcfe63}{Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Posts\+Not\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre sur la page d\textquotesingle{}accueil, la propriété {\ttfamily Posts} du view model de cette page ne soit pas une collection vide. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_aa687cb2dc81e032dd75c74e7b59fc549}{Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Shell\+Title\+Message\+Sent} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre sur la page d\textquotesingle{}accuei, un message de type Shell\+Title\+Message est envoyé afin de demander le changement du titre du shell. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_aa78160a21f8b66a83ed7274623d0abcb}{Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Is\+Post} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur veut voir le détail d\textquotesingle{}un post et appel ainsi la commande d\textquotesingle{}affichage d\textquotesingle{}un post, la page actuellement affichée est celle de ce post. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_a2dad74f03a4ec9a258d8c2bc1e8f17fc}{Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Post\+To\+Show} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur veut voir le détail d\textquotesingle{}un post et appel ainsi la commande d\textquotesingle{}affichage d\textquotesingle{}un post, le paramètre de la page actuellement affichée est bien le post à afficher. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_ad36d1ae9e993528529648a43bf1ec5f3}{Class\+Initialize} (Test\+Context context)
+\begin{DoxyCompactList}\small\item\em Effectue les initialisation qui doivent être faites avant l\textquotesingle{}exécution du premier test. \end{DoxyCompactList}\item 
+static void \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_ada2e3c534138168cb082be5b6155033e}{Class\+Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue les nettoyages qui doivent être faits après l\textquotesingle{}exécution du dernier test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_storage_service}{Fake\+Storage\+Service} \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_a3cef168c7e8bcdbee02a6713e4541105}{storage\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de stockage local. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service}{Fake\+Navigation\+Service} \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_aa4981a7ac7b616762cfc1703b52c42d1}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation fictive. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_post_service}{Fake\+Post\+Service} \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_a2bfaed74f121657195e437b0dfca8eb2}{post\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de l\textquotesingle{}entité Post. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_localization_service}{Fake\+Localization\+Service} \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_a0451d15ae4b229db13798e8c6ddd966f}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de localization. \end{DoxyCompactList}\item 
+Home\+View\+Model \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_a5e19b63ded52862d0545d317fc2406e0}{home\+View\+Model}
+\begin{DoxyCompactList}\small\item\em Stock le view model de la page d\textquotesingle{}accueil (ici le view model à tester). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static Random \hyperlink{class_boxes_1_1_tests_1_1_home_view_model_tests_aa651dd64428e19075fded9c393db63c3}{random}
+\begin{DoxyCompactList}\small\item\em Stock l\textquotesingle{}objet de génération de nombres aléatoires. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Effectue les tests unitaires relatifs au view model Home\+View\+Model. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!Class\+Cleanup@{Class\+Cleanup}}
+\index{Class\+Cleanup@{Class\+Cleanup}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Class\+Cleanup()}{ClassCleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+Class\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_ada2e3c534138168cb082be5b6155033e}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_ada2e3c534138168cb082be5b6155033e}
+
+
+Effectue les nettoyages qui doivent être faits après l\textquotesingle{}exécution du dernier test. 
+
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!Class\+Initialize@{Class\+Initialize}}
+\index{Class\+Initialize@{Class\+Initialize}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Class\+Initialize(\+Test\+Context context)}{ClassInitialize(TestContext context)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+Class\+Initialize (
+\begin{DoxyParamCaption}
+\item[{Test\+Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_ad36d1ae9e993528529648a43bf1ec5f3}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_ad36d1ae9e993528529648a43bf1ec5f3}
+
+
+Effectue les initialisation qui doivent être faites avant l\textquotesingle{}exécution du premier test. 
+
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Posts\+Not\+Empty@{Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Posts\+Not\+Empty}}
+\index{Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Posts\+Not\+Empty@{Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Posts\+Not\+Empty}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Posts\+Not\+Empty()}{Initialize_NavigationToHome_PostsNotEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Posts\+Not\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_a4a49b19e1b9bd1feb12cf22e22fcfe63}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_a4a49b19e1b9bd1feb12cf22e22fcfe63}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre sur la page d\textquotesingle{}accueil, la propriété {\ttfamily Posts} du view model de cette page ne soit pas une collection vide. 
+
+\begin{DoxyReturn}{Renvoie}
+Tache asynchrone qui permet d\textquotesingle{}attendre la fin des opérations. 
+\end{DoxyReturn}
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Shell\+Title\+Message\+Sent@{Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Shell\+Title\+Message\+Sent}}
+\index{Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Shell\+Title\+Message\+Sent@{Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Shell\+Title\+Message\+Sent}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Shell\+Title\+Message\+Sent()}{Initialize_NavigationToHome_ShellTitleMessageSent()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+Initialize\+\_\+\+Navigation\+To\+Home\+\_\+\+Shell\+Title\+Message\+Sent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_aa687cb2dc81e032dd75c74e7b59fc549}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_aa687cb2dc81e032dd75c74e7b59fc549}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre sur la page d\textquotesingle{}accuei, un message de type Shell\+Title\+Message est envoyé afin de demander le changement du titre du shell. 
+
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Is\+Post@{Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Is\+Post}}
+\index{Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Is\+Post@{Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Is\+Post}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Is\+Post()}{ShowPostCommand_GoToPostPage_CurrentPageIsPost()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Is\+Post (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_aa78160a21f8b66a83ed7274623d0abcb}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_aa78160a21f8b66a83ed7274623d0abcb}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur veut voir le détail d\textquotesingle{}un post et appel ainsi la commande d\textquotesingle{}affichage d\textquotesingle{}un post, la page actuellement affichée est celle de ce post. 
+
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Post\+To\+Show@{Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Post\+To\+Show}}
+\index{Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Post\+To\+Show@{Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Post\+To\+Show}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Post\+To\+Show()}{ShowPostCommand_GoToPostPage_CurrentPageParameterIsPostToShow()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+Show\+Post\+Command\+\_\+\+Go\+To\+Post\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Post\+To\+Show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_a2dad74f03a4ec9a258d8c2bc1e8f17fc}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_a2dad74f03a4ec9a258d8c2bc1e8f17fc}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur veut voir le détail d\textquotesingle{}un post et appel ainsi la commande d\textquotesingle{}affichage d\textquotesingle{}un post, le paramètre de la page actuellement affichée est bien le post à afficher. 
+
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!Tests\+Cleanup@{Tests\+Cleanup}}
+\index{Tests\+Cleanup@{Tests\+Cleanup}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Cleanup()}{TestsCleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+Tests\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_a2b014e6e0e790f691c0bf6e939e6ad34}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_a2b014e6e0e790f691c0bf6e939e6ad34}
+
+
+Effectue les nettoyages de variables devant être faits après l\textquotesingle{}exécution de chaque test. 
+
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!Tests\+Initialize@{Tests\+Initialize}}
+\index{Tests\+Initialize@{Tests\+Initialize}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Initialize()}{TestsInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+Tests\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_a9961c9ccfb49e506ee4c3e9f625386e1}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_a9961c9ccfb49e506ee4c3e9f625386e1}
+
+
+Effectue les initialisation qui doivent s\textquotesingle{}exécuter avant chaque test. 
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!home\+View\+Model@{home\+View\+Model}}
+\index{home\+View\+Model@{home\+View\+Model}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{home\+View\+Model}{homeViewModel}}]{\setlength{\rightskip}{0pt plus 5cm}Home\+View\+Model Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+home\+View\+Model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_a5e19b63ded52862d0545d317fc2406e0}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_a5e19b63ded52862d0545d317fc2406e0}
+
+
+Stock le view model de la page d\textquotesingle{}accueil (ici le view model à tester). 
+
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Localization\+Service} Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_a0451d15ae4b229db13798e8c6ddd966f}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_a0451d15ae4b229db13798e8c6ddd966f}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de localization. 
+
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Navigation\+Service} Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_aa4981a7ac7b616762cfc1703b52c42d1}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_aa4981a7ac7b616762cfc1703b52c42d1}
+
+
+Stock le service de navigation fictive. 
+
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!post\+Service@{post\+Service}}
+\index{post\+Service@{post\+Service}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{post\+Service}{postService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Post\+Service} Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+post\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_a2bfaed74f121657195e437b0dfca8eb2}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_a2bfaed74f121657195e437b0dfca8eb2}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de l\textquotesingle{}entité Post. 
+
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!random@{random}}
+\index{random@{random}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{random}{random}}]{\setlength{\rightskip}{0pt plus 5cm}Random Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+random\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_aa651dd64428e19075fded9c393db63c3}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_aa651dd64428e19075fded9c393db63c3}
+
+
+Stock l\textquotesingle{}objet de génération de nombres aléatoires. 
+
+\index{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}!storage\+Service@{storage\+Service}}
+\index{storage\+Service@{storage\+Service}!Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Home\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{storage\+Service}{storageService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Storage\+Service} Boxes.\+Tests.\+Home\+View\+Model\+Tests.\+storage\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_home_view_model_tests_a3cef168c7e8bcdbee02a6713e4541105}{}\label{class_boxes_1_1_tests_1_1_home_view_model_tests_a3cef168c7e8bcdbee02a6713e4541105}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de stockage local. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes.\+Tests/\hyperlink{_home_view_model_tests_8cs}{Home\+View\+Model\+Tests.\+cs}\end{DoxyCompactItemize}

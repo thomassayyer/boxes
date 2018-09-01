@@ -1,0 +1,3100 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Boxes</name>
+    </assembly>
+    <members>
+        <member name="T:Boxes.App">
+            <summary>
+                Fournit un comportement spécifique à l'application afin de compléter la classe Application
+                par défaut.
+            </summary>
+        </member>
+        <member name="M:Boxes.App.#ctor">
+            <summary>
+                Initialise l'objet d'application de singleton.  Il s'agit de la première ligne du code
+                créé à être exécutée. Elle correspond donc à l'équivalent logique de main() ou WinMain().
+            </summary>
+        </member>
+        <member name="M:Boxes.App.OnLaunched(Windows.ApplicationModel.Activation.LaunchActivatedEventArgs)">
+            <summary>
+                Invoqué lorsque l'application est lancée normalement par l'utilisateur final.  D'autres points
+                d'entrée seront utilisés par exemple au moment du lancement de l'application pour l'ouverture
+                d'un fichier spécifique.
+            </summary>
+            <param name="e">
+                Détails concernant la requête et le processus de lancement.
+            </param>
+        </member>
+        <member name="M:Boxes.App.OnNavigationFailed(System.Object,Windows.UI.Xaml.Navigation.NavigationFailedEventArgs)">
+            <summary>
+                Appelé lorsque la navigation vers une page donnée échoue
+            </summary>
+            <param name="sender">
+                Frame à l'origine de l'échec de navigation.
+            </param>
+            <param name="e">
+                Détails relatifs à l'échec de navigation.
+            </param>
+        </member>
+        <member name="M:Boxes.App.OnSuspending(System.Object,Windows.ApplicationModel.SuspendingEventArgs)">
+            <summary>
+                Appelé lorsque l'exécution de l'application est suspendue.  L'état de l'application est
+                enregistré sans savoir si l'application pourra se fermer ou reprendre sans endommager
+                le contenu de la mémoire.
+            </summary>
+            <param name="sender">
+                Source de la requête de suspension.
+            </param>
+            <param name="e">
+                Détails de la requête de suspension.
+            </param>
+        </member>
+        <member name="M:Boxes.App.InitializeTitleBar">
+            <summary>
+                Initialise la barre de titre.
+            </summary>
+        </member>
+        <member name="M:Boxes.App.InitializeStatusBar">
+            <summary>
+                Initialise la barre de statut.
+            </summary>
+        </member>
+        <member name="M:Boxes.App.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Boxes.App.GetXamlType(System.Type)">
+            <summary>
+            GetXamlType(Type)
+            </summary>
+        </member>
+        <member name="M:Boxes.App.GetXamlType(System.String)">
+            <summary>
+            GetXamlType(String)
+            </summary>
+        </member>
+        <member name="M:Boxes.App.GetXmlnsDefinitions">
+            <summary>
+            GetXmlnsDefinitions()
+            </summary>
+        </member>
+        <member name="T:Boxes.Auxiliary.Converters.InverseVisibilityConverter">
+            <summary>
+                Convertit un booléen en valeur pour la propriété "Visibility" des contrôles XAML.
+            </summary>
+            <remarks>
+                Un booléen faux sera convertit en <see cref="F:Windows.UI.Xaml.Visibility.Visible"/> tandis qu'un booléen vrai induira
+                la valeur <see cref="F:Windows.UI.Xaml.Visibility.Collapsed"/>. Ce converter et donc l'inverse de 
+                <see cref="T:Boxes.Auxiliary.Converters.VisibilityConverter"/>.
+            </remarks>
+        </member>
+        <member name="M:Boxes.Auxiliary.Converters.InverseVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+                Exécute la conversion du booléen en <see cref="T:Windows.UI.Xaml.Visibility"/>.
+            </summary>
+            <param name="value">
+                Booléen à convertir.
+            </param>
+            <param name="targetType">
+                Type de donnée attendu en fin de conversion (ici <see cref="T:Windows.UI.Xaml.Visibility"/>).
+            </param>
+            <param name="parameter">
+                Paramètre optionnel (aucun dans ce cas).
+            </param>
+            <param name="language">
+                Langage à utiliser dans le converter.
+            </param>
+            <returns>
+                Le booléen convertit en <see cref="T:Windows.UI.Xaml.Visibility"/>.
+            </returns>
+        </member>
+        <member name="M:Boxes.Auxiliary.Converters.InverseVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+                Exécute la conversion inverse. C'est à dire la conversion de <see cref="T:Windows.UI.Xaml.Visibility"/> en booléen.
+            </summary>
+            <param name="value">
+                Visibilité à convertir.
+            </param>
+            <param name="targetType">
+                Type de donnée attendu en fin de conversion (ici un booléen).
+            </param>
+            <param name="parameter">
+                Paramètre optionnel (aucun dans ce cas).
+            </param>
+            <param name="language">
+                Langage à utiliser dans le converter.
+            </param>
+            <returns>
+                <see cref="T:Windows.UI.Xaml.Visibility"/> convertit en booléen.
+            </returns>
+        </member>
+        <member name="T:Boxes.Auxiliary.Converters.ItemClickedConverter">
+            <summary>
+                Récupère l'élément cliqué dans une <see cref="T:Windows.UI.Xaml.Controls.GridView"/> ou <see cref="T:Windows.UI.Xaml.Controls.ListView"/>.
+            </summary>
+        </member>
+        <member name="M:Boxes.Auxiliary.Converters.ItemClickedConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+                Récupère l'élément cliqué en fonction des <see cref="T:Windows.UI.Xaml.Controls.ItemClickEventArgs"/>.
+            </summary>
+            <param name="value">
+                Arguments retounés par l'événement "ItemClick".
+            </param>
+            <param name="targetType">
+                Type de donnée attendu en fin de conversion.
+            </param>
+            <param name="parameter">
+                Paramètre optionnel (aucun dans ce cas).
+            </param>
+            <param name="language">
+                Langage à utiliser dans le converter.
+            </param>
+            <returns>
+                L'élément clické.
+            </returns>
+        </member>
+        <member name="T:Boxes.Auxiliary.Converters.MaxLengthConverter">
+            <summary>
+                Réduit la taille d'une chaine de caractère et la termine par "...".
+            </summary>
+        </member>
+        <member name="M:Boxes.Auxiliary.Converters.MaxLengthConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+                Réduit la taille d'une chaine de caractère et le termine par "...".
+            </summary>
+            <param name="value">
+                Chaine à convertir.
+            </param>
+            <param name="targetType">
+                Type de donnée attendu en fin de conversion (ici <see cref="T:System.String"/>).
+            </param>
+            <param name="parameter">
+                Taille maximale de la chaine.
+            </param>
+            <param name="language">
+                Langage à utiliser dans le converter.
+            </param>
+            <returns>
+                Chaine réduite.
+            </returns>
+        </member>
+        <member name="T:Boxes.Auxiliary.Converters.VisibilityConverter">
+            <summary>
+                Convertit un booléen en valeur pour la propriété "Visibility" des contrôles XAML.
+            </summary>
+            <remarks>
+                Un booléen vrai sera convertit en <see cref="F:Windows.UI.Xaml.Visibility.Visible"/> tandis qu'un booléen faux
+                induira la valeur <see cref="F:Windows.UI.Xaml.Visibility.Collapsed"/>.
+            </remarks>
+        </member>
+        <member name="M:Boxes.Auxiliary.Converters.VisibilityConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+                Exécute la conversion du booléen en <see cref="T:Windows.UI.Xaml.Visibility"/>.
+            </summary>
+            <param name="value">
+                Booléen à convertir.
+            </param>
+            <param name="targetType">
+                Type de donnée attendu en fin de conversion (ici <see cref="T:Windows.UI.Xaml.Visibility"/>).
+            </param>
+            <param name="parameter">
+                Paramètre optionnel (aucun dans ce cas).
+            </param>
+            <param name="language">
+                Langage à utiliser dans le converter.
+            </param>
+            <returns>
+                Le bouléen convertit en <see cref="T:Windows.UI.Xaml.Visibility"/>.
+            </returns>
+        </member>
+        <member name="M:Boxes.Auxiliary.Converters.VisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+                Exécute la conversion inverse. C'est à dire la conversion de <see cref="T:Windows.UI.Xaml.Visibility"/> en booléen.
+            </summary>
+            <param name="value">
+                Visibilité à convertir.
+            </param>
+            <param name="targetType">
+                Type de donnée attendu en fin de conversion (ici un booléen).
+            </param>
+            <param name="parameter">
+                Paramètre optionnel (aucun dans ce cas).
+            </param>
+            <param name="language">
+                Langage à utiliser dans le converter.
+            </param>
+            <returns>
+                <see cref="T:Windows.UI.Xaml.Visibility"/> convertit en booléen.
+            </returns>
+        </member>
+        <member name="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+            <summary>
+                Exception levée lorsqu'une erreur survient concernant le web service.
+            </summary>
+        </member>
+        <member name="M:Boxes.Auxiliary.Exceptions.WebServiceException.#ctor">
+            <summary>
+                Constructeur non paramétré avec message par défaut.
+            </summary>
+        </member>
+        <member name="T:Boxes.Auxiliary.Messaging.GenericErrorMessage">
+            <summary>
+                Message d'erreur générique à envoyer pour toute erreur qui se produit pendant l'exécution.
+            </summary>
+        </member>
+        <member name="M:Boxes.Auxiliary.Messaging.GenericErrorMessage.#ctor(System.String)">
+            <summary>
+                Constructeur paramétré dont on spécifie le contenu du message.
+            </summary>
+            <param name="content">
+                Contenu du message d'erreur.
+            </param>
+        </member>
+        <member name="T:Boxes.Auxiliary.Messaging.IsBackButtonVisibleMessage">
+            <summary>
+                Message qui détermine si le bouton de retour doit être visible ou non.
+            </summary>
+        </member>
+        <member name="M:Boxes.Auxiliary.Messaging.IsBackButtonVisibleMessage.#ctor">
+            <summary>
+                Constructeur non paramétré avec valeur par défaut.
+            </summary>
+        </member>
+        <member name="M:Boxes.Auxiliary.Messaging.IsBackButtonVisibleMessage.#ctor(System.Boolean)">
+            <summary>
+                Constructeur dont on spécifie si le bouton est visible ou non.
+            </summary>
+            <param name="content">
+                Est-ce que le bouton est visible ?
+            </param>
+        </member>
+        <member name="T:Boxes.Auxiliary.Messaging.ShellTitleMessage">
+            <summary>
+                Message contenant le titre du Shell.
+            </summary>
+        </member>
+        <member name="M:Boxes.Auxiliary.Messaging.ShellTitleMessage.#ctor(System.String)">
+            <summary>
+                Constructeur paramétré dont on spécifie titre du Shell.
+            </summary>
+            <param name="content">
+                Contenu du message.
+            </param>
+        </member>
+        <member name="T:Boxes.Auxiliary.Messaging.ValidationErrorMessage">
+            <summary>
+                Message d'erreur à envoyer lors d'une saisie non conforme.
+            </summary>
+        </member>
+        <member name="P:Boxes.Auxiliary.Messaging.ValidationErrorMessage.Errors">
+            <summary>
+                Erreurs relevées.
+            </summary>
+        </member>
+        <member name="M:Boxes.Auxiliary.Messaging.ValidationErrorMessage.#ctor(System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+                Constructeur dont on spécifie le contenu du message ainsi que les erreurs
+                relevées lors du contrôle de saisie.
+            </summary>
+            <param name="content">
+                Contenu du message à transmettre.
+            </param>
+            <param name="errors">
+                Liste des erreurs à transmettre.
+            </param>
+        </member>
+        <member name="T:Boxes.Auxiliary.Validation.IValidatableViewModel">
+            <summary>
+                Définie l'ensemble des méthodes et propriété publiques d'un view model validable.
+            </summary>
+        </member>
+        <member name="M:Boxes.Auxiliary.Validation.IValidatableViewModel.Validate">
+            <summary>
+                Effectue l'opération de validation.
+            </summary>
+        </member>
+        <member name="T:Boxes.Auxiliary.Validation.ValidatableViewModelBase">
+            <summary>
+                Classe de base de tous les view models validables par des contrôles de saisie.
+            </summary>
+        </member>
+        <member name="M:Boxes.Auxiliary.Validation.ValidatableViewModelBase.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise la liste des erreurs relatives
+                aux contrôles de saisie.
+            </summary>
+        </member>
+        <member name="P:Boxes.Auxiliary.Validation.ValidatableViewModelBase.Errors">
+            <summary>
+                Liste des erreurs relatives aux contrôles de saisie.
+            </summary>
+        </member>
+        <member name="P:Boxes.Auxiliary.Validation.ValidatableViewModelBase.IsValid">
+            <summary>
+                Détermine si les données du view model sont valides.
+            </summary>
+        </member>
+        <member name="M:Boxes.Auxiliary.Validation.ValidatableViewModelBase.Validate">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Models.Box">
+            <summary>
+                Représente une boite de discussion.
+            </summary>
+        </member>
+        <member name="M:Boxes.Models.Box.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise la liste <c>Subscribers</c>.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Box.Id">
+            <summary>
+                Identifiant unique de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Box.Title">
+            <summary>
+                Titre de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Box.Description">
+            <summary>
+                Description de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Box.Creator">
+            <summary>
+                Créateur de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Box.Subscribers">
+            <summary>
+                Utilisateurs abonnés à la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Box.PostsCount">
+            <summary>
+                Nombre de posts créés sur la boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.Models.Box.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Models.Box.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Models.Box.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Models.Comment">
+            <summary>
+                Représente le commentaire d'un post.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Comment.Id">
+            <summary>
+                Identifiant unique du commentaire.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Comment.Content">
+            <summary>
+                Contenu du commentaire.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Comment.CreatedAt">
+            <summary>
+                Date de création du commentaire.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Comment.Author">
+            <summary>
+                Auteur du commentaire.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Comment.Post">
+            <summary>
+                Post associé au commentaire.
+            </summary>
+        </member>
+        <member name="M:Boxes.Models.Comment.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Models.Comment.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Models.Post">
+            <summary>
+                Représente un post (ou publication) publié dans une boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Post.Id">
+            <summary>
+                Identifiant unique du post.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Post.Content">
+            <summary>
+                Contenu du post.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Post.CreatedAt">
+            <summary>
+                Date de création du post.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Post.Author">
+            <summary>
+                Auteur du post.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Post.Box">
+            <summary>
+                Boite associée au post.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.Post.CommentsCount">
+            <summary>
+                Commentaires saisis sur le post.
+            </summary>
+        </member>
+        <member name="M:Boxes.Models.Post.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Models.Post.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Models.User">
+            <summary>
+                Représente un utilisateur inscrit sur Boxes.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.User.Id">
+            <summary>
+                Identifiant unique de l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.User.FirstName">
+            <summary>
+                Nom de l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.User.LastName">
+            <summary>
+                Prénom de l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.User.Phone">
+            <summary>
+                Numéro de tél. de l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.User.Email">
+            <summary>
+                Adresse email de l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.Models.User.Password">
+            <summary>
+                Mot de passe de l'utilisateur.
+            </summary>
+            <remarks>
+                Cette propriété n'est pas incluse dans les import JSON.
+            </remarks>
+        </member>
+        <member name="P:Boxes.Models.User.BirthDate">
+            <summary>
+                Date de naissance de l'utilisateur.
+            </summary>
+        </member>
+        <member name="M:Boxes.Models.User.ToString">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Models.User.Equals(System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Models.User.GetHashCode">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Services.Box.BoxService">
+            <summary>
+                Service d'accès aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Box.BoxService.CreateAsync(Boxes.Models.Box)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service n'est pas en mesure de nous délivrer la boite créée ou
+                que ce dernier renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Box.BoxService.AttachUserAsync(Boxes.Models.Box,Boxes.Models.User)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Box.BoxService.GetByUserAsync(Boxes.Models.User)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service n'est pas en mesure de nous délivrer les boites correspondantes à l'utilisateur ou
+                que ce dernier renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Box.BoxService.GetTopAsync">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service n'est pas en mesure de nous délivrer le top des boites ou
+                que ce dernier renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Box.BoxService.GetSearchResultsAsync(System.String)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service n'est pas en mesure de nous délivrer le résultat de la recherche ou
+                que ce dernier renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Box.BoxService.UpdateAsync(Boxes.Models.Box)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Box.BoxService.DetachUserAsync(Boxes.Models.Box,Boxes.Models.User)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Box.BoxService.DeleteAsync(Boxes.Models.Box)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="T:Boxes.Services.Box.DesignBoxService">
+            <summary>
+                Service d'accès aux données de design de l'entité <see cref="T:Boxes.Models.Box" />.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Box.DesignBoxService.CreateAsync(Boxes.Models.Box)">
+            <inheritdoc />
+            <exception cref="T:System.NotImplementedException">
+                Levée pour chaque appel à cette méthode en mode design.
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Box.DesignBoxService.AttachUserAsync(Boxes.Models.Box,Boxes.Models.User)">
+            <inheritdoc />
+            <exception cref="T:System.NotImplementedException">
+                Levée pour chaque appel à cette méthode en mode design.
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Box.DesignBoxService.GetByUserAsync(Boxes.Models.User)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Box.DesignBoxService.GetTopAsync">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Box.DesignBoxService.GetSearchResultsAsync(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Box.DesignBoxService.UpdateAsync(Boxes.Models.Box)">
+            <inheritdoc />
+            <exception cref="T:System.NotImplementedException">
+                Levée pour chaque appel à cette méthode en mode design.
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Box.DesignBoxService.DetachUserAsync(Boxes.Models.Box,Boxes.Models.User)">
+            <inheritdoc />
+            <exception cref="T:System.NotImplementedException">
+                Levée pour chaque appel à cette méthode en mode design.
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Box.DesignBoxService.DeleteAsync(Boxes.Models.Box)">
+            <inheritdoc />
+            <exception cref="T:System.NotImplementedException">
+                Levée pour chaque appel à cette méthode en mode design.
+            </exception>
+        </member>
+        <member name="T:Boxes.Services.Box.IBoxService">
+            <summary>
+                Définit les méthodes pour accéder aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Box.IBoxService.CreateAsync(Boxes.Models.Box)">
+            <summary>
+                Enregistre une nouvelle boite.
+            </summary>
+            <param name="box">
+                Boite à créer.
+            </param>
+            <returns>
+                Boite créée.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.Box.IBoxService.AttachUserAsync(Boxes.Models.Box,Boxes.Models.User)">
+            <summary>
+                Enregistre un utilisateur à la liste des abonnés d'une boite.
+            </summary>
+            <param name="box">
+                Boite à laquelle l'utilisateur s'abonne.
+            </param>
+            <param name="user">
+                Utilisateur voulant s'abonner.
+            </param>
+            <returns>
+                Opération asynchrone permettant d'attendre la fin des opérations.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.Box.IBoxService.GetByUserAsync(Boxes.Models.User)">
+            <summary>
+                Récupère toutes les boites auxquelles un utilisateur s'est abonné et/ou celles qu'il a créées.
+            </summary>
+            <param name="user">
+                Utilisateur duquel récupérer les boites.
+            </param>
+            <returns>
+                Liste des boites auxquelles l'utilisateur s'est abonné et/ou qu'il a créées.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.Box.IBoxService.GetTopAsync">
+            <summary>
+                Récupère les boites les plus populaires c-à-d. les 10 boites ayant le plus d'abonnés.
+            </summary>
+            <returns>
+                Liste des boites les plus populaires.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.Box.IBoxService.GetSearchResultsAsync(System.String)">
+            <summary>
+                Récupère le résultat d'une recherche sur des boites.
+            </summary>
+            <param name="terms">
+                Termes de la recherche.
+            </param>
+            <returns>
+                Liste des boites correspondantes aux termes de la recherche.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.Box.IBoxService.UpdateAsync(Boxes.Models.Box)">
+            <summary>
+                Modifie la boite en paramètre.
+            </summary>
+            <param name="box">
+                Boite à modifier.
+            </param>
+            <returns>
+                Boite modifiée.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.Box.IBoxService.DetachUserAsync(Boxes.Models.Box,Boxes.Models.User)">
+            <summary>
+                Supprime un utilisateur de la liste des abonnés d'une boite.
+            </summary>
+            <param name="box">
+                Boite de laquelle l'utilisateur se désabonne.
+            </param>
+            <param name="user">
+                Utilisateur voulant se désabonner.
+            </param>
+            <returns>
+                Opération asynchrone permettant d'attendre la fin des opérations.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.Box.IBoxService.DeleteAsync(Boxes.Models.Box)">
+            <summary>
+                Supprime la boite en paramètre.
+            </summary>
+            <param name="box">
+                Boite à supprimer.
+            </param>
+            <returns>
+                Opération asynchrone permettant d'attendre la fin des opérations.
+            </returns>
+        </member>
+        <member name="T:Boxes.Services.Comment.CommentService">
+            <summary>
+                Service d'accès aux données de l'entité <see cref="T:Boxes.Models.Comment"/>.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Comment.CommentService.CreateAsync(Boxes.Models.Comment)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service n'est pas en mesure de nous délivrer le commentaire créé ou
+                que ce dernier renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Comment.CommentService.GetByPostAsync(Boxes.Models.Post)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service n'est pas en mesure de nous délivrer les commentaires du post ou
+                que ce dernier renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="T:Boxes.Services.Comment.DesignCommentService">
+            <summary>
+                Service d'accès aux données de design de l'entité <see cref="T:Boxes.Models.Comment" />.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Comment.DesignCommentService.CreateAsync(Boxes.Models.Comment)">
+            <inheritdoc />
+            <exception cref="T:System.NotImplementedException">
+                Levée pour chaque appel à cette méthode en mode design.
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Comment.DesignCommentService.GetByPostAsync(Boxes.Models.Post)">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Services.Comment.ICommentService">
+            <summary>
+                Définit les méthodes pour accéder aux données de l'entité <see cref="T:Boxes.Models.Comment"/>.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Comment.ICommentService.CreateAsync(Boxes.Models.Comment)">
+            <summary>
+                Enregistre un nouveau commentaire.
+            </summary>
+            <param name="comment">
+                Commentaire à créer.
+            </param>
+            <returns>
+                Le commentaire fraichement créé.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.Comment.ICommentService.GetByPostAsync(Boxes.Models.Post)">
+            <summary>
+                Récupère les commentaire d'un post.
+            </summary>
+            <param name="post">
+                Post duquel récupérer les commentaire.
+            </param>
+            <returns>
+                Les commentaire du post.
+            </returns>
+        </member>
+        <member name="T:Boxes.Services.Dialog.DialogService">
+            <summary>
+                Gère l'affichage de popups.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Dialog.DialogService.ShowError(System.Exception,System.String,System.String,System.Action)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Dialog.DialogService.ShowError(System.String,System.String,System.String,System.Action)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Dialog.DialogService.ShowMessage(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Dialog.DialogService.ShowMessage(System.String,System.String,System.String,System.Action)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Dialog.DialogService.ShowMessage(System.String,System.String,System.String,System.String,System.Action{System.Boolean})">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Dialog.DialogService.ShowMessageBox(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Services.Localization.ILocalizationService">
+            <summary>
+                Définit des méthodes pour manipuler les resources de localization.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Localization.ILocalizationService.GetString(System.String)">
+            <summary>
+                Récupère une donnée de localization en fonction d'une clé précisée.
+            </summary>
+            <param name="resourceKey">
+                Clé de la resource à récupérer.
+            </param>
+            <returns>
+                Valeur de la resource correspondante.
+            </returns>
+        </member>
+        <member name="T:Boxes.Services.Localization.LocalizationService">
+            <summary>
+                Service d'accès aux données de localization.
+            </summary>
+        </member>
+        <member name="F:Boxes.Services.Localization.LocalizationService.resourceLoader">
+            <summary>
+                Stock l'objet d'accès aux resources de localization.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Localization.LocalizationService.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise la propriété <c>resourceLoader</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Localization.LocalizationService.GetString(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Services.Navigation.NavigationService">
+            <summary>
+                Service de navigation pour applications universelles utilisant un shell.
+            </summary>
+        </member>
+        <member name="F:Boxes.Services.Navigation.NavigationService.pagesByKey">
+            <summary>
+                Contient les types des pages sur lesquelles naviguer avec leur clé associé.
+            </summary>
+        </member>
+        <member name="F:Boxes.Services.Navigation.NavigationService.shellPages">
+            <summary>
+                Pages étants destinées à être affichées dans le shell.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Navigation.NavigationService.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise les collections.
+            </summary>
+        </member>
+        <member name="P:Boxes.Services.Navigation.NavigationService.ShellFrame">
+            <summary>
+                Frame du contenu du shell.
+            </summary>
+        </member>
+        <member name="P:Boxes.Services.Navigation.NavigationService.RootFrame">
+            <summary>
+                Frame principale.
+            </summary>
+        </member>
+        <member name="P:Boxes.Services.Navigation.NavigationService.CurrentPageKey">
+            <inheritdoc />
+            <summary>
+                Clé de la page actuellement affichée.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Navigation.NavigationService.GoBack">
+            <inheritdoc />
+            <summary>
+                Si possible, affiche la page précédente (de la pile de navigation).
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Navigation.NavigationService.NavigateTo(System.String)">
+            <inheritdoc />
+            <summary>
+                Affiche la page correspondante à la clé donnée.
+            </summary>
+            <remarks>
+                Ne pas oublier d'appeler <see cref="M:Boxes.Services.Navigation.NavigationService.Configure(System.String,System.Type,System.Boolean)"/>.
+            </remarks>
+            <param name="pageKey">
+                Clé de la page à afficher.
+            </param>
+        </member>
+        <member name="M:Boxes.Services.Navigation.NavigationService.NavigateTo(System.String,System.Object)">
+            <inheritdoc />
+            <summary>
+                Affiche la page correspondante à la clé donnée en lui passant un paramètre.
+            </summary>
+            <remarks>
+                Ne pas oublier d'appeler <see cref="M:Boxes.Services.Navigation.NavigationService.Configure(System.String,System.Type,System.Boolean)"/>.
+            </remarks>
+            <param name="pageKey">
+                Clé de la page à afficher.
+            </param>
+            <param name="parameter">
+                Paramètres à transmettre à la nouvelle page.
+            </param>
+        </member>
+        <member name="M:Boxes.Services.Navigation.NavigationService.Configure(System.String,System.Type,System.Boolean)">
+            <summary>
+                Ajoute une paire clé/page au service de navigation.
+            </summary>
+            <param name="pageKey">
+                La clé qui sera utilisé ensuite dans <see cref="M:Boxes.Services.Navigation.NavigationService.NavigateTo(System.String)"/> ou <see cref="M:Boxes.Services.Navigation.NavigationService.NavigateTo(System.String,System.Object)"/>.
+            </param>
+            <param name="pageType">
+                Type de la page correspondante à la clé.
+            </param>
+            <param name="shell">
+                Est-ce que cette page est destinée à une navigation interne dans le shell ?
+            </param>
+        </member>
+        <member name="T:Boxes.Services.Post.DesignPostService">
+            <summary>
+                Service de design du model <see cref="T:Boxes.Models.Post" />.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Post.DesignPostService.CreateAsync(Boxes.Models.Post)">
+            <inheritdoc />
+            <exception cref="T:System.NotImplementedException">
+                Levée pour chaque appel à cette méthode en mode design.
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Post.DesignPostService.GetByBoxAsync(Boxes.Models.Box)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Post.DesignPostService.GetByUserAsync(Boxes.Models.User)">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Services.Post.IPostService">
+            <summary>
+                Définit les méthodes pour accéder aux données de l'entité <see cref="T:Boxes.Models.Post"/>.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Post.IPostService.CreateAsync(Boxes.Models.Post)">
+            <summary>
+                Enregistre un nouveau post.
+            </summary>
+            <param name="post">
+                Post à créer.
+            </param>
+            <returns>
+                Le post fraichement créé.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.Post.IPostService.GetByBoxAsync(Boxes.Models.Box)">
+            <summary>
+                Récupère les post d'une boite en paramètre.
+            </summary>
+            <param name="box">
+                Boite de laquelle récupérer les posts.
+            </param>
+            <returns>
+                Liste des posts contenus dans la boite en paramètre.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.Post.IPostService.GetByUserAsync(Boxes.Models.User)">
+            <summary>
+                Récupère les posts des boites auxquelles l'utilisateur en paramètre s'est abonné et/ou qu'il
+                a créées.
+            </summary>
+            <param name="user">
+                Utilisateur duquel récupérer les posts.
+            </param>
+            <returns>
+                Liste des posts des boites auxquelles l'utilisateur en paramètre s'est abonné et/ou qu'il
+                a créées.
+            </returns>
+        </member>
+        <member name="T:Boxes.Services.Post.PostService">
+            <summary>
+                Service d'accès aux données du model <see cref="T:Boxes.Models.Post" />.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Post.PostService.CreateAsync(Boxes.Models.Post)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service n'est pas en mesure de nous délivrer le post créé ou
+                que ce dernier renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Post.PostService.GetByBoxAsync(Boxes.Models.Box)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service n'est pas en mesure de nous délivrer les posts de la boite ou
+                que ce dernier renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.Post.PostService.GetByUserAsync(Boxes.Models.User)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service n'est pas en mesure de nous délivrer les posts des boites
+                auxquelles l'utilisateur s'est abonné et/ou qu'il a créées ou qu'il renvoi un code
+                d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="T:Boxes.Services.Storage.DesignStorageService">
+            <summary>
+                Service d'accès aux données de design de stockage local.
+            </summary>
+            <remarks>
+                Retourne des données fictives contenu dans une collection.
+            </remarks>
+        </member>
+        <member name="F:Boxes.Services.Storage.DesignStorageService.localSettings">
+            <summary>
+                Conteneur fictif de paramètres d'application.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Storage.DesignStorageService.#ctor">
+            <summary>
+                Constructeur non paramétré qui enregistre les données fictives
+                de la propriété <c>localSettings</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Storage.DesignStorageService.SaveSetting(System.String,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Storage.DesignStorageService.ReadSetting``1(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Storage.DesignStorageService.RemoveSetting(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Services.Storage.IStorageService">
+            <summary>
+                Définit les méthodes pour accéder aux données de stockage local.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Storage.IStorageService.SaveSetting(System.String,System.Object)">
+            <summary>
+                Enregistre dans le conteneur de paramètres d'application une donnée.
+            </summary>
+            <param name="key">
+                Clé du paramètre.
+            </param>
+            <param name="value">
+                Valeur du paramètre.
+            </param>
+        </member>
+        <member name="M:Boxes.Services.Storage.IStorageService.ReadSetting``1(System.String)">
+            <summary>
+                Retourne un paramètre du conteneur de paramètres d'application.
+            </summary>
+            <typeparam name="T">
+                Type de la donnée à retourner.
+            </typeparam>
+            <param name="key">
+                Clé du paramètre.
+            </param>
+            <returns>
+                Un paramètre du conteneur de paramètres d'application.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.Storage.IStorageService.RemoveSetting(System.String)">
+            <summary>
+                Supprime un paramètre du conteneur de paramètres d'application.
+            </summary>
+            <param name="key">
+                Clé du paramètre.
+            </param>
+        </member>
+        <member name="T:Boxes.Services.Storage.StorageService">
+            <summary>
+                Service d'accès aux données de stockage local.
+            </summary>
+        </member>
+        <member name="F:Boxes.Services.Storage.StorageService.localSettings">
+            <summary>
+                Conteneur de paramètres d'application.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Storage.StorageService.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise la propriété <c>localSettings</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.Storage.StorageService.SaveSetting(System.String,System.Object)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Storage.StorageService.ReadSetting``1(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.Services.Storage.StorageService.RemoveSetting(System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Services.User.DesignUserService">
+            <summary>
+                Service d'accès aux données de design de l'entité <see cref="T:Boxes.Models.User" />.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.User.DesignUserService.CreateAsync(Boxes.Models.User)">
+            <inheritdoc />
+            <exception cref="T:System.NotImplementedException">
+                Levée pour chaque appel à cette méthode en mode design.
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.User.DesignUserService.GetByEmailPasswordAsync(System.String,System.String)">
+            <inheritdoc />
+        </member>
+        <member name="T:Boxes.Services.User.IUserService">
+            <summary>
+                Définit les méthode d'accès aux données de l'entité <see cref="T:Boxes.Models.User"/>.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.User.IUserService.CreateAsync(Boxes.Models.User)">
+            <summary>
+                Enregistre un nouvel utilisateur.
+            </summary>
+            <param name="user">
+                Utilisateur à créer.
+            </param>
+            <returns>
+                L'utilisateur créé.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.User.IUserService.GetByEmailPasswordAsync(System.String,System.String)">
+            <summary>
+                Récupère un utilisateur en fonction de son email et de son mot de passe.
+            </summary>
+            <param name="email">
+                Email de l'utilisateur.
+            </param>
+            <param name="password">
+                Mot de passe de l'utilisateur.
+            </param>
+            <returns>
+                L'utilisateur qui a l'email et le mot de passe en paramètre.
+            </returns>
+        </member>
+        <member name="T:Boxes.Services.User.UserService">
+            <summary>
+                Service d'accès aux données de l'entité <see cref="T:Boxes.Models.User"/>.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.User.UserService.CreateAsync(Boxes.Models.User)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service n'est pas en mesure de nous délivrer l'utilisateur créé
+                ou qu'il renvoi un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="M:Boxes.Services.User.UserService.GetByEmailPasswordAsync(System.String,System.String)">
+            <inheritdoc />
+            <exception cref="T:Boxes.Auxiliary.Exceptions.WebServiceException">
+                Levée si le web service n'est pas en mesure de nous délivrer l'utilisateur
+                correspondant à l'email et le mot de passe en paramètre ou qu'il renvoi
+                un code d'erreur (500, 503, 404, ...).
+            </exception>
+        </member>
+        <member name="T:Boxes.Services.HttpService">
+            <summary>
+                Classe de base pour tout les services ayant besoins de communiquer avec le WebService.
+            </summary>
+        </member>
+        <member name="F:Boxes.Services.HttpService.apiKey">
+            <summary>
+                Clé d'API qui permet de se connecter au web service.
+            </summary>
+        </member>
+        <member name="F:Boxes.Services.HttpService.baseUrl">
+            <summary>
+                URL de base du web service.
+            </summary>
+        </member>
+        <member name="M:Boxes.Services.HttpService.PostAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+                Exécute une requête HTTP de type POST.
+            </summary>
+            <param name="url">
+                URL de l'action du service web à exécuter.
+            </param>
+            <param name="pairs">
+                Paramètres de la requête HTTP.
+            </param>
+            <returns>
+                Réponse du web service.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.HttpService.GetAsync(System.String)">
+            <summary>
+                Exécute une requête HTTP de type GET.
+            </summary>
+            <param name="url">
+                URL de l'action du service à exécuter.
+            </param>
+            <returns>
+                Réponse du web service.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.HttpService.PutAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+                Exécute une requête HTTP de type PUT.
+            </summary>
+            <param name="url">
+                URL de l'action du web service à exécuter.
+            </param>
+            <param name="pairs">
+                Paramètres de la requête HTTP.
+            </param>
+            <returns>
+                Réponse du web service.
+            </returns>
+        </member>
+        <member name="M:Boxes.Services.HttpService.DeleteAsync(System.String)">
+            <summary>
+                Exécute une requête HTTP de type DELETE.
+            </summary>
+            <param name="url">
+                URL de l'action du web service à exécuter.
+            </param>
+            <returns>
+                Réponse du web service.
+            </returns>
+        </member>
+        <member name="T:Boxes.ViewModels.BoxViewModel">
+            <summary>
+                View model de la page d'une boite.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.postService">
+            <summary>
+                Stock le service d'accès aux données de l'entité <see cref="T:Boxes.Models.Post"/>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.boxService">
+            <summary>
+                Stock le service d'accès aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.navigationService">
+            <summary>
+                Stock le service de navigation.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.storageService">
+            <summary>
+                Stock le service d'accès aux données de stockage local.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.dialogService">
+            <summary>
+                Stock le service d'affichage de popups.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.isLoading">
+            <summary>
+                Stock la valeur de la propriété <c>IsLoading</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.isPosting">
+            <summary>
+                Stock la valeur de la propriété <c>IsPosting</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.isSubscribing">
+            <summary>
+                Stock la valeur de la propriété <c>IsSubscribing</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.isUnsubscribing">
+            <summary>
+                Stock la valeur de la propriété <c>IsUnsubscribing</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.isDeleting">
+            <summary>
+                Stock la valeur de la propriété <c>IsDeleting</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.title">
+            <summary>
+                Stock la valeur de la propriété <c>Title</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.description">
+            <summary>
+                Stock la valeur de la propriété <c>Description</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.creator">
+            <summary>
+                Stock la valeur de la propriété <c>Creator</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.posts">
+            <summary>
+                Stock la valeur de la propriété <c>Posts</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.isUserSubscribed">
+            <summary>
+                Stock la valeur de la propriété <c>IsUserSubscribed</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.BoxViewModel.isUserCreated">
+            <summary>
+                Stock la valeur de la propriété <c>IsUserCreated</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.#ctor(Boxes.Services.Post.IPostService,Boxes.Services.Box.IBoxService,GalaSoft.MvvmLight.Views.INavigationService,Boxes.Services.Storage.IStorageService,GalaSoft.MvvmLight.Views.IDialogService)">
+            <summary>
+                Constructeur qui initialise les propriétés du view model.
+            </summary>
+            <param name="postService">
+                Instance du service d'accès aux données de l'entité <see cref="T:Boxes.Models.Post"/>.
+            </param>
+            <param name="boxService">
+                Instance du service d'accès aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </param>
+            <param name="navigationService">
+                Instance du service de navigation.
+            </param>
+            <param name="storageService">
+                Instance du service d'accès aux données de stockage local.
+            </param>
+            <param name="dialogService">
+                Instance du service d'affichage de popups.
+            </param>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.IsLoading">
+            <summary>
+                Est-ce qu'un chargement s'opère ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.IsPosting">
+            <summary>
+                Est-ce que la création d'un post est en cours ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.IsSubscribing">
+            <summary>
+                Est-ce qu'un abonnement est en cours ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.IsUnsubscribing">
+            <summary>
+                Est-ce qu'un désabonnement est en cours ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.IsDeleting">
+            <summary>
+                Est-ce que la boite est en cours de suppression ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.Id">
+            <summary>
+                Id de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.Title">
+            <summary>
+                Titre de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.Description">
+            <summary>
+                Description de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.Creator">
+            <summary>
+                Créateur de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.Posts">
+            <summary>
+                Posts de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.IsUserSubscribed">
+            <summary>
+                Est-ce que l'utilisateur est abonné à cette boite ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.IsUserCreated">
+            <summary>
+                Est-ce que l'utilisateur a créée cette boite ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.ShowPostCommand">
+            <summary>
+                Commande d'affichage d'un post.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.CreatePostCommand">
+            <summary>
+                Commande de création d'un post.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.SubscribeCommand">
+            <summary>
+                Commande d'abonnement à la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.UnsubscribeCommand">
+            <summary>
+                Commande de désabonnement à la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.ShowEditBoxCommand">
+            <summary>
+                Commande d'affichage de la fenêtre d'édition d'une boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.BoxViewModel.DeleteBoxCommand">
+            <summary>
+                Commande de suppression d'une boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.Initialize(Boxes.Models.Box)">
+            <summary>
+                Exécute les initialisations s'opérant pour chaque navigation sur la
+                page de la boite.
+            </summary>
+            <param name="box">
+                Boite à afficher.
+            </param>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.Cleanup">
+            <summary>
+                Exécute les opération à effectuer à chaque fois que l'utilisateur
+                quitte la page de la boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.ReloadPosts">
+            <summary>
+                Recharge les posts de la boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.ShowPost(Boxes.Models.Post)">
+            <summary>
+                Navigue vers la page de détail d'un post.
+            </summary>
+            <param name="post">
+                Post à afficher.
+            </param>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.CanCreatePostExecute(System.String)">
+            <summary>
+                Détermine si la commande de création d'un post peut s'exécuter.
+            </summary>
+            <param name="postContent">
+                Contenu du post à créer.
+            </param>
+            <returns>
+                Est-ce que la commande de création de post peut s'exécuter ?
+            </returns>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.CreatePost(System.String)">
+            <summary>
+                Crée un nouveau post.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.CanSubscribeExecute">
+            <summary>
+                Détermine si la commande d'abonnement de l'utilisateur peut s'exécuter.
+            </summary>
+            <returns>
+                Est-ce que la commande d'abonnement peut s'exécuter ?
+            </returns>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.Subscribe">
+            <summary>
+                Ajoute l'utilisateur à la liste des abonnés de la boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.CanUnsubscribeExecute">
+            <summary>
+                Détermine si la commande de désabonnement peut s'exécuter.
+            </summary>
+            <returns>
+                Est-ce que la commande de désabonnement peut s'exécuter ?
+            </returns>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.Unsubscribe">
+            <summary>
+                Supprime l'utilisateur de la liste des abonnés de la boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.ShowEditBox">
+            <summary>
+                Navigue vers la page d'édition d'une boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.CanDeleteBoxExecute">
+            <summary>
+                Détermine si la commande de suppression peut s'exécuter.
+            </summary>
+            <returns>
+                Est-ce que la commande de suppression peut s'exécuter.
+            </returns>
+        </member>
+        <member name="M:Boxes.ViewModels.BoxViewModel.DeleteBox">
+            <summary>
+                Supprime la boite.
+            </summary>
+        </member>
+        <member name="T:Boxes.ViewModels.CreateBoxViewModel">
+            <summary>
+                View model de la page de création d'une boite.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.CreateBoxViewModel.boxService">
+            <summary>
+                Stock le service d'accès aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.CreateBoxViewModel.storageService">
+            <summary>
+                Stock le service d'accès aux données de stockage local.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.CreateBoxViewModel.navigationService">
+            <summary>
+                Stock le service de navigation.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.CreateBoxViewModel.localizationService">
+            <summary>
+                Stock le service d'accès aux données de localization.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.CreateBoxViewModel.dialogService">
+            <summary>
+                Stock le service d'affichage de popups.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.CreateBoxViewModel.isCreating">
+            <summary>
+                Stock la valeur de la propriété <c>IsCreating</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.CreateBoxViewModel.title">
+            <summary>
+                Stock la valeur de la propriété <c>Title</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.CreateBoxViewModel.description">
+            <summary>
+                Stock la valeur de la propriété <c>Description</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.CreateBoxViewModel.#ctor(Boxes.Services.Box.IBoxService,Boxes.Services.Storage.IStorageService,GalaSoft.MvvmLight.Views.INavigationService,Boxes.Services.Localization.ILocalizationService,GalaSoft.MvvmLight.Views.IDialogService)">
+            <summary>
+                Constructeur paramétré qui initialise les propriétés du view model.
+            </summary>
+            <param name="boxService">
+                Instance du service d'accès aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </param>
+            <param name="storageService">
+                Instance du service d'accès aux données de stockage local.
+            </param>
+            <param name="navigationService">
+                Instance du service de navigation.
+            </param>
+            <param name="localizationService">
+                Instance du service d'accès aux données de localization.
+            </param>
+            <param name="dialogService">
+                Instance du service d'affichage de popups.
+            </param>
+        </member>
+        <member name="P:Boxes.ViewModels.CreateBoxViewModel.IsCreating">
+            <summary>
+            Est-ce que la boite est en train de se créer ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.CreateBoxViewModel.Title">
+            <summary>
+            Titre de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.CreateBoxViewModel.Description">
+            <summary>
+            Description de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.CreateBoxViewModel.CreateBoxCommand">
+            <summary>
+            Commande de création d'une boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.CreateBoxViewModel.Initialize">
+            <summary>
+                Effectue les initialization pour chaque navigation qui se fait
+                sur la page de création d'une boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.CreateBoxViewModel.Cleanup">
+            <summary>
+                Effectue les opération qui doivent s'exécuter à chaque fois que
+                l'utilisateur quite la page de création de la boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.CreateBoxViewModel.CanCreateBoxExecute">
+            <summary>
+                Détermine si la commande de création d'une boite peut s'exécuter.
+            </summary>
+            <returns>
+                Est-ce que la commande de création peut s'exécuter ?
+            </returns>
+        </member>
+        <member name="M:Boxes.ViewModels.CreateBoxViewModel.CreateBox">
+            <summary>
+                Crée une nouvelle boite.
+            </summary>
+        </member>
+        <member name="T:Boxes.ViewModels.DiscoverViewModel">
+            <summary>
+                View model de la page "Découvrir".
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.DiscoverViewModel.boxService">
+            <summary>
+                Stock le service d'accès aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.DiscoverViewModel.navigationService">
+            <summary>
+                Stock le service de navigation.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.DiscoverViewModel.localizationService">
+            <summary>
+                Stock le service d'accès aux données de localization.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.DiscoverViewModel.dialogService">
+            <summary>
+                Stock le service d'affichage de popups.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.DiscoverViewModel.isLoading">
+            <summary>
+                Stock la valeur de la propriété <c>IsLoading</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.DiscoverViewModel.isSearching">
+            <summary>
+                Stock la valeur de la propriété <c>IsSearching</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.DiscoverViewModel.topBoxes">
+            <summary>
+                Stock la valeur de la propriété <c>TopBoxes</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.DiscoverViewModel.searchResults">
+            <summary>
+                Stock la valeur de la propriété <c>SearchResults</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.DiscoverViewModel.#ctor(Boxes.Services.Box.IBoxService,GalaSoft.MvvmLight.Views.INavigationService,Boxes.Services.Localization.ILocalizationService,GalaSoft.MvvmLight.Views.IDialogService)">
+            <summary>
+                Constructeur de paramétré qui initialize les propriétés du view model.
+            </summary>
+            <param name="boxService">
+                Instance du service d'accès aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </param>
+            <param name="navigationService">
+                Instance du service de navigation.
+            </param>
+            <param name="localizationService">
+                Instance du service de localization.
+            </param>
+            <param name="dialogService">
+                Instance du service d'affichage de popups.
+            </param>
+        </member>
+        <member name="P:Boxes.ViewModels.DiscoverViewModel.IsLoading">
+            <summary>
+                Est-ce que la page est en train de charger ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.DiscoverViewModel.IsSearching">
+            <summary>
+                Est-ce que l'utilisateur est en train de faire une recherche ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.DiscoverViewModel.TopBoxes">
+            <summary>
+                Liste des meilleures boites.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.DiscoverViewModel.SearchResults">
+            <summary>
+                Résultat de la recherche effectuée par l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.DiscoverViewModel.ShowBoxCommand">
+            <summary>
+                Commande d'affichage d'une boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.DiscoverViewModel.SearchBoxCommand">
+            <summary>
+                Commande de recherche d'une boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.DiscoverViewModel.Initialize">
+            <summary>
+                Exécute les initialisations pour chaque navigation qui s'effectue sur
+                la page "Découvrir".
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.DiscoverViewModel.ReloadTopBoxes">
+            <summary>
+                Recharge le top des boites.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.DiscoverViewModel.ShowBox(Boxes.Models.Box)">
+            <summary>
+                Navigue vers la page de détails d'une boite.
+            </summary>
+            <param name="box">
+                Boite à afficher.
+            </param>
+        </member>
+        <member name="M:Boxes.ViewModels.DiscoverViewModel.SearchBox(System.String)">
+            <summary>
+                Recherche une boite.
+            </summary>
+            <param name="terms">
+                Termes de la recherche de l'utilisateur.
+            </param>
+        </member>
+        <member name="T:Boxes.ViewModels.EditBoxViewModel">
+            <summary>
+                View model de la page d'édition d'une boite.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.EditBoxViewModel.boxService">
+            <summary>
+                Stock le service d'accès aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.EditBoxViewModel.navigationService">
+            <summary>
+                Stock le service de navigation.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.EditBoxViewModel.localizationService">
+            <summary>
+                Stock le service d'accès aux données de localization.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.EditBoxViewModel.dialogService">
+            <summary>
+                Stock le service d'affichage de popups.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.EditBoxViewModel.isUpdating">
+            <summary>
+                Stock la valeur de la propriété <c>IsUpdating</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.EditBoxViewModel.title">
+            <summary>
+                Stock la valeur de la propriété <c>Title</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.EditBoxViewModel.description">
+            <summary>
+                Stock la valeur de la propriété <c>Description</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.EditBoxViewModel.#ctor(Boxes.Services.Box.IBoxService,GalaSoft.MvvmLight.Views.INavigationService,Boxes.Services.Localization.ILocalizationService,GalaSoft.MvvmLight.Views.IDialogService)">
+            <summary>
+                Constructeur paramétré qui initialise les propriétés du view model.
+            </summary>
+            <param name="boxService">
+                Instance du service d'accès aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </param>
+            <param name="navigationService">
+                Instance du service de navigation.
+            </param>
+            <param name="localizationService">
+                Instance du service d'accès aux données de localization.
+            </param>
+            <param name="dialogService">
+                Instance du service d'affichage de popups.
+            </param>
+        </member>
+        <member name="P:Boxes.ViewModels.EditBoxViewModel.IsUpdating">
+            <summary>
+                Est-ce que la boite est en train d'être modifiée ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.EditBoxViewModel.Id">
+            <summary>
+                Id de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.EditBoxViewModel.Title">
+            <summary>
+                Titre de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.EditBoxViewModel.Description">
+            <summary>
+                Description de la boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.EditBoxViewModel.UpdateBoxCommand">
+            <summary>
+            Commande d'édition de la boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.EditBoxViewModel.Initialize(Boxes.Models.Box)">
+            <summary>
+                Effectue les opérations qui doivent s'exécuter pour chaque navigation
+                qui s'effectue sur la page d'édition d'une boite.
+            </summary>
+            <param name="box">
+                Boite à modifier.
+            </param>
+        </member>
+        <member name="M:Boxes.ViewModels.EditBoxViewModel.Cleanup">
+            <summary>
+                Effectue toute les opérations qui doivent s'exécuter dès que
+                l'utilisateur quitte la page d'édition d'une boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.EditBoxViewModel.CanUpdateBoxExecute">
+            <summary>
+                Détermine si la commande d'édition d'une boite peut s'exécuter.
+            </summary>
+            <returns>
+                Est-ce que la commande d'édition d'une boite peut s'exécuter ?
+            </returns>
+        </member>
+        <member name="M:Boxes.ViewModels.EditBoxViewModel.UpdateBox">
+            <summary>
+                Modifie la boite.
+            </summary>
+        </member>
+        <member name="T:Boxes.ViewModels.HomeViewModel">
+            <summary>
+                View model de la page d'accueil.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.HomeViewModel.storageService">
+            <summary>
+                Stock le service d'accès aux données de stockage local.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.HomeViewModel.navigationService">
+            <summary>
+                Stock le service de navigation.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.HomeViewModel.postService">
+            <summary>
+                Stock le service d'accès aux données de l'entité <see cref="T:Boxes.Models.Post"/>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.HomeViewModel.localizationService">
+            <summary>
+                Stock le service de localization.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.HomeViewModel.dialogService">
+            <summary>
+                Stock le service d'affichage de popups.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.HomeViewModel.isLoading">
+            <summary>
+                Stock la valeur de la propriété <c>IsLoading</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.HomeViewModel.posts">
+            <summary>
+                Stock la valeur de la propriété <c>Posts</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.HomeViewModel.#ctor(Boxes.Services.Storage.IStorageService,GalaSoft.MvvmLight.Views.INavigationService,Boxes.Services.Post.IPostService,Boxes.Services.Localization.ILocalizationService,GalaSoft.MvvmLight.Views.IDialogService)">
+            <summary>
+                Constructeur paramétré qui initialize les propriétés du view model.
+            </summary>
+            <param name="storageService">
+                Instance du service d'accès aux données de stockage local.
+            </param>
+            <param name="navigationService">
+                Instance du service de navigation.
+            </param>
+            <param name="postService">
+                Instance du service d'accès aux données de l'entité <see cref="T:Boxes.Models.Post" />.
+            </param>
+            <param name="localizationService">
+                Instance du service d'accès aux resources de localization.
+            </param>
+            <param name="dialogService">
+                Insance du service d'affichage de popups.
+            </param>
+        </member>
+        <member name="P:Boxes.ViewModels.HomeViewModel.Posts">
+            <summary>
+                Posts de la boite séléctionnée.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.HomeViewModel.IsLoading">
+            <summary>
+                Est-ce qu'un chargement s'opère ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.HomeViewModel.ShowPostCommand">
+            <summary>
+                Commande d'affichage d'un post.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.HomeViewModel.Initialize">
+            <summary>
+                Effectue les initialisation pour chaque navigation qui
+                s'effectue sur la page d'accueil.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.HomeViewModel.ReloadPosts">
+            <summary>
+                Recharge les posts de la boite séléctionnée.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.HomeViewModel.ShowPost(Boxes.Models.Post)">
+            <summary>
+            Navigue vers la page de détail d'un post.
+            </summary>
+            <param name="post">Post à afficher.</param>
+        </member>
+        <member name="T:Boxes.ViewModels.MyBoxesViewModel">
+            <summary>
+                View model de la page "Mes boites".
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.MyBoxesViewModel.boxService">
+            <summary>
+                Stock le service d'accès aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.MyBoxesViewModel.storageService">
+            <summary>
+                Stock le service d'accès aux données de stockage local.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.MyBoxesViewModel.navigationService">
+            <summary>
+                Stock le service de navigation.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.MyBoxesViewModel.localizationService">
+            <summary>
+                Stock le service d'accès aux données de localization.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.MyBoxesViewModel.dialogService">
+            <summary>
+                Stock le service d'affichage de popups.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.MyBoxesViewModel.isLoading">
+            <summary>
+                Stock la valeur de la propriété <c>IsLoading</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.MyBoxesViewModel.boxes">
+            <summary>
+                Stock la valeur de la propriété <c>Boxes</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.MyBoxesViewModel.#ctor(Boxes.Services.Box.IBoxService,Boxes.Services.Storage.IStorageService,GalaSoft.MvvmLight.Views.INavigationService,Boxes.Services.Localization.ILocalizationService,GalaSoft.MvvmLight.Views.IDialogService)">
+            <summary>
+                Constructeur paramétré qui initialize les propriétés du view model.
+            </summary>
+            <param name="boxService">
+                Instance du service d'accès aux données de l'entité <see cref="T:Boxes.Models.Box"/>.
+            </param>
+            <param name="storageService">
+                Instance du service d'accès aux données de stockage local.
+            </param>
+            <param name="navigationService">
+                Instance du service de navigation.
+            </param>
+            <param name="localizationService">
+                Instance du service d'accès aux données de localization.
+            </param>
+            <param name="dialogService">
+                Instance du service d'affichage de popups.
+            </param>
+        </member>
+        <member name="P:Boxes.ViewModels.MyBoxesViewModel.IsLoading">
+            <summary>
+                Est-ce que la page est en train de charger ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.MyBoxesViewModel.Boxes">
+            <summary>
+                Boites auxquelles l'utilisateur s'est abonnées et/ou qu'il a créées.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.MyBoxesViewModel.ShowBoxCommand">
+            <summary>
+                Commande d'affichage d'une boite.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.MyBoxesViewModel.ShowCreateBoxCommand">
+            <summary>
+                Commande d'affichage du formulaire de création d'une boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.MyBoxesViewModel.Initialize">
+            <summary>
+                Effectue les initialisation pour chaque navigation qui se fait
+                sur la page "Mes boites".
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.MyBoxesViewModel.ReloadBoxes">
+            <summary>
+            Recharge les boites de l'utilisateur.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.MyBoxesViewModel.ShowBox(Boxes.Models.Box)">
+            <summary>
+            Navigue vers la page de détails d'une boite.
+            </summary>
+            <param name="box">Boite à afficher.</param>
+        </member>
+        <member name="M:Boxes.ViewModels.MyBoxesViewModel.ShowCreateBox">
+            <summary>
+            Navigue vers le formulaire de création d'une boite.
+            </summary>
+        </member>
+        <member name="T:Boxes.ViewModels.PostViewModel">
+            <summary>
+                View model de la page d'un post.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.PostViewModel.postService">
+            <summary>
+                Stock le service d'accès aux données de l'entité <see cref="T:Boxes.Models.Post"/>
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.PostViewModel.commentService">
+            <summary>
+                Stock le service d'accès aux données de l'entité <see cref="T:Boxes.Models.Comment"/>
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.PostViewModel.storageService">
+            <summary>
+                Stock le service d'accès aux données de stockage local.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.PostViewModel.dialogService">
+            <summary>
+                Stock le service d'affichage de popups.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.PostViewModel.isLoading">
+            <summary>
+                Stock la valeur de la propriété <c>IsLoading</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.PostViewModel.isCommenting">
+            <summary>
+                Stock la valeur de la propriété <c>IsCommenting</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.PostViewModel.content">
+            <summary>
+                Stock la valeur de la propriété <c>Content</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.PostViewModel.author">
+            <summary>
+                Stock la valeur de la propriété <c>Author</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.PostViewModel.box">
+            <summary>
+                Stock la valeur de la propriété <c>Box</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.PostViewModel.createdAt">
+            <summary>
+                Stock la valeur de la propriété <c>CreatedAt</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.PostViewModel.comments">
+            <summary>
+                Stock la valeur de la propriété <c>Comments</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.PostViewModel.#ctor(Boxes.Services.Post.IPostService,Boxes.Services.Comment.ICommentService,Boxes.Services.Storage.IStorageService,GalaSoft.MvvmLight.Views.IDialogService)">
+            <summary>
+                Constructeur paramétré qui initialize les propriétés du view model.
+            </summary>
+            <param name="postService">
+                Instance du service d'accès aux données de l'entité <see cref="T:Boxes.Models.Post"/>.
+            </param>
+            <param name="commentService">
+                Instance du service d'accès aux données de l'entité <see cref="T:Boxes.Models.Comment"/>.
+            </param>
+            <param name="storageService">
+                Instance du service d'accès aux données de stockage local.
+            </param>
+            <param name="dialogService">
+                Instance du service d'affichage de popups.
+            </param>
+        </member>
+        <member name="P:Boxes.ViewModels.PostViewModel.IsLoading">
+            <summary>
+                Est-ce qu'un chargement s'opère ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.PostViewModel.IsCommenting">
+            <summary>
+                Est-ce qu'un commentaire est en cours de création ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.PostViewModel.Id">
+            <summary>
+                Id du post.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.PostViewModel.Content">
+            <summary>
+                Contenu du post.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.PostViewModel.Author">
+            <summary>
+                Auteur du post.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.PostViewModel.Box">
+            <summary>
+                Boite associée au post.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.PostViewModel.CreatedAt">
+            <summary>
+                Date de création du post.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.PostViewModel.Comments">
+            <summary>
+                Commentaires associés au post.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.PostViewModel.CreateCommentCommand">
+            <summary>
+                Commande de création d'un commentaire.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.PostViewModel.Initialize(Boxes.Models.Post)">
+            <summary>
+                Effectue les initialisation pour chaque navigation qui se fait vers
+                la page d'un post.
+            </summary>
+            <param name="post">
+                Post à afficher.
+            </param>
+        </member>
+        <member name="M:Boxes.ViewModels.PostViewModel.Cleanup">
+            <summary>
+                Effectue les opération qui s'effectue à chaque fois que l'utilisateur
+                quitte la page d'un post.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.PostViewModel.ReloadComments">
+            <summary>
+                Recharge les commentaires.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.PostViewModel.CanCreateCommentExecute(System.String)">
+            <summary>
+                Détermine si la commande de création d'un commentaire peut s'exécuter.
+            </summary>
+            <param name="commentContent">
+                Contenu du champ commentaire.
+            </param>
+            <returns>
+                Est-ce que la commande de création d'un commentaire peut s'exécuter ?
+            </returns>
+        </member>
+        <member name="M:Boxes.ViewModels.PostViewModel.CreateComment(System.String)">
+            <summary>
+                Enregistre un nouveau commentaire.
+            </summary>
+        </member>
+        <member name="T:Boxes.ViewModels.ShellViewModel">
+            <summary>
+                View model de la page de menu.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.ShellViewModel.navigationService">
+            <summary>
+                Stock le service de navigation.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.ShellViewModel.localizationService">
+            <summary>
+                Stock le service d'accès aux données de localization.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.ShellViewModel.storageService">
+            <summary>
+                Stock le service d'accès aux données de stockage local.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.ShellViewModel.title">
+            <summary>
+                Stock la valeur de la propriété <c>Title</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.ShellViewModel.currentUserName">
+            <summary>
+                Stock la valeur de la propriété <c>CurrentUserName</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.ShellViewModel.isBackButtonVisible">
+            <summary>
+                Stock la valeur de la propriété <c>IsBackButtonVisible</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.ShellViewModel.#ctor(GalaSoft.MvvmLight.Views.INavigationService,Boxes.Services.Localization.ILocalizationService,Boxes.Services.Storage.IStorageService)">
+            <summary>
+                Constructeur paramétré qui initialise les propriétés du view model.
+            </summary>
+            <param name="navigationService">
+                Instance du service de navigation.
+            </param>
+            <param name="localizationService">
+                Instance du service d'accès aux données de localization.
+            </param>
+            <param name="storageService">
+                Instance du service d'accès aux données de stockage local.
+            </param>
+        </member>
+        <member name="P:Boxes.ViewModels.ShellViewModel.Title">
+            <summary>
+                Titre de la page en cours.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ShellViewModel.CurrentUserName">
+            <summary>
+                Prénom et nom de l'utilisateur courant.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ShellViewModel.IsBackButtonVisible">
+            <summary>
+                Est-ce que le bouton de retour arrière est visible ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ShellViewModel.GoBackCommand">
+            <summary>
+                Commande de retour arrière.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ShellViewModel.NavigateToHomeCommand">
+            <summary>
+                Commande de navigation vers la page d'accueil.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ShellViewModel.NavigateToDiscoverCommand">
+            <summary>
+                Commande de navigation vers la page "Découvrir".
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ShellViewModel.NavigateToMyBoxesCommand">
+            <summary>
+                Commande de navigation vers la page "Mes boites".
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ShellViewModel.SignoutCommand">
+            <summary>
+                Commande de déconnexion.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.ShellViewModel.Initialize">
+            <summary>
+                Enregistre la réception des message de type <see cref="T:Boxes.Auxiliary.Messaging.IsBackButtonVisibleMessage"/>
+                et <see cref="T:Boxes.Auxiliary.Messaging.ShellTitleMessage"/>. Navigue également vers la page par défaut et charge
+                l'utilisateur par défaut dans <c>CurrentUserName</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.ShellViewModel.NavigateToHome">
+            <summary>
+                Navigue vers la page d'accueil.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.ShellViewModel.NavigateToDiscover">
+            <summary>
+                Navigue vers la page "Découvrir".
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.ShellViewModel.NavigateToMyBoxes">
+            <summary>
+                Navigue vers la page d'administration "Mes boites".
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.ShellViewModel.HandleIsBackButtonVisibleMessage(Boxes.Auxiliary.Messaging.IsBackButtonVisibleMessage)">
+            <summary>
+                Traite un message concernant la visibilité du bouton de retour.
+            </summary>
+            <param name="m">
+                Message à traiter.
+            </param>
+        </member>
+        <member name="M:Boxes.ViewModels.ShellViewModel.HandleShellTitleMessage(Boxes.Auxiliary.Messaging.ShellTitleMessage)">
+            <summary>
+                Traite un message contenant un titre pour le Shell.
+            </summary>
+            <param name="m">
+                Message à traiter.
+            </param>
+        </member>
+        <member name="M:Boxes.ViewModels.ShellViewModel.Signout">
+            <summary>
+                Déconnecte l'utilisateur courant.
+            </summary>
+        </member>
+        <member name="T:Boxes.ViewModels.ViewModelLocator">
+            <summary>
+                Cette classe recense les view models et services de l'application.
+            </summary>
+            <remarks>
+                Elle permet une communication simple entre les view models, les views et les services.
+                En effet, cette classe permet l'injection de certaines dépendances notamment les services.
+            </remarks>
+        </member>
+        <member name="M:Boxes.ViewModels.ViewModelLocator.#cctor">
+            <summary>
+                Constructeur statique qui charge tous les view models et service dans
+                le conteneur de dépendance.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ViewModelLocator.LoginVM">
+            <summary>
+                Instance de <see cref="T:Boxes.ViewModels.LoginViewModel"/> du conteneur de dépendance.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ViewModelLocator.RegisterVM">
+            <summary>
+                Instance de <see cref="T:Boxes.ViewModels.RegisterViewModel"/> du conteneur de dépendance.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ViewModelLocator.ShellVM">
+            <summary>
+                Instance de <see cref="T:Boxes.ViewModels.ShellViewModel"/> du conteneur de dépendance.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ViewModelLocator.HomeVM">
+            <summary>
+                Instance de <see cref="T:Boxes.ViewModels.HomeViewModel"/> du conteneur de dépendance.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ViewModelLocator.PostVM">
+            <summary>
+                Instance de <see cref="T:Boxes.ViewModels.PostViewModel"/> du conteneur de dépendance.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ViewModelLocator.DiscoverVM">
+            <summary>
+                Instance de <see cref="T:Boxes.ViewModels.DiscoverViewModel"/> du conteneur de dépendance.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ViewModelLocator.BoxVM">
+            <summary>
+                Instance de <see cref="T:Boxes.ViewModels.BoxViewModel"/> du conteneur de dépendance.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ViewModelLocator.MyBoxesVM">
+            <summary>
+                Instance de <see cref="T:Boxes.ViewModels.MyBoxesViewModel"/> du conteneur de dépendance.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ViewModelLocator.CreateBoxVM">
+            <summary>
+                Instance de <see cref="T:Boxes.ViewModels.CreateBoxViewModel"/> du conteneur de dépendance.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.ViewModelLocator.EditBoxVM">
+            <summary>
+                Instance de <see cref="T:Boxes.ViewModels.EditBoxViewModel"/> du conteneur de dépendance.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.ViewModelLocator.CreateNavigationService">
+            <summary>
+                Crée un service de navigation.
+            </summary>
+            <remarks>
+                C'est dans cette méthode que son configurées les vues du service de
+                navigation.
+            </remarks>
+            <returns>
+                Un service de navigation configuré.
+            </returns>
+        </member>
+        <member name="T:Boxes.ViewModels.LoginViewModel">
+            <summary>
+                View model de la page de connexion.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.LoginViewModel.localizationService">
+            <summary>
+                Stock le service d'accès aux données de localization.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.LoginViewModel.userService">
+            <summary>
+                Stock le service d'accès aux données de l'entité <see cref="T:Boxes.Models.User"/>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.LoginViewModel.storageService">
+            <summary>
+                Stock le service d'accès aux données de stockage local.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.LoginViewModel.navigationService">
+            <summary>
+                Stock le service de navigation.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.LoginViewModel.dialogService">
+            <summary>
+                Stock le service gérant l'affichage de popups.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.LoginViewModel.email">
+            <summary>
+                Stock la valeur de la propriété <c>Email</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.LoginViewModel.password">
+            <summary>
+                Stock la valeur de la propriété <c>Password</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.LoginViewModel.isLoggingIn">
+            <summary>
+                Stock la valeur de la propriété <c>IsLoggingIn</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.LoginViewModel.#ctor(Boxes.Services.User.IUserService,Boxes.Services.Storage.IStorageService,GalaSoft.MvvmLight.Views.INavigationService,Boxes.Services.Localization.ILocalizationService,GalaSoft.MvvmLight.Views.IDialogService)">
+            <summary>
+                Constructeur paramétré qui initialise les propriétés du view model.
+            </summary>
+            <param name="userService">
+                Instance du service des utilisateurs.
+            </param>
+            <param name="storageService">
+                Instance du service de stockage.
+            </param>
+            <param name="navigationService">
+                Instance du service de navigation.
+            </param>
+            <param name="localizationService">
+                Instance du service d'accès aux données de localization.
+            </param>
+            <param name="dialogService">
+                Instance du service gérant l'affichage de popups.
+            </param>
+        </member>
+        <member name="P:Boxes.ViewModels.LoginViewModel.IsLoggingIn">
+            <summary>
+                Est-ce que la connexion est en cours ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.LoginViewModel.Email">
+            <summary>
+                Adresse email entrée par l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.LoginViewModel.Password">
+            <summary>
+                Mot de pass entré par l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.LoginViewModel.LoginCommand">
+            <summary>
+                Commande s'exécutant lors du click sur le bouton de connexion.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.LoginViewModel.RegisterCommand">
+            <summary>
+                Commande s'exécutant lors du click sur le lien hypertext "S'enregistrer".
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.LoginViewModel.Cleanup">
+            <summary>
+                Effectue toute les opération qui s'exécute dès que l'utilisateur
+                quite la page de connexion.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.LoginViewModel.CanLoginExecute">
+            <summary>
+                Détermine si la commande de connexion peut s'exécuter.
+            </summary>
+            <returns>
+                Est-ce que la commande de connexion peut s'exécuter ?
+            </returns>
+        </member>
+        <member name="M:Boxes.ViewModels.LoginViewModel.Login">
+            <summary>
+                Connecte l'utilisateur à l'application.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.LoginViewModel.Register">
+            <summary>
+                Redirige l'utilisateur vers la page d'inscription.
+            </summary>
+        </member>
+        <member name="T:Boxes.ViewModels.RegisterViewModel">
+            <summary>
+                View model de la page d'inscription.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.RegisterViewModel.userService">
+            <summary>
+                Stock le service d'accès aux données de l'entité <see cref="T:Boxes.Models.User"/>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.RegisterViewModel.navigationService">
+            <summary>
+                Stock le service de navigation.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.RegisterViewModel.localizationService">
+            <summary>
+                Stock le service d'accès aux données de localization.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.RegisterViewModel.dialogService">
+            <summary>
+                Stock le service d'affichage de popups.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.RegisterViewModel.firstName">
+            <summary>
+                Stock la valeur de la propriété <c>FirstName</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.RegisterViewModel.lastName">
+            <summary>
+                Stock la valeur de la propriété <c>LastName</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.RegisterViewModel.birthDate">
+            <summary>
+                Stock la valeur de la propriété <c>BirthDate</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.RegisterViewModel.email">
+            <summary>
+                Stock la valeur de la propriété <c>Email</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.RegisterViewModel.password">
+            <summary>
+                Stock la valeur de la propriété <c>Password</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.RegisterViewModel.passwordConfirmation">
+            <summary>
+                Stock la valeur de la propriété <c>PasswordConfirmation</c>.
+            </summary>
+        </member>
+        <member name="F:Boxes.ViewModels.RegisterViewModel.isRegistering">
+            <summary>
+                Stock la valeur de la propriété <c>IsRegistering</c>.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.RegisterViewModel.#ctor(Boxes.Services.User.IUserService,GalaSoft.MvvmLight.Views.INavigationService,Boxes.Services.Localization.ILocalizationService,GalaSoft.MvvmLight.Views.IDialogService)">
+            <summary>
+                Constructeur paramétré qui initialize les propriétés du view model.
+            </summary>
+            <param name="userService">
+                Instance du service d'accès aux données de l'entité <see cref="T:Boxes.Models.User"/>.
+            </param>
+            <param name="navigationService">
+                Instance du service de navigation.
+            </param>
+            <param name="localizationService">
+                Instance du service d'accès aux données de localization.
+            </param>
+            <param name="dialogService">
+                Instance du service d'affichage de popups.
+            </param>
+        </member>
+        <member name="P:Boxes.ViewModels.RegisterViewModel.FirstName">
+            <summary>
+                Prénom entré par l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.RegisterViewModel.LastName">
+            <summary>
+                Nom entré par l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.RegisterViewModel.Phone">
+            <summary>
+                Numéro de tél. entré par l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.RegisterViewModel.BirthDate">
+            <summary>
+                Date de naissance entrée par l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.RegisterViewModel.Email">
+            <summary>
+                Adresse e-mail entrée par l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.RegisterViewModel.Password">
+            <summary>
+                Mot de passe entré par l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.RegisterViewModel.PasswordConfirmation">
+            <summary>
+                Mot de passe de confirmation entré par l'utilisateur.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.RegisterViewModel.IsRegistering">
+            <summary>
+                Est-ce que l'inscription de l'utilisateur est en cours ?
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.RegisterViewModel.RegisterCommand">
+            <summary>
+                Commande d'inscription.
+            </summary>
+        </member>
+        <member name="P:Boxes.ViewModels.RegisterViewModel.GoBackCommand">
+            <summary>
+                Commande de retour à la page précédente.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.RegisterViewModel.Cleanup">
+            <summary>
+                Effectue les opération qui s'exécute à chaque fois que
+                l'utilisateur quitte le formulaire d'inscription.
+            </summary>
+        </member>
+        <member name="M:Boxes.ViewModels.RegisterViewModel.Validate">
+            <inheritdoc />
+        </member>
+        <member name="M:Boxes.ViewModels.RegisterViewModel.CanRegisterExecute">
+            <summary>
+                Détermine si la commande d'inscription peut s'exécuter.
+            </summary>
+            <returns>
+                Est-ce que la commande d'inscription peut s'exécuter ?
+            </returns>
+        </member>
+        <member name="M:Boxes.ViewModels.RegisterViewModel.Register">
+            <summary>
+                Enregistre un nouvel utilisateur.
+            </summary>
+        </member>
+        <member name="T:Boxes.Views.BoxPage">
+            <summary>
+                Page de détails concernant une boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.BoxPage.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise les composants de la
+                page.
+            </summary>
+        </member>
+        <member name="P:Boxes.Views.BoxPage.ViewModel">
+            <summary>
+                View model de la page.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.BoxPage.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation qui se fait vers cette page.
+            </summary>
+            <param name="e">
+                Paramètres de la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.BoxPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation effectuée à partir de cette page.
+            </summary>
+            <param name="e">
+                Paramètres de la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.BoxPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.BoxPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="T:Boxes.Views.CreateBoxPage">
+            <summary>
+                Page de création d'une boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.CreateBoxPage.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise les composants
+                de la page.
+            </summary>
+        </member>
+        <member name="P:Boxes.Views.CreateBoxPage.ViewModel">
+            <summary>
+                View model de la page.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.CreateBoxPage.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation qui se fait vers cette page.
+            </summary>
+            <param name="e">
+                Paramètres relatifs à la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.CreateBoxPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation effectuée à partir de cette page.
+            </summary>
+            <param name="e">
+                Paramètres relatifs à la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.CreateBoxPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.CreateBoxPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="T:Boxes.Views.DiscoverPage">
+            <summary>
+                Page de découverte des boites les plus populaires avec fonction de recherche.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.DiscoverPage.#ctor">
+            <summary>
+                Constructeur non paramétrés qui initialise les composant
+                de la page.
+            </summary>
+        </member>
+        <member name="P:Boxes.Views.DiscoverPage.ViewModel">
+            <summary>
+                View model de la page.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.DiscoverPage.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation qui se fait vers cette page.
+            </summary>
+            <param name="e">
+                Paramètres de la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.DiscoverPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.DiscoverPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="T:Boxes.Views.EditBoxPage">
+            <summary>
+                Page d'édition d'une boite.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.EditBoxPage.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise les composants de
+                la page.
+            </summary>
+        </member>
+        <member name="P:Boxes.Views.EditBoxPage.ViewModel">
+            <summary>
+                View model de la page.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.EditBoxPage.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation qui se fait vers cette page.
+            </summary>
+            <param name="e">
+                Paramètres relatifs à la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.EditBoxPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation effectuée à partir de cette page.
+            </summary>
+            <param name="e">
+                Paramètres relatifs à la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.EditBoxPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.EditBoxPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="T:Boxes.Views.HomePage">
+            <summary>
+                Page d'accueil qui affiche les posts des boites auxquelles l'utilisateur s'est
+                abonnées et/ou qu'il a créées.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.HomePage.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise les composants de la
+                page.
+            </summary>
+        </member>
+        <member name="P:Boxes.Views.HomePage.ViewModel">
+            <summary>
+                View model de la page.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.HomePage.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation qui se fait vers cette page.
+            </summary>
+            <param name="e">
+                Paramètres de la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.HomePage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.HomePage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="T:Boxes.Views.LoginPage">
+            <summary>
+                Page de connexion à Boxes.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.LoginPage.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise les composants de
+                la page.
+            </summary>
+        </member>
+        <member name="P:Boxes.Views.LoginPage.ViewModel">
+            <summary>
+                View model de la page.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.LoginPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation effectuée à partir de cette page.
+            </summary>
+            <param name="e">
+                Paramètres de la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.LoginPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.LoginPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="T:Boxes.Views.MyBoxesPage">
+            <summary>
+                Page contenant les boites que l'utilisateur a créées et/ou auxquelles il
+                s'est abonnées.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.MyBoxesPage.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise les composants de
+                la page.
+            </summary>
+        </member>
+        <member name="P:Boxes.Views.MyBoxesPage.ViewModel">
+            <summary>
+                View model de la page.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.MyBoxesPage.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation qui se fait vers cette page.
+            </summary>
+            <param name="e">
+                Paramètres relatifs à la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.MyBoxesPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.MyBoxesPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="T:Boxes.Views.PostPage">
+            <summary>
+                Page affichant le détail d'un post à savoir les commentaire et le post en entier.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.PostPage.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise les composants de la page.
+            </summary>
+        </member>
+        <member name="P:Boxes.Views.PostPage.ViewModel">
+            <summary>
+                View model de la page.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.PostPage.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation qui se fait vers cette page.
+            </summary>
+            <param name="e">
+                Paramètres de la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.PostPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation effectuée à partir de cette page.
+            </summary>
+            <param name="e">
+                Paramètres de la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.PostPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.PostPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="T:Boxes.Views.RegisterPage">
+            <summary>
+                Page d'inscription à Boxes.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.RegisterPage.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise les composants du view model.
+            </summary>
+        </member>
+        <member name="P:Boxes.Views.RegisterPage.ViewModel">
+            <summary>
+                View model de la page.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.RegisterPage.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation qui se fait vers cette page.
+            </summary>
+            <param name="e">
+                Paramètres de la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.RegisterPage.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute pour chaque navigation effectuée à partir de cette page.
+            </summary>
+            <param name="e">
+                Paramètres de la navigation effectuée.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.RegisterPage.RegisterPage_BackRequested(System.Object,Windows.UI.Core.BackRequestedEventArgs)">
+            <summary>
+                Appelée lors de l'appui sur un bouton physique de retour arrière.
+            </summary>
+            <param name="sender">
+                Objet à l'origine de l'événement.
+            </param>
+            <param name="e">
+                Paramètres relatifs au click sur le bouton.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.RegisterPage.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.RegisterPage.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="T:Boxes.Views.Shell">
+            <summary>
+                Page "coquille" contenant les autres pages.
+            </summary>
+            <remarks>
+                Cette page contient un menu hamburger permettant de naviguer vers les autres pages.
+            </remarks>
+        </member>
+        <member name="M:Boxes.Views.Shell.#ctor">
+            <summary>
+                Constructeur non paramétré qui initialise les composants de la page.
+            </summary>
+        </member>
+        <member name="P:Boxes.Views.Shell.ViewModel">
+            <summary>
+                View model de la page.
+            </summary>
+        </member>
+        <member name="P:Boxes.Views.Shell.RootFrame">
+            <summary>
+                Représente la Frame sur laquelle naviguer.
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.Shell.OnNavigatedTo(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute lorsqu'une navigation s'effectue sur cette page.
+            </summary>
+            <param name="e">
+                Paramètres relatifs à la navigation.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.Shell.OnNavigatedFrom(Windows.UI.Xaml.Navigation.NavigationEventArgs)">
+            <summary>
+                S'exécute lorsqu'une navigation s'effectue à partir de cette page.
+            </summary>
+            <param name="e">
+                Paramètres relatifs à la navigation.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.Shell.HamburgerMenuButton_Click(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+                Appelée lors du click sur le bouton hamburger.
+            </summary>
+            <param name="sender">
+                Bouton à l'origine de l'événement.
+            </param>
+            <param name="e">
+                Paramètres relatifs au click sur le bouton.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.Shell.Shell_BackRequested(System.Object,Windows.UI.Core.BackRequestedEventArgs)">
+            <summary>
+                Appelée lors de l'appui sur un bouton physique de retour arrière.
+            </summary>
+            <param name="sender">
+                Objet à l'origine de l'événement.
+            </param>
+            <param name="e">
+                Paramètres relatifs au click sur le bouton.
+            </param>
+        </member>
+        <member name="M:Boxes.Views.Shell.InitializeComponent">
+            <summary>
+            InitializeComponent()
+            </summary>
+        </member>
+        <member name="M:Boxes.Views.Shell.Connect(System.Int32,System.Object)">
+            <summary>
+            Connect()
+            </summary>
+        </member>
+        <member name="T:Boxes.Program">
+            <summary>
+            Program class
+            </summary>
+        </member>
+    </members>
+</doc>

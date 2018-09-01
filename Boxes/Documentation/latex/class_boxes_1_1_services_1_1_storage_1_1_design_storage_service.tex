@@ -1,0 +1,116 @@
+\hypertarget{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service}{}\section{Référence de la classe Boxes.\+Services.\+Storage.\+Design\+Storage\+Service}
+\label{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service}\index{Boxes.\+Services.\+Storage.\+Design\+Storage\+Service@{Boxes.\+Services.\+Storage.\+Design\+Storage\+Service}}
+
+
+Service d\textquotesingle{}accès aux données de design de stockage local.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Services.\+Storage.\+Design\+Storage\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_a6dc72623a7623a0844a127673b89528b}{Design\+Storage\+Service} ()
+\begin{DoxyCompactList}\small\item\em Constructeur non paramétré qui enregistre les données fictives de la propriété {\ttfamily local\+Settings}. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_aca6e4df08c21ca62695f9325162c4491}{Save\+Setting} (string key, object value)
+\begin{DoxyCompactList}\small\item\em Enregistre dans le conteneur de paramètres d\textquotesingle{}application une donnée.  \end{DoxyCompactList}\item 
+T \hyperlink{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_ad239cf0434c97667ce1d1c6ec0fba063}{Read\+Setting$<$ T $>$} (string key)
+\begin{DoxyCompactList}\small\item\em Retourne un paramètre du conteneur de paramètres d\textquotesingle{}application.  \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_ad570a657f66837a7b769399d1e410a32}{Remove\+Setting} (string key)
+\begin{DoxyCompactList}\small\item\em Supprime un paramètre du conteneur de paramètres d\textquotesingle{}application.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ \hyperlink{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_a23bedd75a1b91c59dc260879fc377b44}{local\+Settings}
+\begin{DoxyCompactList}\small\item\em Conteneur fictif de paramètres d\textquotesingle{}application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Service d\textquotesingle{}accès aux données de design de stockage local. 
+
+Retourne des données fictives contenu dans une collection. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service}!Design\+Storage\+Service@{Design\+Storage\+Service}}
+\index{Design\+Storage\+Service@{Design\+Storage\+Service}!Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service}}
+\subsubsection[{\texorpdfstring{Design\+Storage\+Service()}{DesignStorageService()}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+Services.\+Storage.\+Design\+Storage\+Service.\+Design\+Storage\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_a6dc72623a7623a0844a127673b89528b}{}\label{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_a6dc72623a7623a0844a127673b89528b}
+
+
+Constructeur non paramétré qui enregistre les données fictives de la propriété {\ttfamily local\+Settings}. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service}!Read\+Setting$<$ T $>$@{Read\+Setting$<$ T $>$}}
+\index{Read\+Setting$<$ T $>$@{Read\+Setting$<$ T $>$}!Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service}}
+\subsubsection[{\texorpdfstring{Read\+Setting$<$ T $>$(string key)}{ReadSetting< T >(string key)}}]{\setlength{\rightskip}{0pt plus 5cm}T Boxes.\+Services.\+Storage.\+Design\+Storage\+Service.\+Read\+Setting$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_ad239cf0434c97667ce1d1c6ec0fba063}{}\label{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_ad239cf0434c97667ce1d1c6ec0fba063}
+
+
+Retourne un paramètre du conteneur de paramètres d\textquotesingle{}application.  
+
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a00a4da789711b03b8e7c8fdaec087d47}{Boxes.\+Services.\+Storage.\+I\+Storage\+Service}.
+
+\begin{Desc}
+\item[Contraintes de type]\begin{description}
+\item[{\em T} : {\em class}]\end{description}
+\end{Desc}
+\index{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service}!Remove\+Setting@{Remove\+Setting}}
+\index{Remove\+Setting@{Remove\+Setting}!Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service}}
+\subsubsection[{\texorpdfstring{Remove\+Setting(string key)}{RemoveSetting(string key)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Services.\+Storage.\+Design\+Storage\+Service.\+Remove\+Setting (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_ad570a657f66837a7b769399d1e410a32}{}\label{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_ad570a657f66837a7b769399d1e410a32}
+
+
+Supprime un paramètre du conteneur de paramètres d\textquotesingle{}application.  
+
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a7138e8e5d1d8f31e227b7765f2206e11}{Boxes.\+Services.\+Storage.\+I\+Storage\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service}!Save\+Setting@{Save\+Setting}}
+\index{Save\+Setting@{Save\+Setting}!Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service}}
+\subsubsection[{\texorpdfstring{Save\+Setting(string key, object value)}{SaveSetting(string key, object value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Services.\+Storage.\+Design\+Storage\+Service.\+Save\+Setting (
+\begin{DoxyParamCaption}
+\item[{string}]{key, }
+\item[{object}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_aca6e4df08c21ca62695f9325162c4491}{}\label{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_aca6e4df08c21ca62695f9325162c4491}
+
+
+Enregistre dans le conteneur de paramètres d\textquotesingle{}application une donnée.  
+
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a2d6796200cdd63b0a6b5ed55819978b8}{Boxes.\+Services.\+Storage.\+I\+Storage\+Service}.
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service}!local\+Settings@{local\+Settings}}
+\index{local\+Settings@{local\+Settings}!Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+Design\+Storage\+Service}}
+\subsubsection[{\texorpdfstring{local\+Settings}{localSettings}}]{\setlength{\rightskip}{0pt plus 5cm}Dictionary$<$string, object$>$ Boxes.\+Services.\+Storage.\+Design\+Storage\+Service.\+local\+Settings\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_a23bedd75a1b91c59dc260879fc377b44}{}\label{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_a23bedd75a1b91c59dc260879fc377b44}
+
+
+Conteneur fictif de paramètres d\textquotesingle{}application. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+Services/\+Storage/\hyperlink{_design_storage_service_8cs}{Design\+Storage\+Service.\+cs}\end{DoxyCompactItemize}

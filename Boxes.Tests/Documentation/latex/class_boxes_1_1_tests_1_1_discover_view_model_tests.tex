@@ -1,0 +1,229 @@
+\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests}{}\section{Référence de la classe Boxes.\+Tests.\+Discover\+View\+Model\+Tests}
+\label{class_boxes_1_1_tests_1_1_discover_view_model_tests}\index{Boxes.\+Tests.\+Discover\+View\+Model\+Tests@{Boxes.\+Tests.\+Discover\+View\+Model\+Tests}}
+
+
+Effectue les tests unitaires du view model Discover\+View\+Model.  
+
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa2175b8dd4f6cc0ba1c16eec8ff1b140}{Tests\+Initialize} ()
+\begin{DoxyCompactList}\small\item\em Effectue les initialisation qui s\textquotesingle{}exécute avant chaque test. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa36ffc931a191d58fb0227f4dbd03f8b}{Tests\+Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue les nettoyages de variables devant être faits après l\textquotesingle{}exécution de chaque test. \end{DoxyCompactList}\item 
+async Task \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_a2c8d19575ffefacdf722d8f01a1ff291}{Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Top\+Boxes\+Not\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lors de l\textquotesingle{}initialisation du view model, la liste du top des boites n\textquotesingle{}est pas vide. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_a8ea51a8eda5391c836a8c92ef4f0392d}{Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Shell\+Title\+Message\+Sent} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lors de l\textquotesingle{}initialisation du view model, un message de type Shell\+Title\+Message est envoyé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_ace2a5bcc2ce02ed83d16ceb9ea333637}{Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Is\+Box} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur fait appel à la commande d\textquotesingle{}affichage d\textquotesingle{}une boite, la page actuellement affichée est la page d\textquotesingle{}une boite. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa269a254cf2c6e6ed49453798d9059cb}{Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Box\+To\+Show} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur fait appel à la commande d\textquotesingle{}affichage d\textquotesingle{}une boite, le paramètre transmis à la page actuellement affichée est du type Box. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_a003f47630cda3a64c7f84749888e3e31}{Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Is\+Not\+Searching} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque la commande de recherche d\textquotesingle{}une boite est appelée mais que les termes de la recherche sont trop courts (inférieurs ou égales à 2 caractères), le mode de recherche (attribut {\ttfamily Is\+Searching})$^\wedge$n\textquotesingle{}est pas actif. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_a58653decea4a3beac3885b01c6e72ddc}{Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Search\+Results\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque la commande de recherche d\textquotesingle{}une boite est appelée mais que les termes de la recherche sont trop courts (inférieurs ou égales à 2 caractères), la liste des résultats de la recherche est vide. \end{DoxyCompactList}\item 
+async Task \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_a314bbed2abeaba2244813785bf3270d1}{Search\+Box\+Command\+\_\+\+Valid\+Terms\+\_\+\+Search\+Results\+Not\+Empty} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque la commande de recherche d\textquotesingle{}une boite est appelée et que les termes de la recherches sont valides (supérieurs à 2 caractères), les résultats de recherches ne sont pas vides. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_ae236fb16a528cccc038ac6300518aa38}{Class\+Initialize} (Test\+Context context)
+\begin{DoxyCompactList}\small\item\em Effectue les initialisation qui doivent être faites avant l\textquotesingle{}exécution du premier test. \end{DoxyCompactList}\item 
+static void \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_a5941ab288c4b1db3b5e6e2d626fc7f6b}{Class\+Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue les nettoyages qui doivent être faits après l\textquotesingle{}exécution du dernier test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_box_service}{Fake\+Box\+Service} \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_abd187b438b11e8468d0930dd041ebaf8}{box\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de l\textquotesingle{}entité Box. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service}{Fake\+Navigation\+Service} \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_a6deba16334eacb2749678716199ada87}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation fictif. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_localization_service}{Fake\+Localization\+Service} \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_afbbaf58853f63f8329c434201c79d9ee}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de localization. \end{DoxyCompactList}\item 
+Discover\+View\+Model \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_a42c91316755e354bbe465001344eb2ca}{discover\+View\+Model}
+\begin{DoxyCompactList}\small\item\em Stock le view model de la page \char`\"{}\+Découvrir\char`\"{} (ici le view model à tester). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static Random \hyperlink{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa69a807ac10e1bcb4367c75d4e4641c8}{random}
+\begin{DoxyCompactList}\small\item\em Stock l\textquotesingle{}objet de génération de nombres aléatoires. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Effectue les tests unitaires du view model Discover\+View\+Model. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!Class\+Cleanup@{Class\+Cleanup}}
+\index{Class\+Cleanup@{Class\+Cleanup}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Class\+Cleanup()}{ClassCleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+Class\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_a5941ab288c4b1db3b5e6e2d626fc7f6b}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_a5941ab288c4b1db3b5e6e2d626fc7f6b}
+
+
+Effectue les nettoyages qui doivent être faits après l\textquotesingle{}exécution du dernier test. 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!Class\+Initialize@{Class\+Initialize}}
+\index{Class\+Initialize@{Class\+Initialize}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Class\+Initialize(\+Test\+Context context)}{ClassInitialize(TestContext context)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+Class\+Initialize (
+\begin{DoxyParamCaption}
+\item[{Test\+Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_ae236fb16a528cccc038ac6300518aa38}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_ae236fb16a528cccc038ac6300518aa38}
+
+
+Effectue les initialisation qui doivent être faites avant l\textquotesingle{}exécution du premier test. 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Shell\+Title\+Message\+Sent@{Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Shell\+Title\+Message\+Sent}}
+\index{Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Shell\+Title\+Message\+Sent@{Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Shell\+Title\+Message\+Sent}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Shell\+Title\+Message\+Sent()}{Initialize_NavigationToDiscover_ShellTitleMessageSent()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Shell\+Title\+Message\+Sent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_a8ea51a8eda5391c836a8c92ef4f0392d}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_a8ea51a8eda5391c836a8c92ef4f0392d}
+
+
+Vérifie que lors de l\textquotesingle{}initialisation du view model, un message de type Shell\+Title\+Message est envoyé. 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Top\+Boxes\+Not\+Empty@{Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Top\+Boxes\+Not\+Empty}}
+\index{Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Top\+Boxes\+Not\+Empty@{Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Top\+Boxes\+Not\+Empty}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Top\+Boxes\+Not\+Empty()}{Initialize_NavigationToDiscover_TopBoxesNotEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+Initialize\+\_\+\+Navigation\+To\+Discover\+\_\+\+Top\+Boxes\+Not\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_a2c8d19575ffefacdf722d8f01a1ff291}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_a2c8d19575ffefacdf722d8f01a1ff291}
+
+
+Vérifie que lors de l\textquotesingle{}initialisation du view model, la liste du top des boites n\textquotesingle{}est pas vide. 
+
+\begin{DoxyReturn}{Renvoie}
+Tache asynchrone qui permet d\textquotesingle{}attendre la fin des opérations. 
+\end{DoxyReturn}
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Is\+Not\+Searching@{Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Is\+Not\+Searching}}
+\index{Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Is\+Not\+Searching@{Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Is\+Not\+Searching}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Is\+Not\+Searching()}{SearchBoxCommand_TermsTooShort_IsNotSearching()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Is\+Not\+Searching (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_a003f47630cda3a64c7f84749888e3e31}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_a003f47630cda3a64c7f84749888e3e31}
+
+
+Vérifie que lorsque la commande de recherche d\textquotesingle{}une boite est appelée mais que les termes de la recherche sont trop courts (inférieurs ou égales à 2 caractères), le mode de recherche (attribut {\ttfamily Is\+Searching})$^\wedge$n\textquotesingle{}est pas actif. 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Search\+Results\+Empty@{Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Search\+Results\+Empty}}
+\index{Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Search\+Results\+Empty@{Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Search\+Results\+Empty}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Search\+Results\+Empty()}{SearchBoxCommand_TermsTooShort_SearchResultsEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+Search\+Box\+Command\+\_\+\+Terms\+Too\+Short\+\_\+\+Search\+Results\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_a58653decea4a3beac3885b01c6e72ddc}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_a58653decea4a3beac3885b01c6e72ddc}
+
+
+Vérifie que lorsque la commande de recherche d\textquotesingle{}une boite est appelée mais que les termes de la recherche sont trop courts (inférieurs ou égales à 2 caractères), la liste des résultats de la recherche est vide. 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!Search\+Box\+Command\+\_\+\+Valid\+Terms\+\_\+\+Search\+Results\+Not\+Empty@{Search\+Box\+Command\+\_\+\+Valid\+Terms\+\_\+\+Search\+Results\+Not\+Empty}}
+\index{Search\+Box\+Command\+\_\+\+Valid\+Terms\+\_\+\+Search\+Results\+Not\+Empty@{Search\+Box\+Command\+\_\+\+Valid\+Terms\+\_\+\+Search\+Results\+Not\+Empty}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Search\+Box\+Command\+\_\+\+Valid\+Terms\+\_\+\+Search\+Results\+Not\+Empty()}{SearchBoxCommand_ValidTerms_SearchResultsNotEmpty()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+Search\+Box\+Command\+\_\+\+Valid\+Terms\+\_\+\+Search\+Results\+Not\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_a314bbed2abeaba2244813785bf3270d1}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_a314bbed2abeaba2244813785bf3270d1}
+
+
+Vérifie que lorsque la commande de recherche d\textquotesingle{}une boite est appelée et que les termes de la recherches sont valides (supérieurs à 2 caractères), les résultats de recherches ne sont pas vides. 
+
+\begin{DoxyReturn}{Renvoie}
+Tache asynchrone qui permet d\textquotesingle{}attendre la fin des opérations. 
+\end{DoxyReturn}
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Is\+Box@{Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Is\+Box}}
+\index{Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Is\+Box@{Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Is\+Box}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Is\+Box()}{ShowBoxCommand_GoToBoxPage_CurrentPageIsBox()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Is\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_ace2a5bcc2ce02ed83d16ceb9ea333637}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_ace2a5bcc2ce02ed83d16ceb9ea333637}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur fait appel à la commande d\textquotesingle{}affichage d\textquotesingle{}une boite, la page actuellement affichée est la page d\textquotesingle{}une boite. 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Box\+To\+Show@{Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Box\+To\+Show}}
+\index{Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Box\+To\+Show@{Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Box\+To\+Show}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Box\+To\+Show()}{ShowBoxCommand_GoToBoxPage_CurrentPageParameterIsBoxToShow()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+Show\+Box\+Command\+\_\+\+Go\+To\+Box\+Page\+\_\+\+Current\+Page\+Parameter\+Is\+Box\+To\+Show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa269a254cf2c6e6ed49453798d9059cb}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa269a254cf2c6e6ed49453798d9059cb}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur fait appel à la commande d\textquotesingle{}affichage d\textquotesingle{}une boite, le paramètre transmis à la page actuellement affichée est du type Box. 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!Tests\+Cleanup@{Tests\+Cleanup}}
+\index{Tests\+Cleanup@{Tests\+Cleanup}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Cleanup()}{TestsCleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+Tests\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa36ffc931a191d58fb0227f4dbd03f8b}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa36ffc931a191d58fb0227f4dbd03f8b}
+
+
+Effectue les nettoyages de variables devant être faits après l\textquotesingle{}exécution de chaque test. 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!Tests\+Initialize@{Tests\+Initialize}}
+\index{Tests\+Initialize@{Tests\+Initialize}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Initialize()}{TestsInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+Tests\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa2175b8dd4f6cc0ba1c16eec8ff1b140}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa2175b8dd4f6cc0ba1c16eec8ff1b140}
+
+
+Effectue les initialisation qui s\textquotesingle{}exécute avant chaque test. 
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!box\+Service@{box\+Service}}
+\index{box\+Service@{box\+Service}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{box\+Service}{boxService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Box\+Service} Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+box\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_abd187b438b11e8468d0930dd041ebaf8}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_abd187b438b11e8468d0930dd041ebaf8}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de l\textquotesingle{}entité Box. 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!discover\+View\+Model@{discover\+View\+Model}}
+\index{discover\+View\+Model@{discover\+View\+Model}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{discover\+View\+Model}{discoverViewModel}}]{\setlength{\rightskip}{0pt plus 5cm}Discover\+View\+Model Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+discover\+View\+Model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_a42c91316755e354bbe465001344eb2ca}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_a42c91316755e354bbe465001344eb2ca}
+
+
+Stock le view model de la page \char`\"{}\+Découvrir\char`\"{} (ici le view model à tester). 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Localization\+Service} Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_afbbaf58853f63f8329c434201c79d9ee}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_afbbaf58853f63f8329c434201c79d9ee}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de localization. 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Navigation\+Service} Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_a6deba16334eacb2749678716199ada87}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_a6deba16334eacb2749678716199ada87}
+
+
+Stock le service de navigation fictif. 
+
+\index{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}!random@{random}}
+\index{random@{random}!Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Discover\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{random}{random}}]{\setlength{\rightskip}{0pt plus 5cm}Random Boxes.\+Tests.\+Discover\+View\+Model\+Tests.\+random\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa69a807ac10e1bcb4367c75d4e4641c8}{}\label{class_boxes_1_1_tests_1_1_discover_view_model_tests_aa69a807ac10e1bcb4367c75d4e4641c8}
+
+
+Stock l\textquotesingle{}objet de génération de nombres aléatoires. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes.\+Tests/\hyperlink{_discover_view_model_tests_8cs}{Discover\+View\+Model\+Tests.\+cs}\end{DoxyCompactItemize}

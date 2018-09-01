@@ -1,0 +1,322 @@
+\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests}{}\section{Référence de la classe Boxes.\+Tests.\+Login\+View\+Model\+Tests}
+\label{class_boxes_1_1_tests_1_1_login_view_model_tests}\index{Boxes.\+Tests.\+Login\+View\+Model\+Tests@{Boxes.\+Tests.\+Login\+View\+Model\+Tests}}
+
+
+Effectue les tests unitaires qui concernent le Login\+View\+Model.  
+
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_aeba1576989bbe4a128a96eff58ff1ee4}{Tests\+Initialize} ()
+\begin{DoxyCompactList}\small\item\em Effectue les initialisation qui doivent être exécutées avant l\textquotesingle{}exécution de chaque test. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_a284439b5f36f9b6bb4eb1561bce15c8a}{Tests\+Clean\+Up} ()
+\begin{DoxyCompactList}\small\item\em Effectue les nettoyages de variables devant être faits après l\textquotesingle{}exécution de chaque test. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_af7348cc41eeafb8d50c913c5d5cb86cb}{Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Email\+Is\+Null} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur effectue une navigation à partir de la page de connexion, le champ \char`\"{}\+Adresse email\char`\"{} est bien vidé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_aed742d452397322885bea88dcbd9e2d7}{Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Password\+Is\+Null} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur effectue une navigation à partir de la page de connexion, le champ \char`\"{}\+Mot de passe\char`\"{} est bien vidé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_a1a1911464b163f9ab6b397dced5de134}{Login\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute} (string email)
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas d\textquotesingle{}adresse email, la commande de connexion ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_a04afc4b49a9c2877a36dbecadf8c28be}{Login\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute} (string password)
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de mot de passe, la commande de connexion ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_aee9eda2825bf6e1f0fd3476c75482672}{Login\+Command\+\_\+\+Is\+Logging\+In\+\_\+\+Cannot\+Execute} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque la connexion de l\textquotesingle{}utilisateur est en cours, la commande de connexion ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_a28a278906bde25013a2f138046a63981}{Login\+Command\+\_\+\+Is\+Not\+Logging\+In\+Email\+Password\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque la connexion de l\textquotesingle{}utilisateur n\textquotesingle{}est pas en cours et que ce dernier a entré une adresse email et un mot de passe, la commande de connexion peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+async Task \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_aa4e2393650da2c3def7375d8dac4b061}{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Current\+Page\+Is\+Login} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre une adresse email qui existe mais un mot de passe incorrect, la page actuellement affichée est toujours la page de connexion. \end{DoxyCompactList}\item 
+async Task \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_a2fb23554feb022458a5018736f4ce647}{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+User\+Not\+In\+Local\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre une adresse email qui existe mais un mot de passe incorrect, aucun utilisateur n\textquotesingle{}est inscrit dans le conteneur de paramètre d\textquotesingle{}application. \end{DoxyCompactList}\item 
+async Task \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_a2a1127de3f6d7a127c1e8988a6b9cd9d}{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Generic\+Error\+Message\+Sent} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre une adresse email qui existe mais un mot de passe incorrect, un message d\textquotesingle{}erreur est envoyé. \end{DoxyCompactList}\item 
+async Task \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_ad0a8d68e805d64ee8a8f35ccd071f9e3}{Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+User\+In\+Local\+Settings} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre une adresse email qui existe et le mot de passe correspondant, celui-\/ci est inscrit dans le conteneur de paramètres d\textquotesingle{}application. \end{DoxyCompactList}\item 
+async Task \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_ac6bd2bd039243bef7c8359b762c476d1}{Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+Current\+Page\+Is\+Shell} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre une adresse email qui existe et le mot de passe correspondant, la page actuellement affichée est la page \char`\"{}coquille\char`\"{} (ou \char`\"{}shell\char`\"{}). \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_abb21a707a97a434e1614425584867e05}{Register\+Command\+\_\+\+User\+Not\+Signup\+\_\+\+Current\+Page\+Is\+Register} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque la commande d\textquotesingle{}inscription est exécutée, la page actuellement affichée est la page d\textquotesingle{}inscription. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_a831481d733a8687b7ea29488bf7e82f3}{Class\+Initialize} (Test\+Context context)
+\begin{DoxyCompactList}\small\item\em Effectue les initialisation qui doivent être faites avant l\textquotesingle{}exécution du premier test. \end{DoxyCompactList}\item 
+static void \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_a179ee79b7f1a6716b3072f8e8b39747a}{Class\+Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue les nettoyages qui doivent être faits après l\textquotesingle{}exécution du dernier test. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_user_service}{Fake\+User\+Service} \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_af00de8c20362d15b8fdccb9656f0f401}{user\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de l\textquotesingle{}entité Models.\+User. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_storage_service}{Fake\+Storage\+Service} \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_a5c0b50fa214b17807b8e8f29dde9e245}{storage\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de stockage local. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service}{Fake\+Navigation\+Service} \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_af2c999098015819dbb7750db45bf1615}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation fictif. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_localization_service}{Fake\+Localization\+Service} \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_a36e0274da1520d2f92caecb3149a87ee}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de localization. \end{DoxyCompactList}\item 
+Login\+View\+Model \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_acb0fb5168c69823474cdbf1f4a70d740}{login\+View\+Model}
+\begin{DoxyCompactList}\small\item\em Stock le view model de la page de connexion (le view model à tester). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés statiques}
+\begin{DoxyCompactItemize}
+\item 
+static Random \hyperlink{class_boxes_1_1_tests_1_1_login_view_model_tests_a56a4b805c27c0ceb5c537912ed50d4fc}{random}
+\begin{DoxyCompactList}\small\item\em Stock l\textquotesingle{}objet de génération de nombres aléatoires. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Effectue les tests unitaires qui concernent le Login\+View\+Model. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Class\+Cleanup@{Class\+Cleanup}}
+\index{Class\+Cleanup@{Class\+Cleanup}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Class\+Cleanup()}{ClassCleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}static void Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Class\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_a179ee79b7f1a6716b3072f8e8b39747a}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_a179ee79b7f1a6716b3072f8e8b39747a}
+
+
+Effectue les nettoyages qui doivent être faits après l\textquotesingle{}exécution du dernier test. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Class\+Initialize@{Class\+Initialize}}
+\index{Class\+Initialize@{Class\+Initialize}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Class\+Initialize(\+Test\+Context context)}{ClassInitialize(TestContext context)}}]{\setlength{\rightskip}{0pt plus 5cm}static void Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Class\+Initialize (
+\begin{DoxyParamCaption}
+\item[{Test\+Context}]{context}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_a831481d733a8687b7ea29488bf7e82f3}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_a831481d733a8687b7ea29488bf7e82f3}
+
+
+Effectue les initialisation qui doivent être faites avant l\textquotesingle{}exécution du premier test. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Email\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Email\+Is\+Null}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Email\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Email\+Is\+Null}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Email\+Is\+Null()}{Cleanup_NavigationFromLogin_EmailIsNull()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Email\+Is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_af7348cc41eeafb8d50c913c5d5cb86cb}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_af7348cc41eeafb8d50c913c5d5cb86cb}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur effectue une navigation à partir de la page de connexion, le champ \char`\"{}\+Adresse email\char`\"{} est bien vidé. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Password\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Password\+Is\+Null}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Password\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Password\+Is\+Null}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Password\+Is\+Null()}{Cleanup_NavigationFromLogin_PasswordIsNull()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Login\+\_\+\+Password\+Is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_aed742d452397322885bea88dcbd9e2d7}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_aed742d452397322885bea88dcbd9e2d7}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur effectue une navigation à partir de la page de connexion, le champ \char`\"{}\+Mot de passe\char`\"{} est bien vidé. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+Current\+Page\+Is\+Shell@{Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+Current\+Page\+Is\+Shell}}
+\index{Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+Current\+Page\+Is\+Shell@{Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+Current\+Page\+Is\+Shell}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+Current\+Page\+Is\+Shell()}{LoginCommand_CorrectEmailCorrectPassword_CurrentPageIsShell()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+Current\+Page\+Is\+Shell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_ac6bd2bd039243bef7c8359b762c476d1}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_ac6bd2bd039243bef7c8359b762c476d1}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre une adresse email qui existe et le mot de passe correspondant, la page actuellement affichée est la page \char`\"{}coquille\char`\"{} (ou \char`\"{}shell\char`\"{}). 
+
+\begin{DoxyReturn}{Renvoie}
+Tache asynchrone qui permet d\textquotesingle{}attendre la fin des opérations. 
+\end{DoxyReturn}
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+User\+In\+Local\+Settings@{Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+User\+In\+Local\+Settings}}
+\index{Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+User\+In\+Local\+Settings@{Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+User\+In\+Local\+Settings}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+User\+In\+Local\+Settings()}{LoginCommand_CorrectEmailCorrectPassword_UserInLocalSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Login\+Command\+\_\+\+Correct\+Email\+Correct\+Password\+\_\+\+User\+In\+Local\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_ad0a8d68e805d64ee8a8f35ccd071f9e3}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_ad0a8d68e805d64ee8a8f35ccd071f9e3}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre une adresse email qui existe et le mot de passe correspondant, celui-\/ci est inscrit dans le conteneur de paramètres d\textquotesingle{}application. 
+
+\begin{DoxyReturn}{Renvoie}
+Tache asynchrone qui permet d\textquotesingle{}attendre la fin des opérations. 
+\end{DoxyReturn}
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Current\+Page\+Is\+Login@{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Current\+Page\+Is\+Login}}
+\index{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Current\+Page\+Is\+Login@{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Current\+Page\+Is\+Login}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Current\+Page\+Is\+Login()}{LoginCommand_CorrectEmailWrongPassword_CurrentPageIsLogin()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Current\+Page\+Is\+Login (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_aa4e2393650da2c3def7375d8dac4b061}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_aa4e2393650da2c3def7375d8dac4b061}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre une adresse email qui existe mais un mot de passe incorrect, la page actuellement affichée est toujours la page de connexion. 
+
+\begin{DoxyReturn}{Renvoie}
+Tache asynchrone qui permet d\textquotesingle{}attendre la fin des opérations. 
+\end{DoxyReturn}
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Generic\+Error\+Message\+Sent@{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Generic\+Error\+Message\+Sent}}
+\index{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Generic\+Error\+Message\+Sent@{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Generic\+Error\+Message\+Sent}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Generic\+Error\+Message\+Sent()}{LoginCommand_CorrectEmailWrongPassword_GenericErrorMessageSent()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+Generic\+Error\+Message\+Sent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_a2a1127de3f6d7a127c1e8988a6b9cd9d}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_a2a1127de3f6d7a127c1e8988a6b9cd9d}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre une adresse email qui existe mais un mot de passe incorrect, un message d\textquotesingle{}erreur est envoyé. 
+
+\begin{DoxyReturn}{Renvoie}
+Tache asynchrone qui permet d\textquotesingle{}attendre la fin des opérations. 
+\end{DoxyReturn}
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+User\+Not\+In\+Local\+Settings@{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+User\+Not\+In\+Local\+Settings}}
+\index{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+User\+Not\+In\+Local\+Settings@{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+User\+Not\+In\+Local\+Settings}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+User\+Not\+In\+Local\+Settings()}{LoginCommand_CorrectEmailWrongPassword_UserNotInLocalSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}async Task Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Login\+Command\+\_\+\+Correct\+Email\+Wrong\+Password\+\_\+\+User\+Not\+In\+Local\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_a2fb23554feb022458a5018736f4ce647}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_a2fb23554feb022458a5018736f4ce647}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre une adresse email qui existe mais un mot de passe incorrect, aucun utilisateur n\textquotesingle{}est inscrit dans le conteneur de paramètre d\textquotesingle{}application. 
+
+\begin{DoxyReturn}{Renvoie}
+Tache asynchrone qui permet d\textquotesingle{}attendre la fin des opérations. 
+\end{DoxyReturn}
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Login\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Login\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}}
+\index{Login\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Login\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Login\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute(string email)}{LoginCommand_EmailIsNullOrWhiteSpace_CannotExecute(string email)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Login\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+\item[{string}]{email}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_a1a1911464b163f9ab6b397dced5de134}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_a1a1911464b163f9ab6b397dced5de134}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas d\textquotesingle{}adresse email, la commande de connexion ne peut s\textquotesingle{}exécuter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em email} & Email à tester. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Login\+Command\+\_\+\+Is\+Logging\+In\+\_\+\+Cannot\+Execute@{Login\+Command\+\_\+\+Is\+Logging\+In\+\_\+\+Cannot\+Execute}}
+\index{Login\+Command\+\_\+\+Is\+Logging\+In\+\_\+\+Cannot\+Execute@{Login\+Command\+\_\+\+Is\+Logging\+In\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Login\+Command\+\_\+\+Is\+Logging\+In\+\_\+\+Cannot\+Execute()}{LoginCommand_IsLoggingIn_CannotExecute()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Login\+Command\+\_\+\+Is\+Logging\+In\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_aee9eda2825bf6e1f0fd3476c75482672}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_aee9eda2825bf6e1f0fd3476c75482672}
+
+
+Vérifie que lorsque la connexion de l\textquotesingle{}utilisateur est en cours, la commande de connexion ne peut s\textquotesingle{}exécuter. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Login\+Command\+\_\+\+Is\+Not\+Logging\+In\+Email\+Password\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute@{Login\+Command\+\_\+\+Is\+Not\+Logging\+In\+Email\+Password\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute}}
+\index{Login\+Command\+\_\+\+Is\+Not\+Logging\+In\+Email\+Password\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute@{Login\+Command\+\_\+\+Is\+Not\+Logging\+In\+Email\+Password\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Login\+Command\+\_\+\+Is\+Not\+Logging\+In\+Email\+Password\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute()}{LoginCommand_IsNotLoggingInEmailPasswordNotNullOrWhiteSpace_CanExecute()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Login\+Command\+\_\+\+Is\+Not\+Logging\+In\+Email\+Password\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_a28a278906bde25013a2f138046a63981}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_a28a278906bde25013a2f138046a63981}
+
+
+Vérifie que lorsque la connexion de l\textquotesingle{}utilisateur n\textquotesingle{}est pas en cours et que ce dernier a entré une adresse email et un mot de passe, la commande de connexion peut s\textquotesingle{}exécuter. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Login\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Login\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}}
+\index{Login\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Login\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Login\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute(string password)}{LoginCommand_PasswordIsNullOrWhiteSpace_CannotExecute(string password)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Login\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_a04afc4b49a9c2877a36dbecadf8c28be}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_a04afc4b49a9c2877a36dbecadf8c28be}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de mot de passe, la commande de connexion ne peut s\textquotesingle{}exécuter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em password} & Mot de passe à tester. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Register\+Command\+\_\+\+User\+Not\+Signup\+\_\+\+Current\+Page\+Is\+Register@{Register\+Command\+\_\+\+User\+Not\+Signup\+\_\+\+Current\+Page\+Is\+Register}}
+\index{Register\+Command\+\_\+\+User\+Not\+Signup\+\_\+\+Current\+Page\+Is\+Register@{Register\+Command\+\_\+\+User\+Not\+Signup\+\_\+\+Current\+Page\+Is\+Register}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+User\+Not\+Signup\+\_\+\+Current\+Page\+Is\+Register()}{RegisterCommand_UserNotSignup_CurrentPageIsRegister()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Register\+Command\+\_\+\+User\+Not\+Signup\+\_\+\+Current\+Page\+Is\+Register (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_abb21a707a97a434e1614425584867e05}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_abb21a707a97a434e1614425584867e05}
+
+
+Vérifie que lorsque la commande d\textquotesingle{}inscription est exécutée, la page actuellement affichée est la page d\textquotesingle{}inscription. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Tests\+Clean\+Up@{Tests\+Clean\+Up}}
+\index{Tests\+Clean\+Up@{Tests\+Clean\+Up}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Clean\+Up()}{TestsCleanUp()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Tests\+Clean\+Up (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_a284439b5f36f9b6bb4eb1561bce15c8a}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_a284439b5f36f9b6bb4eb1561bce15c8a}
+
+
+Effectue les nettoyages de variables devant être faits après l\textquotesingle{}exécution de chaque test. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!Tests\+Initialize@{Tests\+Initialize}}
+\index{Tests\+Initialize@{Tests\+Initialize}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Initialize()}{TestsInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+Tests\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_aeba1576989bbe4a128a96eff58ff1ee4}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_aeba1576989bbe4a128a96eff58ff1ee4}
+
+
+Effectue les initialisation qui doivent être exécutées avant l\textquotesingle{}exécution de chaque test. 
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Localization\+Service} Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_a36e0274da1520d2f92caecb3149a87ee}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_a36e0274da1520d2f92caecb3149a87ee}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de localization. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!login\+View\+Model@{login\+View\+Model}}
+\index{login\+View\+Model@{login\+View\+Model}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{login\+View\+Model}{loginViewModel}}]{\setlength{\rightskip}{0pt plus 5cm}Login\+View\+Model Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+login\+View\+Model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_acb0fb5168c69823474cdbf1f4a70d740}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_acb0fb5168c69823474cdbf1f4a70d740}
+
+
+Stock le view model de la page de connexion (le view model à tester). 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Navigation\+Service} Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_af2c999098015819dbb7750db45bf1615}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_af2c999098015819dbb7750db45bf1615}
+
+
+Stock le service de navigation fictif. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!random@{random}}
+\index{random@{random}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{random}{random}}]{\setlength{\rightskip}{0pt plus 5cm}Random Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+random\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_a56a4b805c27c0ceb5c537912ed50d4fc}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_a56a4b805c27c0ceb5c537912ed50d4fc}
+
+
+Stock l\textquotesingle{}objet de génération de nombres aléatoires. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!storage\+Service@{storage\+Service}}
+\index{storage\+Service@{storage\+Service}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{storage\+Service}{storageService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Storage\+Service} Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+storage\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_a5c0b50fa214b17807b8e8f29dde9e245}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_a5c0b50fa214b17807b8e8f29dde9e245}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de stockage local. 
+
+\index{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}!user\+Service@{user\+Service}}
+\index{user\+Service@{user\+Service}!Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Login\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{user\+Service}{userService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+User\+Service} Boxes.\+Tests.\+Login\+View\+Model\+Tests.\+user\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_login_view_model_tests_af00de8c20362d15b8fdccb9656f0f401}{}\label{class_boxes_1_1_tests_1_1_login_view_model_tests_af00de8c20362d15b8fdccb9656f0f401}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de l\textquotesingle{}entité Models.\+User. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes.\+Tests/\hyperlink{_login_view_model_tests_8cs}{Login\+View\+Model\+Tests.\+cs}\end{DoxyCompactItemize}

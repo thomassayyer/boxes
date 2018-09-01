@@ -1,0 +1,82 @@
+\hypertarget{interface_boxes_1_1_services_1_1_user_1_1_i_user_service}{}\section{Référence de l\textquotesingle{}interface Boxes.\+Services.\+User.\+I\+User\+Service}
+\label{interface_boxes_1_1_services_1_1_user_1_1_i_user_service}\index{Boxes.\+Services.\+User.\+I\+User\+Service@{Boxes.\+Services.\+User.\+I\+User\+Service}}
+
+
+Définit les méthode d\textquotesingle{}accès aux données de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User}.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Services.\+User.\+I\+User\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_boxes_1_1_services_1_1_user_1_1_i_user_service}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User} $>$ \hyperlink{interface_boxes_1_1_services_1_1_user_1_1_i_user_service_a880f9da1dd444fda122508bf67cb46f7}{Create\+Async} (\hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User} user)
+\begin{DoxyCompactList}\small\item\em Enregistre un nouvel utilisateur. \end{DoxyCompactList}\item 
+Task$<$ \hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User} $>$ \hyperlink{interface_boxes_1_1_services_1_1_user_1_1_i_user_service_af1d3d64ca48c7bf548203f6fa170f9d8}{Get\+By\+Email\+Password\+Async} (string email, string password)
+\begin{DoxyCompactList}\small\item\em Récupère un utilisateur en fonction de son email et de son mot de passe. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Définit les méthode d\textquotesingle{}accès aux données de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User}. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Services\+::\+User\+::\+I\+User\+Service@{Boxes\+::\+Services\+::\+User\+::\+I\+User\+Service}!Create\+Async@{Create\+Async}}
+\index{Create\+Async@{Create\+Async}!Boxes\+::\+Services\+::\+User\+::\+I\+User\+Service@{Boxes\+::\+Services\+::\+User\+::\+I\+User\+Service}}
+\subsubsection[{\texorpdfstring{Create\+Async(\+Models.\+User user)}{CreateAsync(Models.User user)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<${\bf Models.\+User}$>$ Boxes.\+Services.\+User.\+I\+User\+Service.\+Create\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+User}}]{user}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_boxes_1_1_services_1_1_user_1_1_i_user_service_a880f9da1dd444fda122508bf67cb46f7}{}\label{interface_boxes_1_1_services_1_1_user_1_1_i_user_service_a880f9da1dd444fda122508bf67cb46f7}
+
+
+Enregistre un nouvel utilisateur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em user} & Utilisateur à créer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}utilisateur créé. 
+\end{DoxyReturn}
+
+
+Implémenté dans \hyperlink{class_boxes_1_1_services_1_1_user_1_1_user_service_a16cddcf857e84cbe91e6080a0c069ea6}{Boxes.\+Services.\+User.\+User\+Service}, et \hyperlink{class_boxes_1_1_services_1_1_user_1_1_design_user_service_a2d217193ac6d06680676d386ef334db5}{Boxes.\+Services.\+User.\+Design\+User\+Service}.
+
+\index{Boxes\+::\+Services\+::\+User\+::\+I\+User\+Service@{Boxes\+::\+Services\+::\+User\+::\+I\+User\+Service}!Get\+By\+Email\+Password\+Async@{Get\+By\+Email\+Password\+Async}}
+\index{Get\+By\+Email\+Password\+Async@{Get\+By\+Email\+Password\+Async}!Boxes\+::\+Services\+::\+User\+::\+I\+User\+Service@{Boxes\+::\+Services\+::\+User\+::\+I\+User\+Service}}
+\subsubsection[{\texorpdfstring{Get\+By\+Email\+Password\+Async(string email, string password)}{GetByEmailPasswordAsync(string email, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<${\bf Models.\+User}$>$ Boxes.\+Services.\+User.\+I\+User\+Service.\+Get\+By\+Email\+Password\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{email, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_boxes_1_1_services_1_1_user_1_1_i_user_service_af1d3d64ca48c7bf548203f6fa170f9d8}{}\label{interface_boxes_1_1_services_1_1_user_1_1_i_user_service_af1d3d64ca48c7bf548203f6fa170f9d8}
+
+
+Récupère un utilisateur en fonction de son email et de son mot de passe. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em email} & Email de l\textquotesingle{}utilisateur. \\
+\hline
+{\em password} & Mot de passe de l\textquotesingle{}utilisateur. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+L\textquotesingle{}utilisateur qui a l\textquotesingle{}email et le mot de passe en paramètre. 
+\end{DoxyReturn}
+
+
+Implémenté dans \hyperlink{class_boxes_1_1_services_1_1_user_1_1_user_service_a78cf446a883eba4bef411c128794a624}{Boxes.\+Services.\+User.\+User\+Service}, et \hyperlink{class_boxes_1_1_services_1_1_user_1_1_design_user_service_a3ac7a5901cd976b715f819ab19f5f4eb}{Boxes.\+Services.\+User.\+Design\+User\+Service}.
+
+
+
+La documentation de cette interface a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+Services/\+User/\hyperlink{_i_user_service_8cs}{I\+User\+Service.\+cs}\end{DoxyCompactItemize}

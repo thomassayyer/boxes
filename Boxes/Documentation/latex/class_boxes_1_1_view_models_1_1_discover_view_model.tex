@@ -1,0 +1,250 @@
+\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model}{}\section{Référence de la classe Boxes.\+View\+Models.\+Discover\+View\+Model}
+\label{class_boxes_1_1_view_models_1_1_discover_view_model}\index{Boxes.\+View\+Models.\+Discover\+View\+Model@{Boxes.\+View\+Models.\+Discover\+View\+Model}}
+
+
+View model de la page \char`\"{}\+Découvrir\char`\"{}.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+View\+Models.\+Discover\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_view_models_1_1_discover_view_model}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_ae702aa7d97660570ac5febc56b780eb9}{Discover\+View\+Model} (\hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service}{I\+Box\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a2a376432019b9691d7186d7b836351c6}{box\+Service}, I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_ada996a561fb3c2c94eb9db6837fa2bcc}{navigation\+Service}, \hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a0943f8df352f5b062555031016670a4d}{localization\+Service})
+\begin{DoxyCompactList}\small\item\em Constructeur de paramétré qui initialize les propriétés du view model. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_ade36b3877ca967fcb98389fbb5547d04}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em Exécute les initialisations pour chaque navigation qui s\textquotesingle{}effectue sur la page \char`\"{}\+Découvrir\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a8979aad196a45eb8c7de27c8d9650dfa}{Is\+Loading}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Est-\/ce que la page est en train de charger ? \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_aedda1c3e0c8e0d0269aad154ce7132f2}{Is\+Searching}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Est-\/ce que l\textquotesingle{}utilisateur est en train de faire une recherche ? \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \hyperlink{class_boxes_1_1_models_1_1_box}{Box} $>$ \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a1b4b81f645af78ea5ca8f7de5ced39a3}{Top\+Boxes}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Liste des meilleures boites. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \hyperlink{class_boxes_1_1_models_1_1_box}{Box} $>$ \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a73bfae617de24675afc97332aca4d78a}{Search\+Results}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Résultat de la recherche effectuée par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+Relay\+Command$<$ \hyperlink{class_boxes_1_1_models_1_1_box}{Box} $>$ \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_adc536e0351a3e5ac210564ec78de6e3f}{Show\+Box\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande d\textquotesingle{}affichage d\textquotesingle{}une boite. \end{DoxyCompactList}\item 
+Relay\+Command$<$ string $>$ \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_ad7bc4f429321d175c2de48df673e2a8e}{Search\+Box\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande de recherche d\textquotesingle{}une boite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+async void \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a1f7528d73c0ea98bec7b2370787686aa}{Reload\+Top\+Boxes} ()
+\begin{DoxyCompactList}\small\item\em Recharge le top des boites. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a4d4bc38e9f10b50fe788bb419cd8c5f6}{Show\+Box} (\hyperlink{class_boxes_1_1_models_1_1_box}{Box} box)
+\begin{DoxyCompactList}\small\item\em Navigue vers la page de détails d\textquotesingle{}une boite. \end{DoxyCompactList}\item 
+async void \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a04a09e5ec95de2403c998a1cbcf161a2}{Search\+Box} (string terms)
+\begin{DoxyCompactList}\small\item\em Recherche une boite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service}{I\+Box\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a2a376432019b9691d7186d7b836351c6}{box\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Box. \end{DoxyCompactList}\item 
+I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_ada996a561fb3c2c94eb9db6837fa2bcc}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation. \end{DoxyCompactList}\item 
+\hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a0943f8df352f5b062555031016670a4d}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de localization. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a64b84ad405d9841f0b373beb851c9aed}{is\+Loading}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Is\+Loading}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a4a4f2b92e080881b02af2d05c64b6932}{is\+Searching}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Is\+Searching}. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \hyperlink{class_boxes_1_1_models_1_1_box}{Box} $>$ \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a34bd0f598fdc837a58cf93c99413799f}{top\+Boxes}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Top\+Boxes}. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \hyperlink{class_boxes_1_1_models_1_1_box}{Box} $>$ \hyperlink{class_boxes_1_1_view_models_1_1_discover_view_model_a33cadcaef722d6c4c57becdd2643c6a1}{search\+Results}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Search\+Results}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+View model de la page \char`\"{}\+Découvrir\char`\"{}. 
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!Discover\+View\+Model@{Discover\+View\+Model}}
+\index{Discover\+View\+Model@{Discover\+View\+Model}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{Discover\+View\+Model(\+I\+Box\+Service box\+Service, I\+Navigation\+Service navigation\+Service, I\+Localization\+Service localization\+Service)}{DiscoverViewModel(IBoxService boxService, INavigationService navigationService, ILocalizationService localizationService)}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+View\+Models.\+Discover\+View\+Model.\+Discover\+View\+Model (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Box\+Service}}]{box\+Service, }
+\item[{I\+Navigation\+Service}]{navigation\+Service, }
+\item[{{\bf I\+Localization\+Service}}]{localization\+Service}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_ae702aa7d97660570ac5febc56b780eb9}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_ae702aa7d97660570ac5febc56b780eb9}
+
+
+Constructeur de paramétré qui initialize les propriétés du view model. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em box\+Service} & Instance du service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Box. \\
+\hline
+{\em navigation\+Service} & Instance du service de navigation. \\
+\hline
+{\em localization\+Service} & Instance du service de localization. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{Initialize()}{Initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Discover\+View\+Model.\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_ade36b3877ca967fcb98389fbb5547d04}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_ade36b3877ca967fcb98389fbb5547d04}
+
+
+Exécute les initialisations pour chaque navigation qui s\textquotesingle{}effectue sur la page \char`\"{}\+Découvrir\char`\"{}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!Reload\+Top\+Boxes@{Reload\+Top\+Boxes}}
+\index{Reload\+Top\+Boxes@{Reload\+Top\+Boxes}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{Reload\+Top\+Boxes()}{ReloadTopBoxes()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Boxes.\+View\+Models.\+Discover\+View\+Model.\+Reload\+Top\+Boxes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a1f7528d73c0ea98bec7b2370787686aa}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a1f7528d73c0ea98bec7b2370787686aa}
+
+
+Recharge le top des boites. 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!Search\+Box@{Search\+Box}}
+\index{Search\+Box@{Search\+Box}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{Search\+Box(string terms)}{SearchBox(string terms)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Boxes.\+View\+Models.\+Discover\+View\+Model.\+Search\+Box (
+\begin{DoxyParamCaption}
+\item[{string}]{terms}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a04a09e5ec95de2403c998a1cbcf161a2}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a04a09e5ec95de2403c998a1cbcf161a2}
+
+
+Recherche une boite. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em terms} & Termes de la recherche de l\textquotesingle{}utilisateur. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!Show\+Box@{Show\+Box}}
+\index{Show\+Box@{Show\+Box}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{Show\+Box(\+Box box)}{ShowBox(Box box)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Discover\+View\+Model.\+Show\+Box (
+\begin{DoxyParamCaption}
+\item[{{\bf Box}}]{box}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a4d4bc38e9f10b50fe788bb419cd8c5f6}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a4d4bc38e9f10b50fe788bb419cd8c5f6}
+
+
+Navigue vers la page de détails d\textquotesingle{}une boite. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em box} & Boite à afficher. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!box\+Service@{box\+Service}}
+\index{box\+Service@{box\+Service}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{box\+Service}{boxService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Box\+Service} Boxes.\+View\+Models.\+Discover\+View\+Model.\+box\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a2a376432019b9691d7186d7b836351c6}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a2a376432019b9691d7186d7b836351c6}
+
+
+Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Box. 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!is\+Loading@{is\+Loading}}
+\index{is\+Loading@{is\+Loading}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{is\+Loading}{isLoading}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Discover\+View\+Model.\+is\+Loading\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a64b84ad405d9841f0b373beb851c9aed}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a64b84ad405d9841f0b373beb851c9aed}
+
+
+Stock la valeur de la propriété {\ttfamily Is\+Loading}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!is\+Searching@{is\+Searching}}
+\index{is\+Searching@{is\+Searching}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{is\+Searching}{isSearching}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Discover\+View\+Model.\+is\+Searching\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a4a4f2b92e080881b02af2d05c64b6932}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a4a4f2b92e080881b02af2d05c64b6932}
+
+
+Stock la valeur de la propriété {\ttfamily Is\+Searching}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Localization\+Service} Boxes.\+View\+Models.\+Discover\+View\+Model.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a0943f8df352f5b062555031016670a4d}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a0943f8df352f5b062555031016670a4d}
+
+
+Stock le service d\textquotesingle{}accès aux données de localization. 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Navigation\+Service Boxes.\+View\+Models.\+Discover\+View\+Model.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_ada996a561fb3c2c94eb9db6837fa2bcc}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_ada996a561fb3c2c94eb9db6837fa2bcc}
+
+
+Stock le service de navigation. 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!search\+Results@{search\+Results}}
+\index{search\+Results@{search\+Results}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{search\+Results}{searchResults}}]{\setlength{\rightskip}{0pt plus 5cm}Observable\+Collection$<${\bf Box}$>$ Boxes.\+View\+Models.\+Discover\+View\+Model.\+search\+Results\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a33cadcaef722d6c4c57becdd2643c6a1}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a33cadcaef722d6c4c57becdd2643c6a1}
+
+
+Stock la valeur de la propriété {\ttfamily Search\+Results}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!top\+Boxes@{top\+Boxes}}
+\index{top\+Boxes@{top\+Boxes}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{top\+Boxes}{topBoxes}}]{\setlength{\rightskip}{0pt plus 5cm}Observable\+Collection$<${\bf Box}$>$ Boxes.\+View\+Models.\+Discover\+View\+Model.\+top\+Boxes\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a34bd0f598fdc837a58cf93c99413799f}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a34bd0f598fdc837a58cf93c99413799f}
+
+
+Stock la valeur de la propriété {\ttfamily Top\+Boxes}. 
+
+
+
+\subsection{Documentation des propriétés}
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!Is\+Loading@{Is\+Loading}}
+\index{Is\+Loading@{Is\+Loading}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{Is\+Loading}{IsLoading}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Discover\+View\+Model.\+Is\+Loading\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a8979aad196a45eb8c7de27c8d9650dfa}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a8979aad196a45eb8c7de27c8d9650dfa}
+
+
+Est-\/ce que la page est en train de charger ? 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!Is\+Searching@{Is\+Searching}}
+\index{Is\+Searching@{Is\+Searching}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{Is\+Searching}{IsSearching}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Discover\+View\+Model.\+Is\+Searching\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_aedda1c3e0c8e0d0269aad154ce7132f2}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_aedda1c3e0c8e0d0269aad154ce7132f2}
+
+
+Est-\/ce que l\textquotesingle{}utilisateur est en train de faire une recherche ? 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!Search\+Box\+Command@{Search\+Box\+Command}}
+\index{Search\+Box\+Command@{Search\+Box\+Command}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{Search\+Box\+Command}{SearchBoxCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command$<$string$>$ Boxes.\+View\+Models.\+Discover\+View\+Model.\+Search\+Box\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_ad7bc4f429321d175c2de48df673e2a8e}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_ad7bc4f429321d175c2de48df673e2a8e}
+
+
+Commande de recherche d\textquotesingle{}une boite. 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!Search\+Results@{Search\+Results}}
+\index{Search\+Results@{Search\+Results}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{Search\+Results}{SearchResults}}]{\setlength{\rightskip}{0pt plus 5cm}Observable\+Collection$<${\bf Box}$>$ Boxes.\+View\+Models.\+Discover\+View\+Model.\+Search\+Results\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a73bfae617de24675afc97332aca4d78a}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a73bfae617de24675afc97332aca4d78a}
+
+
+Résultat de la recherche effectuée par l\textquotesingle{}utilisateur. 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!Show\+Box\+Command@{Show\+Box\+Command}}
+\index{Show\+Box\+Command@{Show\+Box\+Command}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{Show\+Box\+Command}{ShowBoxCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command$<${\bf Box}$>$ Boxes.\+View\+Models.\+Discover\+View\+Model.\+Show\+Box\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_adc536e0351a3e5ac210564ec78de6e3f}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_adc536e0351a3e5ac210564ec78de6e3f}
+
+
+Commande d\textquotesingle{}affichage d\textquotesingle{}une boite. 
+
+\index{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}!Top\+Boxes@{Top\+Boxes}}
+\index{Top\+Boxes@{Top\+Boxes}!Boxes\+::\+View\+Models\+::\+Discover\+View\+Model@{Boxes\+::\+View\+Models\+::\+Discover\+View\+Model}}
+\subsubsection[{\texorpdfstring{Top\+Boxes}{TopBoxes}}]{\setlength{\rightskip}{0pt plus 5cm}Observable\+Collection$<${\bf Box}$>$ Boxes.\+View\+Models.\+Discover\+View\+Model.\+Top\+Boxes\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_discover_view_model_a1b4b81f645af78ea5ca8f7de5ced39a3}{}\label{class_boxes_1_1_view_models_1_1_discover_view_model_a1b4b81f645af78ea5ca8f7de5ced39a3}
+
+
+Liste des meilleures boites. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+View\+Models/\hyperlink{_discover_view_model_8cs}{Discover\+View\+Model.\+cs}\end{DoxyCompactItemize}

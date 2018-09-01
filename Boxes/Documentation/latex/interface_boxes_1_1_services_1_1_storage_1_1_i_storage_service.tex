@@ -1,0 +1,110 @@
+\hypertarget{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}{}\section{Référence de l\textquotesingle{}interface Boxes.\+Services.\+Storage.\+I\+Storage\+Service}
+\label{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}\index{Boxes.\+Services.\+Storage.\+I\+Storage\+Service@{Boxes.\+Services.\+Storage.\+I\+Storage\+Service}}
+
+
+Définit les méthodes pour accéder aux données de stockage local.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Services.\+Storage.\+I\+Storage\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.951219cm]{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a2d6796200cdd63b0a6b5ed55819978b8}{Save\+Setting} (string key, object value)
+\begin{DoxyCompactList}\small\item\em Enregistre dans le conteneur de paramètres d\textquotesingle{}application une donnée. \end{DoxyCompactList}\item 
+T \hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a00a4da789711b03b8e7c8fdaec087d47}{Read\+Setting$<$ T $>$} (string key)
+\begin{DoxyCompactList}\small\item\em Retourne un paramètre du conteneur de paramètres d\textquotesingle{}application. \end{DoxyCompactList}\item 
+void \hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a7138e8e5d1d8f31e227b7765f2206e11}{Remove\+Setting} (string key)
+\begin{DoxyCompactList}\small\item\em Supprime un paramètre du conteneur de paramètres d\textquotesingle{}application. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Définit les méthodes pour accéder aux données de stockage local. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service}!Read\+Setting$<$ T $>$@{Read\+Setting$<$ T $>$}}
+\index{Read\+Setting$<$ T $>$@{Read\+Setting$<$ T $>$}!Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service}}
+\subsubsection[{\texorpdfstring{Read\+Setting$<$ T $>$(string key)}{ReadSetting< T >(string key)}}]{\setlength{\rightskip}{0pt plus 5cm}T Boxes.\+Services.\+Storage.\+I\+Storage\+Service.\+Read\+Setting$<$ T $>$ (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a00a4da789711b03b8e7c8fdaec087d47}{}\label{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a00a4da789711b03b8e7c8fdaec087d47}
+
+
+Retourne un paramètre du conteneur de paramètres d\textquotesingle{}application. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type de la donnée à retourner. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Paramètres}
+{\em key} & Clé du paramètre. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Un paramètre du conteneur de paramètres d\textquotesingle{}application. 
+\end{DoxyReturn}
+
+
+Implémenté dans \hyperlink{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_ad239cf0434c97667ce1d1c6ec0fba063}{Boxes.\+Services.\+Storage.\+Design\+Storage\+Service}, et \hyperlink{class_boxes_1_1_services_1_1_storage_1_1_storage_service_a401d9d4c2a4c67aa05134cc5f174ffa8}{Boxes.\+Services.\+Storage.\+Storage\+Service}.
+
+\begin{Desc}
+\item[Contraintes de type]\begin{description}
+\item[{\em T} : {\em class}]\end{description}
+\end{Desc}
+\index{Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service}!Remove\+Setting@{Remove\+Setting}}
+\index{Remove\+Setting@{Remove\+Setting}!Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service}}
+\subsubsection[{\texorpdfstring{Remove\+Setting(string key)}{RemoveSetting(string key)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Services.\+Storage.\+I\+Storage\+Service.\+Remove\+Setting (
+\begin{DoxyParamCaption}
+\item[{string}]{key}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a7138e8e5d1d8f31e227b7765f2206e11}{}\label{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a7138e8e5d1d8f31e227b7765f2206e11}
+
+
+Supprime un paramètre du conteneur de paramètres d\textquotesingle{}application. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em key} & Clé du paramètre. \\
+\hline
+\end{DoxyParams}
+
+
+Implémenté dans \hyperlink{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_ad570a657f66837a7b769399d1e410a32}{Boxes.\+Services.\+Storage.\+Design\+Storage\+Service}, et \hyperlink{class_boxes_1_1_services_1_1_storage_1_1_storage_service_a3942ae238059a248a89ff00cfa9551b3}{Boxes.\+Services.\+Storage.\+Storage\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service}!Save\+Setting@{Save\+Setting}}
+\index{Save\+Setting@{Save\+Setting}!Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service@{Boxes\+::\+Services\+::\+Storage\+::\+I\+Storage\+Service}}
+\subsubsection[{\texorpdfstring{Save\+Setting(string key, object value)}{SaveSetting(string key, object value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Services.\+Storage.\+I\+Storage\+Service.\+Save\+Setting (
+\begin{DoxyParamCaption}
+\item[{string}]{key, }
+\item[{object}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a2d6796200cdd63b0a6b5ed55819978b8}{}\label{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service_a2d6796200cdd63b0a6b5ed55819978b8}
+
+
+Enregistre dans le conteneur de paramètres d\textquotesingle{}application une donnée. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em key} & Clé du paramètre. \\
+\hline
+{\em value} & Valeur du paramètre. \\
+\hline
+\end{DoxyParams}
+
+
+Implémenté dans \hyperlink{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service_aca6e4df08c21ca62695f9325162c4491}{Boxes.\+Services.\+Storage.\+Design\+Storage\+Service}, et \hyperlink{class_boxes_1_1_services_1_1_storage_1_1_storage_service_aa02af3f5aead556a10db366c013c7ee4}{Boxes.\+Services.\+Storage.\+Storage\+Service}.
+
+
+
+La documentation de cette interface a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+Services/\+Storage/\hyperlink{_i_storage_service_8cs}{I\+Storage\+Service.\+cs}\end{DoxyCompactItemize}

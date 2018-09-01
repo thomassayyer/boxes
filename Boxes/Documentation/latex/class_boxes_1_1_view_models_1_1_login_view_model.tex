@@ -1,0 +1,237 @@
+\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model}{}\section{Référence de la classe Boxes.\+View\+Models.\+Login\+View\+Model}
+\label{class_boxes_1_1_view_models_1_1_login_view_model}\index{Boxes.\+View\+Models.\+Login\+View\+Model@{Boxes.\+View\+Models.\+Login\+View\+Model}}
+
+
+View model de la page de connexion.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+View\+Models.\+Login\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_view_models_1_1_login_view_model}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_acca51ef8bffac884fa5713752d1ff703}{Login\+View\+Model} (\hyperlink{interface_boxes_1_1_services_1_1_user_1_1_i_user_service}{I\+User\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a8cba7200b33227b306f2e67b41913ed6}{user\+Service}, \hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}{I\+Storage\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a0e1f19d329c368d76bc2872066a31fd6}{storage\+Service}, I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a0381d903ddcdc0df8cd8ade8fb991120}{navigation\+Service}, \hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a16b58520549ca46282be67efae03e395}{localization\+Service})
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré qui initialise les propriétés du view model. \end{DoxyCompactList}\item 
+override void \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a69b6f79536335b7fff2adde087276151}{Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue toute les opération qui s\textquotesingle{}exécute dès que l\textquotesingle{}utilisateur quite la page de connexion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a63c41a62b46524d72f7b787df892588c}{Is\+Logging\+In}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Est-\/ce que la connexion est en cours ? \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_adba04d5e03c3760ba5558ede7be4cc7b}{Email}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Adresse email entrée par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_afe04bca22ce0658d9425ddbfda938132}{Password}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Mot de pass entré par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+Relay\+Command \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a6f00ee2692c6c1309e8333618495f392}{Login\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande s\textquotesingle{}exécutant lors du click sur le bouton de connexion. \end{DoxyCompactList}\item 
+Relay\+Command \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_ac9703766c99fbb8a8ecfbac2a2e0dd06}{Register\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande s\textquotesingle{}exécutant lors du click sur le lien hypertext \char`\"{}\+S\textquotesingle{}enregistrer\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_acc4fcf0f4038e867c64e0fc18245a6e3}{Can\+Login\+Execute} ()
+\begin{DoxyCompactList}\small\item\em Détermine si la commande de connexion peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+async void \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a690178426074be27e93f1f99cbe7fb01}{Login} ()
+\begin{DoxyCompactList}\small\item\em Connecte l\textquotesingle{}utilisateur à l\textquotesingle{}application. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a6dcfc414b7b38fac178af6bea17cc55b}{Register} ()
+\begin{DoxyCompactList}\small\item\em Redirige l\textquotesingle{}utilisateur vers la page d\textquotesingle{}inscription. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a16b58520549ca46282be67efae03e395}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de localization. \end{DoxyCompactList}\item 
+\hyperlink{interface_boxes_1_1_services_1_1_user_1_1_i_user_service}{I\+User\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a8cba7200b33227b306f2e67b41913ed6}{user\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité User. \end{DoxyCompactList}\item 
+\hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}{I\+Storage\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a0e1f19d329c368d76bc2872066a31fd6}{storage\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de stockage local. \end{DoxyCompactList}\item 
+I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a0381d903ddcdc0df8cd8ade8fb991120}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_aa21af9c3a3edd71b2d56fb792bbe158a}{email}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Email}. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a70733c161088e84ca1a41bffa75b28dc}{password}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Password}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_login_view_model_a300bed033482a3ef89a7a7afa3508c48}{is\+Logging\+In}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Is\+Logging\+In}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+View model de la page de connexion. 
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!Login\+View\+Model@{Login\+View\+Model}}
+\index{Login\+View\+Model@{Login\+View\+Model}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{Login\+View\+Model(\+I\+User\+Service user\+Service, I\+Storage\+Service storage\+Service, I\+Navigation\+Service navigation\+Service, I\+Localization\+Service localization\+Service)}{LoginViewModel(IUserService userService, IStorageService storageService, INavigationService navigationService, ILocalizationService localizationService)}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+View\+Models.\+Login\+View\+Model.\+Login\+View\+Model (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+User\+Service}}]{user\+Service, }
+\item[{{\bf I\+Storage\+Service}}]{storage\+Service, }
+\item[{I\+Navigation\+Service}]{navigation\+Service, }
+\item[{{\bf I\+Localization\+Service}}]{localization\+Service}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_acca51ef8bffac884fa5713752d1ff703}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_acca51ef8bffac884fa5713752d1ff703}
+
+
+Constructeur paramétré qui initialise les propriétés du view model. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em user\+Service} & Instance du service des utilisateurs. \\
+\hline
+{\em storage\+Service} & Instance du service de stockage. \\
+\hline
+{\em navigation\+Service} & Instance du service de navigation. \\
+\hline
+{\em localization\+Service} & Instance du service d\textquotesingle{}accès aux données de localization. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!Can\+Login\+Execute@{Can\+Login\+Execute}}
+\index{Can\+Login\+Execute@{Can\+Login\+Execute}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{Can\+Login\+Execute()}{CanLoginExecute()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Login\+View\+Model.\+Can\+Login\+Execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_acc4fcf0f4038e867c64e0fc18245a6e3}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_acc4fcf0f4038e867c64e0fc18245a6e3}
+
+
+Détermine si la commande de connexion peut s\textquotesingle{}exécuter. 
+
+\begin{DoxyReturn}{Renvoie}
+Est-\/ce que la commande de connexion peut s\textquotesingle{}exécuter ? 
+\end{DoxyReturn}
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{Cleanup()}{Cleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Boxes.\+View\+Models.\+Login\+View\+Model.\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_a69b6f79536335b7fff2adde087276151}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_a69b6f79536335b7fff2adde087276151}
+
+
+Effectue toute les opération qui s\textquotesingle{}exécute dès que l\textquotesingle{}utilisateur quite la page de connexion. 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!Login@{Login}}
+\index{Login@{Login}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{Login()}{Login()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Boxes.\+View\+Models.\+Login\+View\+Model.\+Login (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_a690178426074be27e93f1f99cbe7fb01}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_a690178426074be27e93f1f99cbe7fb01}
+
+
+Connecte l\textquotesingle{}utilisateur à l\textquotesingle{}application. 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!Register@{Register}}
+\index{Register@{Register}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{Register()}{Register()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Login\+View\+Model.\+Register (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_a6dcfc414b7b38fac178af6bea17cc55b}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_a6dcfc414b7b38fac178af6bea17cc55b}
+
+
+Redirige l\textquotesingle{}utilisateur vers la page d\textquotesingle{}inscription. 
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!email@{email}}
+\index{email@{email}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{email}{email}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Login\+View\+Model.\+email\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_aa21af9c3a3edd71b2d56fb792bbe158a}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_aa21af9c3a3edd71b2d56fb792bbe158a}
+
+
+Stock la valeur de la propriété {\ttfamily Email}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!is\+Logging\+In@{is\+Logging\+In}}
+\index{is\+Logging\+In@{is\+Logging\+In}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{is\+Logging\+In}{isLoggingIn}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Login\+View\+Model.\+is\+Logging\+In\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_a300bed033482a3ef89a7a7afa3508c48}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_a300bed033482a3ef89a7a7afa3508c48}
+
+
+Stock la valeur de la propriété {\ttfamily Is\+Logging\+In}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Localization\+Service} Boxes.\+View\+Models.\+Login\+View\+Model.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_a16b58520549ca46282be67efae03e395}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_a16b58520549ca46282be67efae03e395}
+
+
+Stock le service d\textquotesingle{}accès aux données de localization. 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Navigation\+Service Boxes.\+View\+Models.\+Login\+View\+Model.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_a0381d903ddcdc0df8cd8ade8fb991120}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_a0381d903ddcdc0df8cd8ade8fb991120}
+
+
+Stock le service de navigation. 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!password@{password}}
+\index{password@{password}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{password}{password}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Login\+View\+Model.\+password\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_a70733c161088e84ca1a41bffa75b28dc}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_a70733c161088e84ca1a41bffa75b28dc}
+
+
+Stock la valeur de la propriété {\ttfamily Password}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!storage\+Service@{storage\+Service}}
+\index{storage\+Service@{storage\+Service}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{storage\+Service}{storageService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Storage\+Service} Boxes.\+View\+Models.\+Login\+View\+Model.\+storage\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_a0e1f19d329c368d76bc2872066a31fd6}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_a0e1f19d329c368d76bc2872066a31fd6}
+
+
+Stock le service d\textquotesingle{}accès aux données de stockage local. 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!user\+Service@{user\+Service}}
+\index{user\+Service@{user\+Service}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{user\+Service}{userService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+User\+Service} Boxes.\+View\+Models.\+Login\+View\+Model.\+user\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_a8cba7200b33227b306f2e67b41913ed6}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_a8cba7200b33227b306f2e67b41913ed6}
+
+
+Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité User. 
+
+
+
+\subsection{Documentation des propriétés}
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!Email@{Email}}
+\index{Email@{Email}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{Email}{Email}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Login\+View\+Model.\+Email\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_adba04d5e03c3760ba5558ede7be4cc7b}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_adba04d5e03c3760ba5558ede7be4cc7b}
+
+
+Adresse email entrée par l\textquotesingle{}utilisateur. 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!Is\+Logging\+In@{Is\+Logging\+In}}
+\index{Is\+Logging\+In@{Is\+Logging\+In}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{Is\+Logging\+In}{IsLoggingIn}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Login\+View\+Model.\+Is\+Logging\+In\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_a63c41a62b46524d72f7b787df892588c}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_a63c41a62b46524d72f7b787df892588c}
+
+
+Est-\/ce que la connexion est en cours ? 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!Login\+Command@{Login\+Command}}
+\index{Login\+Command@{Login\+Command}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{Login\+Command}{LoginCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command Boxes.\+View\+Models.\+Login\+View\+Model.\+Login\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_a6f00ee2692c6c1309e8333618495f392}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_a6f00ee2692c6c1309e8333618495f392}
+
+
+Commande s\textquotesingle{}exécutant lors du click sur le bouton de connexion. 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!Password@{Password}}
+\index{Password@{Password}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{Password}{Password}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Login\+View\+Model.\+Password\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_afe04bca22ce0658d9425ddbfda938132}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_afe04bca22ce0658d9425ddbfda938132}
+
+
+Mot de pass entré par l\textquotesingle{}utilisateur. 
+
+\index{Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}!Register\+Command@{Register\+Command}}
+\index{Register\+Command@{Register\+Command}!Boxes\+::\+View\+Models\+::\+Login\+View\+Model@{Boxes\+::\+View\+Models\+::\+Login\+View\+Model}}
+\subsubsection[{\texorpdfstring{Register\+Command}{RegisterCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command Boxes.\+View\+Models.\+Login\+View\+Model.\+Register\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_login_view_model_ac9703766c99fbb8a8ecfbac2a2e0dd06}{}\label{class_boxes_1_1_view_models_1_1_login_view_model_ac9703766c99fbb8a8ecfbac2a2e0dd06}
+
+
+Commande s\textquotesingle{}exécutant lors du click sur le lien hypertext \char`\"{}\+S\textquotesingle{}enregistrer\char`\"{}. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+View\+Models/\hyperlink{_login_view_model_8cs}{Login\+View\+Model.\+cs}\end{DoxyCompactItemize}

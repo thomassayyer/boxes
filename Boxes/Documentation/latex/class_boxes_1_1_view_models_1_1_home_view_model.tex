@@ -1,0 +1,199 @@
+\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model}{}\section{Référence de la classe Boxes.\+View\+Models.\+Home\+View\+Model}
+\label{class_boxes_1_1_view_models_1_1_home_view_model}\index{Boxes.\+View\+Models.\+Home\+View\+Model@{Boxes.\+View\+Models.\+Home\+View\+Model}}
+
+
+View model de la page d\textquotesingle{}accueil.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+View\+Models.\+Home\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_view_models_1_1_home_view_model}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_a9db727ef80ccce02d79fa5977a7cbac6}{Home\+View\+Model} (\hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}{I\+Storage\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_a3bd6b9be9afed71066aeb39291b2aaa4}{storage\+Service}, I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_ae5517d2f2f0bf741514a370425c99fcb}{navigation\+Service}, \hyperlink{interface_boxes_1_1_services_1_1_post_1_1_i_post_service}{I\+Post\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_adeb2bc8d9cb82fee7f93583f5901ba79}{post\+Service}, \hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_a929f17c774ad92cff26b39e3f35812c6}{localization\+Service})
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré qui initialize les propriétés du view model. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_ac47f26b6394b7c9eaa728e0dc7a87c9f}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em Effectue les initialisation pour chaque navigation qui s\textquotesingle{}effectue sur la page d\textquotesingle{}accueil. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Observable\+Collection$<$ \hyperlink{class_boxes_1_1_models_1_1_post}{Post} $>$ \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_a64608b92284b13db11abf18c5bca8a6b}{Posts}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Posts de la boite séléctionnée. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_a439e8cc0dbe399422652382d76ab674f}{Is\+Loading}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Est-\/ce qu\textquotesingle{}un chargement s\textquotesingle{}opère ? \end{DoxyCompactList}\item 
+Relay\+Command$<$ \hyperlink{class_boxes_1_1_models_1_1_post}{Post} $>$ \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_ae2f37a3465da061c17aa9694e8dbdf54}{Show\+Post\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande d\textquotesingle{}affichage d\textquotesingle{}un post. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+async void \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_a72d97f5c62e4819aebba4bbae3110785}{Reload\+Posts} ()
+\begin{DoxyCompactList}\small\item\em Recharge les posts de la boite séléctionnée. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_aeb3509eee7ffa0c2b1d9edda2ee64772}{Show\+Post} (\hyperlink{class_boxes_1_1_models_1_1_post}{Post} post)
+\begin{DoxyCompactList}\small\item\em Navigue vers la page de détail d\textquotesingle{}un post. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}{I\+Storage\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_a3bd6b9be9afed71066aeb39291b2aaa4}{storage\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de stockage local. \end{DoxyCompactList}\item 
+I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_ae5517d2f2f0bf741514a370425c99fcb}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation. \end{DoxyCompactList}\item 
+\hyperlink{interface_boxes_1_1_services_1_1_post_1_1_i_post_service}{I\+Post\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_adeb2bc8d9cb82fee7f93583f5901ba79}{post\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Post. \end{DoxyCompactList}\item 
+\hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_a929f17c774ad92cff26b39e3f35812c6}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de localization. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_a208d887882ff10486fdcabafe8491e7d}{is\+Loading}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Is\+Loading}. \end{DoxyCompactList}\item 
+Observable\+Collection$<$ \hyperlink{class_boxes_1_1_models_1_1_post}{Post} $>$ \hyperlink{class_boxes_1_1_view_models_1_1_home_view_model_a5bdecd39df858e8a9b57d5d3f6210a44}{posts}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Posts}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+View model de la page d\textquotesingle{}accueil. 
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!Home\+View\+Model@{Home\+View\+Model}}
+\index{Home\+View\+Model@{Home\+View\+Model}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{Home\+View\+Model(\+I\+Storage\+Service storage\+Service, I\+Navigation\+Service navigation\+Service, I\+Post\+Service post\+Service, I\+Localization\+Service localization\+Service)}{HomeViewModel(IStorageService storageService, INavigationService navigationService, IPostService postService, ILocalizationService localizationService)}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+View\+Models.\+Home\+View\+Model.\+Home\+View\+Model (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Storage\+Service}}]{storage\+Service, }
+\item[{I\+Navigation\+Service}]{navigation\+Service, }
+\item[{{\bf I\+Post\+Service}}]{post\+Service, }
+\item[{{\bf I\+Localization\+Service}}]{localization\+Service}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_a9db727ef80ccce02d79fa5977a7cbac6}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_a9db727ef80ccce02d79fa5977a7cbac6}
+
+
+Constructeur paramétré qui initialize les propriétés du view model. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em storage\+Service} & Instance du service d\textquotesingle{}accès aux données de stockage local. \\
+\hline
+{\em navigation\+Service} & Instance du service de navigation. \\
+\hline
+{\em post\+Service} & Instance du service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Post. \\
+\hline
+{\em localization\+Service} & Instance du service d\textquotesingle{}accès aux resources de localization. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{Initialize()}{Initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Home\+View\+Model.\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_ac47f26b6394b7c9eaa728e0dc7a87c9f}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_ac47f26b6394b7c9eaa728e0dc7a87c9f}
+
+
+Effectue les initialisation pour chaque navigation qui s\textquotesingle{}effectue sur la page d\textquotesingle{}accueil. 
+
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!Reload\+Posts@{Reload\+Posts}}
+\index{Reload\+Posts@{Reload\+Posts}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{Reload\+Posts()}{ReloadPosts()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Boxes.\+View\+Models.\+Home\+View\+Model.\+Reload\+Posts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_a72d97f5c62e4819aebba4bbae3110785}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_a72d97f5c62e4819aebba4bbae3110785}
+
+
+Recharge les posts de la boite séléctionnée. 
+
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!Show\+Post@{Show\+Post}}
+\index{Show\+Post@{Show\+Post}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{Show\+Post(\+Post post)}{ShowPost(Post post)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Home\+View\+Model.\+Show\+Post (
+\begin{DoxyParamCaption}
+\item[{{\bf Post}}]{post}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_aeb3509eee7ffa0c2b1d9edda2ee64772}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_aeb3509eee7ffa0c2b1d9edda2ee64772}
+
+
+Navigue vers la page de détail d\textquotesingle{}un post. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em post} & Post à afficher.\\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!is\+Loading@{is\+Loading}}
+\index{is\+Loading@{is\+Loading}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{is\+Loading}{isLoading}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Home\+View\+Model.\+is\+Loading\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_a208d887882ff10486fdcabafe8491e7d}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_a208d887882ff10486fdcabafe8491e7d}
+
+
+Stock la valeur de la propriété {\ttfamily Is\+Loading}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Localization\+Service} Boxes.\+View\+Models.\+Home\+View\+Model.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_a929f17c774ad92cff26b39e3f35812c6}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_a929f17c774ad92cff26b39e3f35812c6}
+
+
+Stock le service de localization. 
+
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Navigation\+Service Boxes.\+View\+Models.\+Home\+View\+Model.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_ae5517d2f2f0bf741514a370425c99fcb}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_ae5517d2f2f0bf741514a370425c99fcb}
+
+
+Stock le service de navigation. 
+
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!posts@{posts}}
+\index{posts@{posts}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{posts}{posts}}]{\setlength{\rightskip}{0pt plus 5cm}Observable\+Collection$<${\bf Post}$>$ Boxes.\+View\+Models.\+Home\+View\+Model.\+posts\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_a5bdecd39df858e8a9b57d5d3f6210a44}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_a5bdecd39df858e8a9b57d5d3f6210a44}
+
+
+Stock la valeur de la propriété {\ttfamily Posts}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!post\+Service@{post\+Service}}
+\index{post\+Service@{post\+Service}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{post\+Service}{postService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Post\+Service} Boxes.\+View\+Models.\+Home\+View\+Model.\+post\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_adeb2bc8d9cb82fee7f93583f5901ba79}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_adeb2bc8d9cb82fee7f93583f5901ba79}
+
+
+Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Post. 
+
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!storage\+Service@{storage\+Service}}
+\index{storage\+Service@{storage\+Service}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{storage\+Service}{storageService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Storage\+Service} Boxes.\+View\+Models.\+Home\+View\+Model.\+storage\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_a3bd6b9be9afed71066aeb39291b2aaa4}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_a3bd6b9be9afed71066aeb39291b2aaa4}
+
+
+Stock le service d\textquotesingle{}accès aux données de stockage local. 
+
+
+
+\subsection{Documentation des propriétés}
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!Is\+Loading@{Is\+Loading}}
+\index{Is\+Loading@{Is\+Loading}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{Is\+Loading}{IsLoading}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Home\+View\+Model.\+Is\+Loading\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_a439e8cc0dbe399422652382d76ab674f}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_a439e8cc0dbe399422652382d76ab674f}
+
+
+Est-\/ce qu\textquotesingle{}un chargement s\textquotesingle{}opère ? 
+
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!Posts@{Posts}}
+\index{Posts@{Posts}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{Posts}{Posts}}]{\setlength{\rightskip}{0pt plus 5cm}Observable\+Collection$<${\bf Post}$>$ Boxes.\+View\+Models.\+Home\+View\+Model.\+Posts\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_a64608b92284b13db11abf18c5bca8a6b}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_a64608b92284b13db11abf18c5bca8a6b}
+
+
+Posts de la boite séléctionnée. 
+
+\index{Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}!Show\+Post\+Command@{Show\+Post\+Command}}
+\index{Show\+Post\+Command@{Show\+Post\+Command}!Boxes\+::\+View\+Models\+::\+Home\+View\+Model@{Boxes\+::\+View\+Models\+::\+Home\+View\+Model}}
+\subsubsection[{\texorpdfstring{Show\+Post\+Command}{ShowPostCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command$<${\bf Post}$>$ Boxes.\+View\+Models.\+Home\+View\+Model.\+Show\+Post\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_home_view_model_ae2f37a3465da061c17aa9694e8dbdf54}{}\label{class_boxes_1_1_view_models_1_1_home_view_model_ae2f37a3465da061c17aa9694e8dbdf54}
+
+
+Commande d\textquotesingle{}affichage d\textquotesingle{}un post. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+View\+Models/\hyperlink{_home_view_model_8cs}{Home\+View\+Model.\+cs}\end{DoxyCompactItemize}

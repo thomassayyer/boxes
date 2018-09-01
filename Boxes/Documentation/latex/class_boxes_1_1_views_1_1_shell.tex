@@ -1,0 +1,177 @@
+\hypertarget{class_boxes_1_1_views_1_1_shell}{}\section{Référence de la classe Boxes.\+Views.\+Shell}
+\label{class_boxes_1_1_views_1_1_shell}\index{Boxes.\+Views.\+Shell@{Boxes.\+Views.\+Shell}}
+
+
+Page \char`\"{}coquille\char`\"{} contenant les autres pages.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Views.\+Shell\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_views_1_1_shell}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_views_1_1_shell_ae1dc32ec2e7d16880de8b6a62762c93b}{Shell} ()
+\begin{DoxyCompactList}\small\item\em Constructeur non paramétré qui initialise les composants de la page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs publics}
+\begin{DoxyCompactItemize}
+\item 
+Frame \hyperlink{class_boxes_1_1_views_1_1_shell_a0497de869176bf216e46152a376dcf30}{Root\+Frame} =$>$ this.\+Content\+Frame
+\begin{DoxyCompactList}\small\item\em Représente la Frame sur laquelle naviguer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_boxes_1_1_views_1_1_shell_af504d729ce47da92d98123368a9cf8de}{On\+Navigated\+To} (Navigation\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em S\textquotesingle{}exécute lorsqu\textquotesingle{}une navigation s\textquotesingle{}effectue sur cette page. \end{DoxyCompactList}\item 
+override void \hyperlink{class_boxes_1_1_views_1_1_shell_a1826504ec95a91ff7460184b1c9033e8}{On\+Navigated\+From} (Navigation\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em S\textquotesingle{}exécute lorsqu\textquotesingle{}une navigation s\textquotesingle{}effectue à partir de cette page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model}{Shell\+View\+Model} \hyperlink{class_boxes_1_1_views_1_1_shell_a6b274fcc0d3ec20c8a20ac27ff0686e3}{View\+Model}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em View model de la page. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+async void \hyperlink{class_boxes_1_1_views_1_1_shell_a78bc7bff20d802ce0a1908d75d520694}{Handle\+Generic\+Error\+Message} (\hyperlink{class_boxes_1_1_auxiliary_1_1_messaging_1_1_generic_error_message}{Generic\+Error\+Message} m)
+\begin{DoxyCompactList}\small\item\em Traite un message d\textquotesingle{}erreur. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_views_1_1_shell_a845aa2b99bf64d1706ff7d06a94d961b}{Hamburger\+Menu\+Button\+\_\+\+Click} (object sender, Routed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Appelée lors du click sur le bouton hamburger. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_views_1_1_shell_a02f6cefe33f9069a93162127eae1d28b}{Shell\+\_\+\+Back\+Requested} (object sender, Back\+Requested\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Appelée lors de l\textquotesingle{}appui sur un bouton physique de retour arrière. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Page \char`\"{}coquille\char`\"{} contenant les autres pages. 
+
+Cette page contient un menu hamburger permettant de naviguer vers les autres pages. 
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}!Shell@{Shell}}
+\index{Shell@{Shell}!Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}}
+\subsubsection[{\texorpdfstring{Shell()}{Shell()}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+Views.\+Shell.\+Shell (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_views_1_1_shell_ae1dc32ec2e7d16880de8b6a62762c93b}{}\label{class_boxes_1_1_views_1_1_shell_ae1dc32ec2e7d16880de8b6a62762c93b}
+
+
+Constructeur non paramétré qui initialise les composants de la page. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}!Hamburger\+Menu\+Button\+\_\+\+Click@{Hamburger\+Menu\+Button\+\_\+\+Click}}
+\index{Hamburger\+Menu\+Button\+\_\+\+Click@{Hamburger\+Menu\+Button\+\_\+\+Click}!Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}}
+\subsubsection[{\texorpdfstring{Hamburger\+Menu\+Button\+\_\+\+Click(object sender, Routed\+Event\+Args e)}{HamburgerMenuButton_Click(object sender, RoutedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Views.\+Shell.\+Hamburger\+Menu\+Button\+\_\+\+Click (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Routed\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_views_1_1_shell_a845aa2b99bf64d1706ff7d06a94d961b}{}\label{class_boxes_1_1_views_1_1_shell_a845aa2b99bf64d1706ff7d06a94d961b}
+
+
+Appelée lors du click sur le bouton hamburger. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sender} & Bouton à l\textquotesingle{}origine de l\textquotesingle{}événement. \\
+\hline
+{\em e} & Paramètres relatifs au click sur le bouton. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}!Handle\+Generic\+Error\+Message@{Handle\+Generic\+Error\+Message}}
+\index{Handle\+Generic\+Error\+Message@{Handle\+Generic\+Error\+Message}!Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}}
+\subsubsection[{\texorpdfstring{Handle\+Generic\+Error\+Message(\+Generic\+Error\+Message m)}{HandleGenericErrorMessage(GenericErrorMessage m)}}]{\setlength{\rightskip}{0pt plus 5cm}async void Boxes.\+Views.\+Shell.\+Handle\+Generic\+Error\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf Generic\+Error\+Message}}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_views_1_1_shell_a78bc7bff20d802ce0a1908d75d520694}{}\label{class_boxes_1_1_views_1_1_shell_a78bc7bff20d802ce0a1908d75d520694}
+
+
+Traite un message d\textquotesingle{}erreur. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em m} & Message à traiter. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}!On\+Navigated\+From@{On\+Navigated\+From}}
+\index{On\+Navigated\+From@{On\+Navigated\+From}!Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}}
+\subsubsection[{\texorpdfstring{On\+Navigated\+From(\+Navigation\+Event\+Args e)}{OnNavigatedFrom(NavigationEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}override void Boxes.\+Views.\+Shell.\+On\+Navigated\+From (
+\begin{DoxyParamCaption}
+\item[{Navigation\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_boxes_1_1_views_1_1_shell_a1826504ec95a91ff7460184b1c9033e8}{}\label{class_boxes_1_1_views_1_1_shell_a1826504ec95a91ff7460184b1c9033e8}
+
+
+S\textquotesingle{}exécute lorsqu\textquotesingle{}une navigation s\textquotesingle{}effectue à partir de cette page. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em e} & Paramètres relatifs à la navigation. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}!On\+Navigated\+To@{On\+Navigated\+To}}
+\index{On\+Navigated\+To@{On\+Navigated\+To}!Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}}
+\subsubsection[{\texorpdfstring{On\+Navigated\+To(\+Navigation\+Event\+Args e)}{OnNavigatedTo(NavigationEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}override void Boxes.\+Views.\+Shell.\+On\+Navigated\+To (
+\begin{DoxyParamCaption}
+\item[{Navigation\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_boxes_1_1_views_1_1_shell_af504d729ce47da92d98123368a9cf8de}{}\label{class_boxes_1_1_views_1_1_shell_af504d729ce47da92d98123368a9cf8de}
+
+
+S\textquotesingle{}exécute lorsqu\textquotesingle{}une navigation s\textquotesingle{}effectue sur cette page. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em e} & Paramètres relatifs à la navigation. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}!Shell\+\_\+\+Back\+Requested@{Shell\+\_\+\+Back\+Requested}}
+\index{Shell\+\_\+\+Back\+Requested@{Shell\+\_\+\+Back\+Requested}!Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}}
+\subsubsection[{\texorpdfstring{Shell\+\_\+\+Back\+Requested(object sender, Back\+Requested\+Event\+Args e)}{Shell_BackRequested(object sender, BackRequestedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Views.\+Shell.\+Shell\+\_\+\+Back\+Requested (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Back\+Requested\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_views_1_1_shell_a02f6cefe33f9069a93162127eae1d28b}{}\label{class_boxes_1_1_views_1_1_shell_a02f6cefe33f9069a93162127eae1d28b}
+
+
+Appelée lors de l\textquotesingle{}appui sur un bouton physique de retour arrière. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sender} & Objet à l\textquotesingle{}origine de l\textquotesingle{}événement. \\
+\hline
+{\em e} & Paramètres relatifs au click sur le bouton. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}!Root\+Frame@{Root\+Frame}}
+\index{Root\+Frame@{Root\+Frame}!Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}}
+\subsubsection[{\texorpdfstring{Root\+Frame}{RootFrame}}]{\setlength{\rightskip}{0pt plus 5cm}Frame Boxes.\+Views.\+Shell.\+Root\+Frame =$>$ this.\+Content\+Frame}\hypertarget{class_boxes_1_1_views_1_1_shell_a0497de869176bf216e46152a376dcf30}{}\label{class_boxes_1_1_views_1_1_shell_a0497de869176bf216e46152a376dcf30}
+
+
+Représente la Frame sur laquelle naviguer. 
+
+
+
+\subsection{Documentation des propriétés}
+\index{Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}!View\+Model@{View\+Model}}
+\index{View\+Model@{View\+Model}!Boxes\+::\+Views\+::\+Shell@{Boxes\+::\+Views\+::\+Shell}}
+\subsubsection[{\texorpdfstring{View\+Model}{ViewModel}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shell\+View\+Model} Boxes.\+Views.\+Shell.\+View\+Model\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}\hypertarget{class_boxes_1_1_views_1_1_shell_a6b274fcc0d3ec20c8a20ac27ff0686e3}{}\label{class_boxes_1_1_views_1_1_shell_a6b274fcc0d3ec20c8a20ac27ff0686e3}
+
+
+View model de la page. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+Views/\hyperlink{_shell_8xaml_8cs}{Shell.\+xaml.\+cs}\end{DoxyCompactItemize}

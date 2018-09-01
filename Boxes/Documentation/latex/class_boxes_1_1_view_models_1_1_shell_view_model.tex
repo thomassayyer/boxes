@@ -1,0 +1,298 @@
+\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model}{}\section{Référence de la classe Boxes.\+View\+Models.\+Shell\+View\+Model}
+\label{class_boxes_1_1_view_models_1_1_shell_view_model}\index{Boxes.\+View\+Models.\+Shell\+View\+Model@{Boxes.\+View\+Models.\+Shell\+View\+Model}}
+
+
+View model de la page de menu.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+View\+Models.\+Shell\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_view_models_1_1_shell_view_model}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a1ba248d94544bb16d7f83cea2ad9ef0b}{Shell\+View\+Model} (I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a6d3eb71e962c5743cbe88c6965bb0d56}{navigation\+Service}, \hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_affb3ef1bb3aec55f80714a2fa4fd79a1}{localization\+Service}, \hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}{I\+Storage\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a8be9f33243fd2a7427d2d36f1276d3a5}{storage\+Service})
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré qui initialise les propriétés du view model. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a72fcbd032d572b6505a8b603527f7252}{Initialize} ()
+\begin{DoxyCompactList}\small\item\em Enregistre la réception des message de type Is\+Back\+Button\+Visible\+Message et Shell\+Title\+Message. Navigue également vers la page par défaut et charge l\textquotesingle{}utilisateur par défaut dans {\ttfamily Current\+User\+Name}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a1640979a1fef171c4923787cef2e551f}{Title}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Titre de la page en cours. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a1a6d908df3c288e9a5239a04eb047eb4}{Current\+User\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Prénom et nom de l\textquotesingle{}utilisateur courant. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a5c1cb0f080c2bceb2419be4586b839f3}{Is\+Back\+Button\+Visible}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Est-\/ce que le bouton de retour arrière est visible ? \end{DoxyCompactList}\item 
+Relay\+Command \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a79515d296d20f7589540705d0e708d2f}{Go\+Back\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande de retour arrière. \end{DoxyCompactList}\item 
+Relay\+Command \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a9e61307917c9bb6132b3506c3f96c827}{Navigate\+To\+Home\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande de navigation vers la page d\textquotesingle{}accueil. \end{DoxyCompactList}\item 
+Relay\+Command \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_abe1ff38e661982f6c4e2e7cdc0036a40}{Navigate\+To\+Discover\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande de navigation vers la page \char`\"{}\+Découvrir\char`\"{}. \end{DoxyCompactList}\item 
+Relay\+Command \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_aeb5a287e70df4b7a212e33d5bc59155e}{Navigate\+To\+My\+Boxes\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande de navigation vers la page \char`\"{}\+Mes boites\char`\"{}. \end{DoxyCompactList}\item 
+Relay\+Command \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_acd36737e5c5366baa05998f11294d25c}{Signout\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande de déconnexion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a85f0193da593041ecb341c2ead9c83c2}{Navigate\+To\+Home} ()
+\begin{DoxyCompactList}\small\item\em Navigue vers la page d\textquotesingle{}accueil. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a2c6ed8562a71a911a5debbf0a4be14ed}{Navigate\+To\+Discover} ()
+\begin{DoxyCompactList}\small\item\em Navigue vers la page \char`\"{}\+Découvrir\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a40e58efb894ea031c313ae5023c0a07b}{Navigate\+To\+My\+Boxes} ()
+\begin{DoxyCompactList}\small\item\em Navigue vers la page d\textquotesingle{}administration \char`\"{}\+Mes boites\char`\"{}. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_aeb95dc925b2ee3a47cc2b39904ed5e86}{Handle\+Is\+Back\+Button\+Visible\+Message} (\hyperlink{class_boxes_1_1_auxiliary_1_1_messaging_1_1_is_back_button_visible_message}{Is\+Back\+Button\+Visible\+Message} m)
+\begin{DoxyCompactList}\small\item\em Traite un message concernant la visibilité du bouton de retour. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a47f0f0a2778f9690fcf81d6f5d8eeafe}{Handle\+Shell\+Title\+Message} (\hyperlink{class_boxes_1_1_auxiliary_1_1_messaging_1_1_shell_title_message}{Shell\+Title\+Message} m)
+\begin{DoxyCompactList}\small\item\em Traite un message contenant un titre pour le Shell. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a95dad92da041940641b40b1f1251068f}{Signout} ()
+\begin{DoxyCompactList}\small\item\em Déconnecte l\textquotesingle{}utilisateur courant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a6d3eb71e962c5743cbe88c6965bb0d56}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation. \end{DoxyCompactList}\item 
+\hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_affb3ef1bb3aec55f80714a2fa4fd79a1}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de localization. \end{DoxyCompactList}\item 
+\hyperlink{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}{I\+Storage\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a8be9f33243fd2a7427d2d36f1276d3a5}{storage\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de stockage local. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_ae4eac58ce406c6ece587a7c06ed5623f}{title}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Title}. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a13ccc8c0cc1c0df72a2780c55f866ec2}{current\+User\+Name}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Current\+User\+Name}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_shell_view_model_a455d23b6128ff0a05072a61ace6dfa65}{is\+Back\+Button\+Visible}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Is\+Back\+Button\+Visible}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+View model de la page de menu. 
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Shell\+View\+Model@{Shell\+View\+Model}}
+\index{Shell\+View\+Model@{Shell\+View\+Model}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Shell\+View\+Model(\+I\+Navigation\+Service navigation\+Service, I\+Localization\+Service localization\+Service, I\+Storage\+Service storage\+Service)}{ShellViewModel(INavigationService navigationService, ILocalizationService localizationService, IStorageService storageService)}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+View\+Models.\+Shell\+View\+Model.\+Shell\+View\+Model (
+\begin{DoxyParamCaption}
+\item[{I\+Navigation\+Service}]{navigation\+Service, }
+\item[{{\bf I\+Localization\+Service}}]{localization\+Service, }
+\item[{{\bf I\+Storage\+Service}}]{storage\+Service}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a1ba248d94544bb16d7f83cea2ad9ef0b}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a1ba248d94544bb16d7f83cea2ad9ef0b}
+
+
+Constructeur paramétré qui initialise les propriétés du view model. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em navigation\+Service} & Instance du service de navigation. \\
+\hline
+{\em localization\+Service} & Instance du service d\textquotesingle{}accès aux données de localization. \\
+\hline
+{\em storage\+Service} & Instance du service d\textquotesingle{}accès aux données de stockage local. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Handle\+Is\+Back\+Button\+Visible\+Message@{Handle\+Is\+Back\+Button\+Visible\+Message}}
+\index{Handle\+Is\+Back\+Button\+Visible\+Message@{Handle\+Is\+Back\+Button\+Visible\+Message}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Handle\+Is\+Back\+Button\+Visible\+Message(\+Is\+Back\+Button\+Visible\+Message m)}{HandleIsBackButtonVisibleMessage(IsBackButtonVisibleMessage m)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Shell\+View\+Model.\+Handle\+Is\+Back\+Button\+Visible\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf Is\+Back\+Button\+Visible\+Message}}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_aeb95dc925b2ee3a47cc2b39904ed5e86}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_aeb95dc925b2ee3a47cc2b39904ed5e86}
+
+
+Traite un message concernant la visibilité du bouton de retour. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em m} & Message à traiter. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Handle\+Shell\+Title\+Message@{Handle\+Shell\+Title\+Message}}
+\index{Handle\+Shell\+Title\+Message@{Handle\+Shell\+Title\+Message}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Handle\+Shell\+Title\+Message(\+Shell\+Title\+Message m)}{HandleShellTitleMessage(ShellTitleMessage m)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Shell\+View\+Model.\+Handle\+Shell\+Title\+Message (
+\begin{DoxyParamCaption}
+\item[{{\bf Shell\+Title\+Message}}]{m}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a47f0f0a2778f9690fcf81d6f5d8eeafe}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a47f0f0a2778f9690fcf81d6f5d8eeafe}
+
+
+Traite un message contenant un titre pour le Shell. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em m} & Message à traiter. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Initialize()}{Initialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Shell\+View\+Model.\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a72fcbd032d572b6505a8b603527f7252}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a72fcbd032d572b6505a8b603527f7252}
+
+
+Enregistre la réception des message de type Is\+Back\+Button\+Visible\+Message et Shell\+Title\+Message. Navigue également vers la page par défaut et charge l\textquotesingle{}utilisateur par défaut dans {\ttfamily Current\+User\+Name}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Navigate\+To\+Discover@{Navigate\+To\+Discover}}
+\index{Navigate\+To\+Discover@{Navigate\+To\+Discover}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Navigate\+To\+Discover()}{NavigateToDiscover()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Shell\+View\+Model.\+Navigate\+To\+Discover (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a2c6ed8562a71a911a5debbf0a4be14ed}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a2c6ed8562a71a911a5debbf0a4be14ed}
+
+
+Navigue vers la page \char`\"{}\+Découvrir\char`\"{}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Navigate\+To\+Home@{Navigate\+To\+Home}}
+\index{Navigate\+To\+Home@{Navigate\+To\+Home}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Navigate\+To\+Home()}{NavigateToHome()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Shell\+View\+Model.\+Navigate\+To\+Home (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a85f0193da593041ecb341c2ead9c83c2}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a85f0193da593041ecb341c2ead9c83c2}
+
+
+Navigue vers la page d\textquotesingle{}accueil. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Navigate\+To\+My\+Boxes@{Navigate\+To\+My\+Boxes}}
+\index{Navigate\+To\+My\+Boxes@{Navigate\+To\+My\+Boxes}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Navigate\+To\+My\+Boxes()}{NavigateToMyBoxes()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Shell\+View\+Model.\+Navigate\+To\+My\+Boxes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a40e58efb894ea031c313ae5023c0a07b}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a40e58efb894ea031c313ae5023c0a07b}
+
+
+Navigue vers la page d\textquotesingle{}administration \char`\"{}\+Mes boites\char`\"{}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Signout@{Signout}}
+\index{Signout@{Signout}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Signout()}{Signout()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Shell\+View\+Model.\+Signout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a95dad92da041940641b40b1f1251068f}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a95dad92da041940641b40b1f1251068f}
+
+
+Déconnecte l\textquotesingle{}utilisateur courant. 
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!current\+User\+Name@{current\+User\+Name}}
+\index{current\+User\+Name@{current\+User\+Name}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{current\+User\+Name}{currentUserName}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Shell\+View\+Model.\+current\+User\+Name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a13ccc8c0cc1c0df72a2780c55f866ec2}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a13ccc8c0cc1c0df72a2780c55f866ec2}
+
+
+Stock la valeur de la propriété {\ttfamily Current\+User\+Name}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!is\+Back\+Button\+Visible@{is\+Back\+Button\+Visible}}
+\index{is\+Back\+Button\+Visible@{is\+Back\+Button\+Visible}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{is\+Back\+Button\+Visible}{isBackButtonVisible}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Shell\+View\+Model.\+is\+Back\+Button\+Visible\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a455d23b6128ff0a05072a61ace6dfa65}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a455d23b6128ff0a05072a61ace6dfa65}
+
+
+Stock la valeur de la propriété {\ttfamily Is\+Back\+Button\+Visible}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Localization\+Service} Boxes.\+View\+Models.\+Shell\+View\+Model.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_affb3ef1bb3aec55f80714a2fa4fd79a1}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_affb3ef1bb3aec55f80714a2fa4fd79a1}
+
+
+Stock le service d\textquotesingle{}accès aux données de localization. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Navigation\+Service Boxes.\+View\+Models.\+Shell\+View\+Model.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a6d3eb71e962c5743cbe88c6965bb0d56}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a6d3eb71e962c5743cbe88c6965bb0d56}
+
+
+Stock le service de navigation. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!storage\+Service@{storage\+Service}}
+\index{storage\+Service@{storage\+Service}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{storage\+Service}{storageService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Storage\+Service} Boxes.\+View\+Models.\+Shell\+View\+Model.\+storage\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a8be9f33243fd2a7427d2d36f1276d3a5}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a8be9f33243fd2a7427d2d36f1276d3a5}
+
+
+Stock le service d\textquotesingle{}accès aux données de stockage local. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!title@{title}}
+\index{title@{title}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{title}{title}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Shell\+View\+Model.\+title\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_ae4eac58ce406c6ece587a7c06ed5623f}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_ae4eac58ce406c6ece587a7c06ed5623f}
+
+
+Stock la valeur de la propriété {\ttfamily Title}. 
+
+
+
+\subsection{Documentation des propriétés}
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Current\+User\+Name@{Current\+User\+Name}}
+\index{Current\+User\+Name@{Current\+User\+Name}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Current\+User\+Name}{CurrentUserName}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Shell\+View\+Model.\+Current\+User\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a1a6d908df3c288e9a5239a04eb047eb4}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a1a6d908df3c288e9a5239a04eb047eb4}
+
+
+Prénom et nom de l\textquotesingle{}utilisateur courant. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Go\+Back\+Command@{Go\+Back\+Command}}
+\index{Go\+Back\+Command@{Go\+Back\+Command}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Go\+Back\+Command}{GoBackCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command Boxes.\+View\+Models.\+Shell\+View\+Model.\+Go\+Back\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a79515d296d20f7589540705d0e708d2f}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a79515d296d20f7589540705d0e708d2f}
+
+
+Commande de retour arrière. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Is\+Back\+Button\+Visible@{Is\+Back\+Button\+Visible}}
+\index{Is\+Back\+Button\+Visible@{Is\+Back\+Button\+Visible}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Is\+Back\+Button\+Visible}{IsBackButtonVisible}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Shell\+View\+Model.\+Is\+Back\+Button\+Visible\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a5c1cb0f080c2bceb2419be4586b839f3}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a5c1cb0f080c2bceb2419be4586b839f3}
+
+
+Est-\/ce que le bouton de retour arrière est visible ? 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Navigate\+To\+Discover\+Command@{Navigate\+To\+Discover\+Command}}
+\index{Navigate\+To\+Discover\+Command@{Navigate\+To\+Discover\+Command}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Navigate\+To\+Discover\+Command}{NavigateToDiscoverCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command Boxes.\+View\+Models.\+Shell\+View\+Model.\+Navigate\+To\+Discover\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_abe1ff38e661982f6c4e2e7cdc0036a40}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_abe1ff38e661982f6c4e2e7cdc0036a40}
+
+
+Commande de navigation vers la page \char`\"{}\+Découvrir\char`\"{}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Navigate\+To\+Home\+Command@{Navigate\+To\+Home\+Command}}
+\index{Navigate\+To\+Home\+Command@{Navigate\+To\+Home\+Command}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Navigate\+To\+Home\+Command}{NavigateToHomeCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command Boxes.\+View\+Models.\+Shell\+View\+Model.\+Navigate\+To\+Home\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a9e61307917c9bb6132b3506c3f96c827}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a9e61307917c9bb6132b3506c3f96c827}
+
+
+Commande de navigation vers la page d\textquotesingle{}accueil. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Navigate\+To\+My\+Boxes\+Command@{Navigate\+To\+My\+Boxes\+Command}}
+\index{Navigate\+To\+My\+Boxes\+Command@{Navigate\+To\+My\+Boxes\+Command}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Navigate\+To\+My\+Boxes\+Command}{NavigateToMyBoxesCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command Boxes.\+View\+Models.\+Shell\+View\+Model.\+Navigate\+To\+My\+Boxes\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_aeb5a287e70df4b7a212e33d5bc59155e}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_aeb5a287e70df4b7a212e33d5bc59155e}
+
+
+Commande de navigation vers la page \char`\"{}\+Mes boites\char`\"{}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Signout\+Command@{Signout\+Command}}
+\index{Signout\+Command@{Signout\+Command}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Signout\+Command}{SignoutCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command Boxes.\+View\+Models.\+Shell\+View\+Model.\+Signout\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_acd36737e5c5366baa05998f11294d25c}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_acd36737e5c5366baa05998f11294d25c}
+
+
+Commande de déconnexion. 
+
+\index{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}!Title@{Title}}
+\index{Title@{Title}!Boxes\+::\+View\+Models\+::\+Shell\+View\+Model@{Boxes\+::\+View\+Models\+::\+Shell\+View\+Model}}
+\subsubsection[{\texorpdfstring{Title}{Title}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Shell\+View\+Model.\+Title\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_shell_view_model_a1640979a1fef171c4923787cef2e551f}{}\label{class_boxes_1_1_view_models_1_1_shell_view_model_a1640979a1fef171c4923787cef2e551f}
+
+
+Titre de la page en cours. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+View\+Models/\hyperlink{_shell_view_model_8cs}{Shell\+View\+Model.\+cs}\end{DoxyCompactItemize}

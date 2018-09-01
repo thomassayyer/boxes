@@ -1,0 +1,136 @@
+\hypertarget{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service}{}\section{Référence de la classe Boxes.\+Tests.\+Mock.\+Services.\+Fake\+Navigation\+Service}
+\label{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service}\index{Boxes.\+Tests.\+Mock.\+Services.\+Fake\+Navigation\+Service@{Boxes.\+Tests.\+Mock.\+Services.\+Fake\+Navigation\+Service}}
+
+
+Service de navigation fictif dont on peut récupérer la page actuellement affichée avec la propriété {\ttfamily Current\+Page\+Key}. Le stack de navigation est enregistré dans une liste (champ {\ttfamily navigation\+Stack}).  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Tests.\+Mock.\+Services.\+Fake\+Navigation\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_aceadde6c61562278fce55e793434f934}{Fake\+Navigation\+Service} ()
+\begin{DoxyCompactList}\small\item\em Constructeur non paramétré qui initialise le stack de navigation. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a27266175146d23c89c997e637e3c8813}{Go\+Back} ()
+\begin{DoxyCompactList}\small\item\em Navigue vers la page précédente dans le stack de navigation. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a0459ed72ee0a07da55556de2cff5182f}{Navigate\+To} (string page\+Key)
+\begin{DoxyCompactList}\small\item\em Navigue vers la page de clé {\itshape page\+Key} . La propriété {\ttfamily Current\+Page\+Key} prend donc la valeur de {\itshape page\+Key} . \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a4471c5eaa01e36727efd13c6b25936d8}{Navigate\+To} (string page\+Key, object parameter)
+\begin{DoxyCompactList}\small\item\em Navigue vers la page de clé {\itshape page\+Key}  en lui passant un paramètre. La propriété {\ttfamily Current\+Page\+Key} prend donc la valeur de {\itshape page\+Key} . La propriété {\ttfamily Current\+Page\+Parameter} prend la valeur de {\itshape parameter} . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_ac56e00a3392fc0d8370e34f2b3665021}{Current\+Page\+Key}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Clé de la page actuellement affichée. \end{DoxyCompactList}\item 
+object \hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a6a5a1f38263717cf9dbfada81deb79d3}{Current\+Page\+Parameter}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Paramètre transmis à la page actuellement affichée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, object $>$ \hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_ad295920ed186a7b945b3597c635f12e0}{navigation\+Stack}
+\begin{DoxyCompactList}\small\item\em Stack de navigation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Service de navigation fictif dont on peut récupérer la page actuellement affichée avec la propriété {\ttfamily Current\+Page\+Key}. Le stack de navigation est enregistré dans une liste (champ {\ttfamily navigation\+Stack}). 
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}!Fake\+Navigation\+Service@{Fake\+Navigation\+Service}}
+\index{Fake\+Navigation\+Service@{Fake\+Navigation\+Service}!Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Fake\+Navigation\+Service()}{FakeNavigationService()}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+Tests.\+Mock.\+Services.\+Fake\+Navigation\+Service.\+Fake\+Navigation\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_aceadde6c61562278fce55e793434f934}{}\label{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_aceadde6c61562278fce55e793434f934}
+
+
+Constructeur non paramétré qui initialise le stack de navigation. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}!Go\+Back@{Go\+Back}}
+\index{Go\+Back@{Go\+Back}!Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Go\+Back()}{GoBack()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Mock.\+Services.\+Fake\+Navigation\+Service.\+Go\+Back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a27266175146d23c89c997e637e3c8813}{}\label{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a27266175146d23c89c997e637e3c8813}
+
+
+Navigue vers la page précédente dans le stack de navigation. 
+
+\index{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}!Navigate\+To@{Navigate\+To}}
+\index{Navigate\+To@{Navigate\+To}!Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Navigate\+To(string page\+Key)}{NavigateTo(string pageKey)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Mock.\+Services.\+Fake\+Navigation\+Service.\+Navigate\+To (
+\begin{DoxyParamCaption}
+\item[{string}]{page\+Key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a0459ed72ee0a07da55556de2cff5182f}{}\label{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a0459ed72ee0a07da55556de2cff5182f}
+
+
+Navigue vers la page de clé {\itshape page\+Key} . La propriété {\ttfamily Current\+Page\+Key} prend donc la valeur de {\itshape page\+Key} . 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em page\+Key} & Clé de la page sur laquelle naviguer. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}!Navigate\+To@{Navigate\+To}}
+\index{Navigate\+To@{Navigate\+To}!Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Navigate\+To(string page\+Key, object parameter)}{NavigateTo(string pageKey, object parameter)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Mock.\+Services.\+Fake\+Navigation\+Service.\+Navigate\+To (
+\begin{DoxyParamCaption}
+\item[{string}]{page\+Key, }
+\item[{object}]{parameter}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a4471c5eaa01e36727efd13c6b25936d8}{}\label{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a4471c5eaa01e36727efd13c6b25936d8}
+
+
+Navigue vers la page de clé {\itshape page\+Key}  en lui passant un paramètre. La propriété {\ttfamily Current\+Page\+Key} prend donc la valeur de {\itshape page\+Key} . La propriété {\ttfamily Current\+Page\+Parameter} prend la valeur de {\itshape parameter} . 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em page\+Key} & Clé de la page sur laquelle naviguer. \\
+\hline
+{\em parameter} & Paramètre à passer à la page. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}!navigation\+Stack@{navigation\+Stack}}
+\index{navigation\+Stack@{navigation\+Stack}!Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{navigation\+Stack}{navigationStack}}]{\setlength{\rightskip}{0pt plus 5cm}Dictionary$<$string, object$>$ Boxes.\+Tests.\+Mock.\+Services.\+Fake\+Navigation\+Service.\+navigation\+Stack\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_ad295920ed186a7b945b3597c635f12e0}{}\label{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_ad295920ed186a7b945b3597c635f12e0}
+
+
+Stack de navigation. 
+
+A chaque fois qu\textquotesingle{}une navigation s\textquotesingle{}opère la page affichée s\textquotesingle{}inscrit dans ce dictionnaire (en clé). Le paramètre transmis à la page s\textquotesingle{}inscrit en valeur. 
+
+\subsection{Documentation des propriétés}
+\index{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}!Current\+Page\+Key@{Current\+Page\+Key}}
+\index{Current\+Page\+Key@{Current\+Page\+Key}!Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Current\+Page\+Key}{CurrentPageKey}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+Tests.\+Mock.\+Services.\+Fake\+Navigation\+Service.\+Current\+Page\+Key\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_ac56e00a3392fc0d8370e34f2b3665021}{}\label{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_ac56e00a3392fc0d8370e34f2b3665021}
+
+
+Clé de la page actuellement affichée. 
+
+\index{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}!Current\+Page\+Parameter@{Current\+Page\+Parameter}}
+\index{Current\+Page\+Parameter@{Current\+Page\+Parameter}!Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service@{Boxes\+::\+Tests\+::\+Mock\+::\+Services\+::\+Fake\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Current\+Page\+Parameter}{CurrentPageParameter}}]{\setlength{\rightskip}{0pt plus 5cm}object Boxes.\+Tests.\+Mock.\+Services.\+Fake\+Navigation\+Service.\+Current\+Page\+Parameter\hspace{0.3cm}{\ttfamily [get]}}\hypertarget{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a6a5a1f38263717cf9dbfada81deb79d3}{}\label{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service_a6a5a1f38263717cf9dbfada81deb79d3}
+
+
+Paramètre transmis à la page actuellement affichée. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes.\+Tests/\+Mock/\+Services/\hyperlink{_fake_navigation_service_8cs}{Fake\+Navigation\+Service.\+cs}\end{DoxyCompactItemize}

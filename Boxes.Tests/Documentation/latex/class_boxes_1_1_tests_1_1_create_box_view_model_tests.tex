@@ -1,0 +1,253 @@
+\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests}{}\section{Référence de la classe Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests}
+\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests}\index{Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests@{Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests}}
+
+
+Effectue les tests unitaires concernant le view model Create\+Box\+View\+Model.  
+
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a1d813751528e634b253d780fcc794779}{Tests\+Initialize} ()
+\begin{DoxyCompactList}\small\item\em Effectue les initialisation qui doivent s\textquotesingle{}exécuter avant chaque test. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a2a692c8de3378e034057910464104f95}{Tests\+Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue les nettoyages de variables devant être faits après l\textquotesingle{}exécution de chaque test. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_adeb87abdc4260dc20a35f481ae41a976}{Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent} ()
+\begin{DoxyCompactList}\small\item\em Vérifie si lors de l\textquotesingle{}initialisation du view model, un message de type Is\+Back\+Button\+Visible\+Message est envoyé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a7211d7dda73fcadf8b1355b9448fab0d}{Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Shell\+Title\+Message\+Sent} ()
+\begin{DoxyCompactList}\small\item\em Vérifie si lors de l\textquotesingle{}initialisation du view model, un message de type Shell\+Title\+Message est envoyé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a6c22cfcf1332b17894e3e60c3ff7961f}{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent} ()
+\begin{DoxyCompactList}\small\item\em Vérifie si lorsque l\textquotesingle{}utilisateur quitte la page de création d\textquotesingle{}une boite, un message de type Is\+Back\+Button\+Visible\+Message est envoyé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_acccc1b16f201142fa8d9a336fd7680f0}{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Title\+Is\+Null} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page de création d\textquotesingle{}une boite, le champ \char`\"{}\+Titre\char`\"{} est bien vidé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a1900608827ee7d9726b9a2188b884676}{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Description\+Is\+Null} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page de création d\textquotesingle{}une boite, le champ \char`\"{}\+Description\char`\"{} est bien vidé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a132cbc9e8ed6598e75e8edca409c579f}{Create\+Box\+Command\+\_\+\+Is\+Creating\+\_\+\+Cannot\+Execute} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lors de la création d\textquotesingle{}une boite si une boite est déjà en cours de création, la commande ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a998314a0b3b974ba384c1e6cb8c536de}{Create\+Box\+Command\+\_\+\+Title\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute} (string title)
+\begin{DoxyCompactList}\small\item\em Vérifie que lors de la création d\textquotesingle{}une boite si le titre de la boite n\textquotesingle{}a pas été entré (ou succession d\textquotesingle{}espaces), la commande ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a3d62071f0ab2476369f7c4687dd1fdb0}{Create\+Box\+Command\+\_\+\+Description\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute} (string description)
+\begin{DoxyCompactList}\small\item\em Vérifie que lors de la création d\textquotesingle{}une boite si la description n\textquotesingle{}a pas été entrée (ou succession d\textquotesingle{}espaces), la commande ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_af03bc34daefe0005029c4827a8cb827e}{Create\+Box\+Command\+\_\+\+Is\+Not\+Creating\+Required\+Field\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lors de la création d\textquotesingle{}une boite si aucune boite n\textquotesingle{}est en cours de création et que les champs obligatoires sont remplis, la commande peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a837e50015e6f0c2cb3d0965f874f636c}{Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Box\+Created} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lors de la création d\textquotesingle{}une boite avec des données valides, une boite est bien créée. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a47ed39e4e759655a5be4cb5b4d432a04}{Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lors de la création d\textquotesingle{}une boite avec des données valides, la page actuellement affichée est la page précédente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_box_service}{Fake\+Box\+Service} \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a3574fac430ae1fafdc6462748df828f8}{box\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de l\textquotesingle{}entité Box. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_storage_service}{Fake\+Storage\+Service} \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a0f47944eb8fc4ec9d3fa19aef2e597a4}{storage\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de stockage local. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service}{Fake\+Navigation\+Service} \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a4b133a0a51f3a1fccdbfe2c4e110c526}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation fictif. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_localization_service}{Fake\+Localization\+Service} \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_aaefad9e2f283139c6df197b6a9b6488d}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de localization. \end{DoxyCompactList}\item 
+Create\+Box\+View\+Model \hyperlink{class_boxes_1_1_tests_1_1_create_box_view_model_tests_aca1f0f5d93687b6dec26894d54ff2b2d}{create\+Box\+View\+Model}
+\begin{DoxyCompactList}\small\item\em Stock le view model de la page de création d\textquotesingle{}une boite (ici le view model à tester). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Effectue les tests unitaires concernant le view model Create\+Box\+View\+Model. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Description\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Description\+Is\+Null}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Description\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Description\+Is\+Null}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Description\+Is\+Null()}{Cleanup_NavigationFromCreateBox_DescriptionIsNull()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Description\+Is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a1900608827ee7d9726b9a2188b884676}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a1900608827ee7d9726b9a2188b884676}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page de création d\textquotesingle{}une boite, le champ \char`\"{}\+Description\char`\"{} est bien vidé. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent@{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent@{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent()}{Cleanup_NavigationFromCreateBox_IsBackButtonVisibleMessageSent()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a6c22cfcf1332b17894e3e60c3ff7961f}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a6c22cfcf1332b17894e3e60c3ff7961f}
+
+
+Vérifie si lorsque l\textquotesingle{}utilisateur quitte la page de création d\textquotesingle{}une boite, un message de type Is\+Back\+Button\+Visible\+Message est envoyé. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Title\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Title\+Is\+Null}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Title\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Title\+Is\+Null}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Title\+Is\+Null()}{Cleanup_NavigationFromCreateBox_TitleIsNull()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Create\+Box\+\_\+\+Title\+Is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_acccc1b16f201142fa8d9a336fd7680f0}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_acccc1b16f201142fa8d9a336fd7680f0}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page de création d\textquotesingle{}une boite, le champ \char`\"{}\+Titre\char`\"{} est bien vidé. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Create\+Box\+Command\+\_\+\+Description\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Create\+Box\+Command\+\_\+\+Description\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}}
+\index{Create\+Box\+Command\+\_\+\+Description\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Create\+Box\+Command\+\_\+\+Description\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Create\+Box\+Command\+\_\+\+Description\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute(string description)}{CreateBoxCommand_DescriptionIsNullOrWhiteSpace_CannotExecute(string description)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Create\+Box\+Command\+\_\+\+Description\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+\item[{string}]{description}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a3d62071f0ab2476369f7c4687dd1fdb0}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a3d62071f0ab2476369f7c4687dd1fdb0}
+
+
+Vérifie que lors de la création d\textquotesingle{}une boite si la description n\textquotesingle{}a pas été entrée (ou succession d\textquotesingle{}espaces), la commande ne peut s\textquotesingle{}exécuter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em description} & Description auto-\/généré pour le test (null, \char`\"{}\char`\"{} ou \char`\"{} \char`\"{}). \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Create\+Box\+Command\+\_\+\+Is\+Creating\+\_\+\+Cannot\+Execute@{Create\+Box\+Command\+\_\+\+Is\+Creating\+\_\+\+Cannot\+Execute}}
+\index{Create\+Box\+Command\+\_\+\+Is\+Creating\+\_\+\+Cannot\+Execute@{Create\+Box\+Command\+\_\+\+Is\+Creating\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Create\+Box\+Command\+\_\+\+Is\+Creating\+\_\+\+Cannot\+Execute()}{CreateBoxCommand_IsCreating_CannotExecute()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Create\+Box\+Command\+\_\+\+Is\+Creating\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a132cbc9e8ed6598e75e8edca409c579f}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a132cbc9e8ed6598e75e8edca409c579f}
+
+
+Vérifie que lors de la création d\textquotesingle{}une boite si une boite est déjà en cours de création, la commande ne peut s\textquotesingle{}exécuter. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Create\+Box\+Command\+\_\+\+Is\+Not\+Creating\+Required\+Field\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute@{Create\+Box\+Command\+\_\+\+Is\+Not\+Creating\+Required\+Field\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute}}
+\index{Create\+Box\+Command\+\_\+\+Is\+Not\+Creating\+Required\+Field\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute@{Create\+Box\+Command\+\_\+\+Is\+Not\+Creating\+Required\+Field\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Create\+Box\+Command\+\_\+\+Is\+Not\+Creating\+Required\+Field\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute()}{CreateBoxCommand_IsNotCreatingRequiredFieldNotNullOrWhiteSpace_CanExecute()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Create\+Box\+Command\+\_\+\+Is\+Not\+Creating\+Required\+Field\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_af03bc34daefe0005029c4827a8cb827e}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_af03bc34daefe0005029c4827a8cb827e}
+
+
+Vérifie que lors de la création d\textquotesingle{}une boite si aucune boite n\textquotesingle{}est en cours de création et que les champs obligatoires sont remplis, la commande peut s\textquotesingle{}exécuter. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Create\+Box\+Command\+\_\+\+Title\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Create\+Box\+Command\+\_\+\+Title\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}}
+\index{Create\+Box\+Command\+\_\+\+Title\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Create\+Box\+Command\+\_\+\+Title\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Create\+Box\+Command\+\_\+\+Title\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute(string title)}{CreateBoxCommand_TitleIsNullOrWhiteSpace_CannotExecute(string title)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Create\+Box\+Command\+\_\+\+Title\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+\item[{string}]{title}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a998314a0b3b974ba384c1e6cb8c536de}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a998314a0b3b974ba384c1e6cb8c536de}
+
+
+Vérifie que lors de la création d\textquotesingle{}une boite si le titre de la boite n\textquotesingle{}a pas été entré (ou succession d\textquotesingle{}espaces), la commande ne peut s\textquotesingle{}exécuter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em title} & Titre auto-\/généré pour le test (null, \char`\"{}\char`\"{} ou \char`\"{} \char`\"{}). \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Box\+Created@{Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Box\+Created}}
+\index{Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Box\+Created@{Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Box\+Created}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Box\+Created()}{CreateBoxCommand_ValidData_BoxCreated()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Box\+Created (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a837e50015e6f0c2cb3d0965f874f636c}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a837e50015e6f0c2cb3d0965f874f636c}
+
+
+Vérifie que lors de la création d\textquotesingle{}une boite avec des données valides, une boite est bien créée. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page@{Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page}}
+\index{Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page@{Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page()}{CreateBoxCommand_ValidData_CurrentPageIsRootPage()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Create\+Box\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a47ed39e4e759655a5be4cb5b4d432a04}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a47ed39e4e759655a5be4cb5b4d432a04}
+
+
+Vérifie que lors de la création d\textquotesingle{}une boite avec des données valides, la page actuellement affichée est la page précédente. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent@{Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent}}
+\index{Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent@{Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent()}{Initialize_NavigationToCreateBox_IsBackButtonVisibleMessageSent()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Is\+Back\+Button\+Visible\+Message\+Sent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_adeb87abdc4260dc20a35f481ae41a976}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_adeb87abdc4260dc20a35f481ae41a976}
+
+
+Vérifie si lors de l\textquotesingle{}initialisation du view model, un message de type Is\+Back\+Button\+Visible\+Message est envoyé. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Shell\+Title\+Message\+Sent@{Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Shell\+Title\+Message\+Sent}}
+\index{Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Shell\+Title\+Message\+Sent@{Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Shell\+Title\+Message\+Sent}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Shell\+Title\+Message\+Sent()}{Initialize_NavigationToCreateBox_ShellTitleMessageSent()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Initialize\+\_\+\+Navigation\+To\+Create\+Box\+\_\+\+Shell\+Title\+Message\+Sent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a7211d7dda73fcadf8b1355b9448fab0d}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a7211d7dda73fcadf8b1355b9448fab0d}
+
+
+Vérifie si lors de l\textquotesingle{}initialisation du view model, un message de type Shell\+Title\+Message est envoyé. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Tests\+Cleanup@{Tests\+Cleanup}}
+\index{Tests\+Cleanup@{Tests\+Cleanup}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Cleanup()}{TestsCleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Tests\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a2a692c8de3378e034057910464104f95}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a2a692c8de3378e034057910464104f95}
+
+
+Effectue les nettoyages de variables devant être faits après l\textquotesingle{}exécution de chaque test. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!Tests\+Initialize@{Tests\+Initialize}}
+\index{Tests\+Initialize@{Tests\+Initialize}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Initialize()}{TestsInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+Tests\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a1d813751528e634b253d780fcc794779}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a1d813751528e634b253d780fcc794779}
+
+
+Effectue les initialisation qui doivent s\textquotesingle{}exécuter avant chaque test. 
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!box\+Service@{box\+Service}}
+\index{box\+Service@{box\+Service}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{box\+Service}{boxService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Box\+Service} Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+box\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a3574fac430ae1fafdc6462748df828f8}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a3574fac430ae1fafdc6462748df828f8}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de l\textquotesingle{}entité Box. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!create\+Box\+View\+Model@{create\+Box\+View\+Model}}
+\index{create\+Box\+View\+Model@{create\+Box\+View\+Model}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{create\+Box\+View\+Model}{createBoxViewModel}}]{\setlength{\rightskip}{0pt plus 5cm}Create\+Box\+View\+Model Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+create\+Box\+View\+Model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_aca1f0f5d93687b6dec26894d54ff2b2d}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_aca1f0f5d93687b6dec26894d54ff2b2d}
+
+
+Stock le view model de la page de création d\textquotesingle{}une boite (ici le view model à tester). 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Localization\+Service} Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_aaefad9e2f283139c6df197b6a9b6488d}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_aaefad9e2f283139c6df197b6a9b6488d}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de localization. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Navigation\+Service} Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a4b133a0a51f3a1fccdbfe2c4e110c526}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a4b133a0a51f3a1fccdbfe2c4e110c526}
+
+
+Stock le service de navigation fictif. 
+
+\index{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}!storage\+Service@{storage\+Service}}
+\index{storage\+Service@{storage\+Service}!Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Create\+Box\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{storage\+Service}{storageService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Storage\+Service} Boxes.\+Tests.\+Create\+Box\+View\+Model\+Tests.\+storage\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a0f47944eb8fc4ec9d3fa19aef2e597a4}{}\label{class_boxes_1_1_tests_1_1_create_box_view_model_tests_a0f47944eb8fc4ec9d3fa19aef2e597a4}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de stockage local. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes.\+Tests/\hyperlink{_create_box_view_model_tests_8cs}{Create\+Box\+View\+Model\+Tests.\+cs}\end{DoxyCompactItemize}

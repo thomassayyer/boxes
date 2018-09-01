@@ -1,0 +1,230 @@
+\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model}{}\section{Référence de la classe Boxes.\+View\+Models.\+Edit\+Box\+View\+Model}
+\label{class_boxes_1_1_view_models_1_1_edit_box_view_model}\index{Boxes.\+View\+Models.\+Edit\+Box\+View\+Model@{Boxes.\+View\+Models.\+Edit\+Box\+View\+Model}}
+
+
+View model de la page d\textquotesingle{}édition d\textquotesingle{}une boite.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+View\+Models.\+Edit\+Box\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_view_models_1_1_edit_box_view_model}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a3e676dec2417a9f9c0eb9d8b8bfdc6cc}{Edit\+Box\+View\+Model} (\hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service}{I\+Box\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a35bb4b67f667937380b5beed177b6ae8}{box\+Service}, I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a5af96228bc2a2bebdd4372862829c46d}{navigation\+Service}, \hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_afe7557739bc131aa155ccd6812df37c4}{localization\+Service})
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré qui initialise les propriétés du view model. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a55bd2fdf17df409ac8125f5cb5853056}{Initialize} (\hyperlink{class_boxes_1_1_models_1_1_box}{Box} box)
+\begin{DoxyCompactList}\small\item\em Effectue les opérations qui doivent s\textquotesingle{}exécuter pour chaque navigation qui s\textquotesingle{}effectue sur la page d\textquotesingle{}édition d\textquotesingle{}une boite. \end{DoxyCompactList}\item 
+override void \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a9edff57d0ca2a5565af61d0ed68cfb08}{Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue toute les opérations qui doivent s\textquotesingle{}exécuter dès que l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}édition d\textquotesingle{}une boite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a748a7914cb47ab2734bdc748e23164e6}{Is\+Updating}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Est-\/ce que la boite est en train d\textquotesingle{}être modifiée ? \end{DoxyCompactList}\item 
+int \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a2fadb1f4b9f62da43e871d6164be76e2}{Id}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Id de la boite. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_af854468250ed81309d852290981bae5b}{Title}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Titre de la boite. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a4639fb722a8e57e315ad69ad20906c4a}{Description}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Description de la boite. \end{DoxyCompactList}\item 
+Relay\+Command \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a564a5a2602c29685d7939e20e5dc1f81}{Update\+Box\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande d\textquotesingle{}édition de la boite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_af70fdcc783221589824ef5000f000b39}{Can\+Update\+Box\+Execute} ()
+\begin{DoxyCompactList}\small\item\em Détermine si la commande d\textquotesingle{}édition d\textquotesingle{}une boite peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+async void \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a52745545a871a523a4e66d70f172e325}{Update\+Box} ()
+\begin{DoxyCompactList}\small\item\em Modifie la boite. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_boxes_1_1_services_1_1_box_1_1_i_box_service}{I\+Box\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a35bb4b67f667937380b5beed177b6ae8}{box\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Box. \end{DoxyCompactList}\item 
+I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a5af96228bc2a2bebdd4372862829c46d}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation. \end{DoxyCompactList}\item 
+\hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_afe7557739bc131aa155ccd6812df37c4}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de localization. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a4c9a3ff1136d89cb873a0af3dd77a25a}{is\+Updating}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Is\+Updating}. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a1726155b5f3c90391303fe6842745f2b}{title}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Title}. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_edit_box_view_model_a6f5f86d4704d201e886e8a92dd897889}{description}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Description}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+View model de la page d\textquotesingle{}édition d\textquotesingle{}une boite. 
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!Edit\+Box\+View\+Model@{Edit\+Box\+View\+Model}}
+\index{Edit\+Box\+View\+Model@{Edit\+Box\+View\+Model}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{Edit\+Box\+View\+Model(\+I\+Box\+Service box\+Service, I\+Navigation\+Service navigation\+Service, I\+Localization\+Service localization\+Service)}{EditBoxViewModel(IBoxService boxService, INavigationService navigationService, ILocalizationService localizationService)}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+Edit\+Box\+View\+Model (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Box\+Service}}]{box\+Service, }
+\item[{I\+Navigation\+Service}]{navigation\+Service, }
+\item[{{\bf I\+Localization\+Service}}]{localization\+Service}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a3e676dec2417a9f9c0eb9d8b8bfdc6cc}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a3e676dec2417a9f9c0eb9d8b8bfdc6cc}
+
+
+Constructeur paramétré qui initialise les propriétés du view model. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em box\+Service} & Instance du service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Box. \\
+\hline
+{\em navigation\+Service} & Instance du service de navigation. \\
+\hline
+{\em localization\+Service} & Instance du service d\textquotesingle{}accès aux données de localization. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!Can\+Update\+Box\+Execute@{Can\+Update\+Box\+Execute}}
+\index{Can\+Update\+Box\+Execute@{Can\+Update\+Box\+Execute}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{Can\+Update\+Box\+Execute()}{CanUpdateBoxExecute()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+Can\+Update\+Box\+Execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_af70fdcc783221589824ef5000f000b39}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_af70fdcc783221589824ef5000f000b39}
+
+
+Détermine si la commande d\textquotesingle{}édition d\textquotesingle{}une boite peut s\textquotesingle{}exécuter. 
+
+\begin{DoxyReturn}{Renvoie}
+Est-\/ce que la commande d\textquotesingle{}édition d\textquotesingle{}une boite peut s\textquotesingle{}exécuter ? 
+\end{DoxyReturn}
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{Cleanup()}{Cleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a9edff57d0ca2a5565af61d0ed68cfb08}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a9edff57d0ca2a5565af61d0ed68cfb08}
+
+
+Effectue toute les opérations qui doivent s\textquotesingle{}exécuter dès que l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}édition d\textquotesingle{}une boite. 
+
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{Initialize(\+Box box)}{Initialize(Box box)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+Initialize (
+\begin{DoxyParamCaption}
+\item[{{\bf Box}}]{box}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a55bd2fdf17df409ac8125f5cb5853056}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a55bd2fdf17df409ac8125f5cb5853056}
+
+
+Effectue les opérations qui doivent s\textquotesingle{}exécuter pour chaque navigation qui s\textquotesingle{}effectue sur la page d\textquotesingle{}édition d\textquotesingle{}une boite. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em box} & Boite à modifier. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!Update\+Box@{Update\+Box}}
+\index{Update\+Box@{Update\+Box}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{Update\+Box()}{UpdateBox()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+Update\+Box (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a52745545a871a523a4e66d70f172e325}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a52745545a871a523a4e66d70f172e325}
+
+
+Modifie la boite. 
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!box\+Service@{box\+Service}}
+\index{box\+Service@{box\+Service}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{box\+Service}{boxService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Box\+Service} Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+box\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a35bb4b67f667937380b5beed177b6ae8}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a35bb4b67f667937380b5beed177b6ae8}
+
+
+Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité Box. 
+
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!description@{description}}
+\index{description@{description}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{description}{description}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+description\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a6f5f86d4704d201e886e8a92dd897889}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a6f5f86d4704d201e886e8a92dd897889}
+
+
+Stock la valeur de la propriété {\ttfamily Description}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!is\+Updating@{is\+Updating}}
+\index{is\+Updating@{is\+Updating}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{is\+Updating}{isUpdating}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+is\+Updating\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a4c9a3ff1136d89cb873a0af3dd77a25a}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a4c9a3ff1136d89cb873a0af3dd77a25a}
+
+
+Stock la valeur de la propriété {\ttfamily Is\+Updating}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Localization\+Service} Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_afe7557739bc131aa155ccd6812df37c4}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_afe7557739bc131aa155ccd6812df37c4}
+
+
+Stock le service d\textquotesingle{}accès aux données de localization. 
+
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Navigation\+Service Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a5af96228bc2a2bebdd4372862829c46d}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a5af96228bc2a2bebdd4372862829c46d}
+
+
+Stock le service de navigation. 
+
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!title@{title}}
+\index{title@{title}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{title}{title}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+title\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a1726155b5f3c90391303fe6842745f2b}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a1726155b5f3c90391303fe6842745f2b}
+
+
+Stock la valeur de la propriété {\ttfamily Title}. 
+
+
+
+\subsection{Documentation des propriétés}
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!Description@{Description}}
+\index{Description@{Description}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{Description}{Description}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+Description\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a4639fb722a8e57e315ad69ad20906c4a}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a4639fb722a8e57e315ad69ad20906c4a}
+
+
+Description de la boite. 
+
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!Id@{Id}}
+\index{Id@{Id}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{Id}{Id}}]{\setlength{\rightskip}{0pt plus 5cm}int Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+Id\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a2fadb1f4b9f62da43e871d6164be76e2}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a2fadb1f4b9f62da43e871d6164be76e2}
+
+
+Id de la boite. 
+
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!Is\+Updating@{Is\+Updating}}
+\index{Is\+Updating@{Is\+Updating}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{Is\+Updating}{IsUpdating}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+Is\+Updating\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a748a7914cb47ab2734bdc748e23164e6}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a748a7914cb47ab2734bdc748e23164e6}
+
+
+Est-\/ce que la boite est en train d\textquotesingle{}être modifiée ? 
+
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!Title@{Title}}
+\index{Title@{Title}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{Title}{Title}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+Title\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_af854468250ed81309d852290981bae5b}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_af854468250ed81309d852290981bae5b}
+
+
+Titre de la boite. 
+
+\index{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}!Update\+Box\+Command@{Update\+Box\+Command}}
+\index{Update\+Box\+Command@{Update\+Box\+Command}!Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model@{Boxes\+::\+View\+Models\+::\+Edit\+Box\+View\+Model}}
+\subsubsection[{\texorpdfstring{Update\+Box\+Command}{UpdateBoxCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command Boxes.\+View\+Models.\+Edit\+Box\+View\+Model.\+Update\+Box\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_edit_box_view_model_a564a5a2602c29685d7939e20e5dc1f81}{}\label{class_boxes_1_1_view_models_1_1_edit_box_view_model_a564a5a2602c29685d7939e20e5dc1f81}
+
+
+Commande d\textquotesingle{}édition de la boite. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+View\+Models/\hyperlink{_edit_box_view_model_8cs}{Edit\+Box\+View\+Model.\+cs}\end{DoxyCompactItemize}

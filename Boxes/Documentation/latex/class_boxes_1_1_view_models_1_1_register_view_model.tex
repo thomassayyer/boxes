@@ -1,0 +1,310 @@
+\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model}{}\section{Référence de la classe Boxes.\+View\+Models.\+Register\+View\+Model}
+\label{class_boxes_1_1_view_models_1_1_register_view_model}\index{Boxes.\+View\+Models.\+Register\+View\+Model@{Boxes.\+View\+Models.\+Register\+View\+Model}}
+
+
+View model de la page d\textquotesingle{}inscription.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+View\+Models.\+Register\+View\+Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.576687cm]{class_boxes_1_1_view_models_1_1_register_view_model}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a4b1dc5b91c6d02f442729cec8b04a399}{Register\+View\+Model} (\hyperlink{interface_boxes_1_1_services_1_1_user_1_1_i_user_service}{I\+User\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_acb915d2826a23f07e311c904ddf6fac9}{user\+Service}, I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_afcceb72df99eab11056fff6f93847e17}{navigation\+Service}, \hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a7ebf08d118dd2ad8ef90d36373b1185f}{localization\+Service})
+\begin{DoxyCompactList}\small\item\em Constructeur paramétré qui initialize les propriétés du view model. \end{DoxyCompactList}\item 
+override void \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_aaf8c4826e523ddd70f2d47bdc4182586}{Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue les opération qui s\textquotesingle{}exécute à chaque fois que l\textquotesingle{}utilisateur quitte le formulaire d\textquotesingle{}inscription. \end{DoxyCompactList}\item 
+override void \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a22d6527067ce51cae0e52ec7fb98fb6a}{Validate} ()
+\begin{DoxyCompactList}\small\item\em Effectue l\textquotesingle{}opération de validation.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_ade9e9b19aa0dd12d6a2a602b31589028}{First\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Prénom entré par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_aa472c0e4d5e0b86954a8a9f8b6293c5f}{Last\+Name}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Nom entré par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_ad1f7bd5d2949698e68fae56f4b87980e}{Phone}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Numéro de tél. entré par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+Date\+Time\+Offset \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a6c9e918e6c3b4b4865c8ccd5956867ac}{Birth\+Date}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Date de naissance entrée par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_aaf670271c9923b35ba525b1d04785511}{Email}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Adresse e-\/mail entrée par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a88e8df0efe69ebd8fa951b76a2c8018c}{Password}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Mot de passe entré par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a858d39f447598841d607c8299ff1abb5}{Password\+Confirmation}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Mot de passe de confirmation entré par l\textquotesingle{}utilisateur. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_aadd1c445ed909526cf2ff9ffa1604e7c}{Is\+Registering}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Est-\/ce que l\textquotesingle{}inscription de l\textquotesingle{}utilisateur est en cours ? \end{DoxyCompactList}\item 
+Relay\+Command \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a21f0b17057452c9ac974122df5fdbc0e}{Register\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande d\textquotesingle{}inscription. \end{DoxyCompactList}\item 
+Relay\+Command \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a995a3cce93db8b0f82262ce814c52514}{Go\+Back\+Command}\hspace{0.3cm}{\ttfamily  \mbox{[}get, private set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Commande de retour à la page précédente. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a8eb66857f9959a2136094567aa44e548}{Can\+Register\+Execute} ()
+\begin{DoxyCompactList}\small\item\em Détermine si la commande d\textquotesingle{}inscription peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+async void \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_add19d4be0a438b916e9b6109f03b5f6f}{Register} ()
+\begin{DoxyCompactList}\small\item\em Enregistre un nouvel utilisateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_boxes_1_1_services_1_1_user_1_1_i_user_service}{I\+User\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_acb915d2826a23f07e311c904ddf6fac9}{user\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité User. \end{DoxyCompactList}\item 
+I\+Navigation\+Service \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_afcceb72df99eab11056fff6f93847e17}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation. \end{DoxyCompactList}\item 
+\hyperlink{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}{I\+Localization\+Service} \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a7ebf08d118dd2ad8ef90d36373b1185f}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données de localization. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_ae36409fb1c802e10b570b441fd388884}{first\+Name}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily First\+Name}. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_ac5c719764dfe7bd968a92f012ef5e4b7}{last\+Name}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Last\+Name}. \end{DoxyCompactList}\item 
+Date\+Time\+Offset \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a6fd9dab40e9ba9e93904072a061f5a6a}{birth\+Date}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Birth\+Date}. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a00629f6700b5704fe4c8c6dfded6d011}{email}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Email}. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a3aead86ad1596454c581f6cc9fd02c76}{password}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Password}. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a034d4b47eaa785324c2dd5f665feef66}{password\+Confirmation}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Password\+Confirmation}. \end{DoxyCompactList}\item 
+bool \hyperlink{class_boxes_1_1_view_models_1_1_register_view_model_a59a3575b50e2d42c2cf48d09421f4562}{is\+Registering}
+\begin{DoxyCompactList}\small\item\em Stock la valeur de la propriété {\ttfamily Is\+Registering}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+View model de la page d\textquotesingle{}inscription. 
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Register\+View\+Model@{Register\+View\+Model}}
+\index{Register\+View\+Model@{Register\+View\+Model}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Register\+View\+Model(\+I\+User\+Service user\+Service, I\+Navigation\+Service navigation\+Service, I\+Localization\+Service localization\+Service)}{RegisterViewModel(IUserService userService, INavigationService navigationService, ILocalizationService localizationService)}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+View\+Models.\+Register\+View\+Model.\+Register\+View\+Model (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+User\+Service}}]{user\+Service, }
+\item[{I\+Navigation\+Service}]{navigation\+Service, }
+\item[{{\bf I\+Localization\+Service}}]{localization\+Service}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a4b1dc5b91c6d02f442729cec8b04a399}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a4b1dc5b91c6d02f442729cec8b04a399}
+
+
+Constructeur paramétré qui initialize les propriétés du view model. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em user\+Service} & Instance du service d\textquotesingle{}accès aux données de l\textquotesingle{}entité User. \\
+\hline
+{\em navigation\+Service} & Instance du service de navigation. \\
+\hline
+{\em localization\+Service} & Instance du service d\textquotesingle{}accès aux données de localization. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Can\+Register\+Execute@{Can\+Register\+Execute}}
+\index{Can\+Register\+Execute@{Can\+Register\+Execute}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Can\+Register\+Execute()}{CanRegisterExecute()}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Register\+View\+Model.\+Can\+Register\+Execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a8eb66857f9959a2136094567aa44e548}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a8eb66857f9959a2136094567aa44e548}
+
+
+Détermine si la commande d\textquotesingle{}inscription peut s\textquotesingle{}exécuter. 
+
+\begin{DoxyReturn}{Renvoie}
+Est-\/ce que la commande d\textquotesingle{}inscription peut s\textquotesingle{}exécuter ? 
+\end{DoxyReturn}
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Cleanup()}{Cleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Boxes.\+View\+Models.\+Register\+View\+Model.\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_aaf8c4826e523ddd70f2d47bdc4182586}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_aaf8c4826e523ddd70f2d47bdc4182586}
+
+
+Effectue les opération qui s\textquotesingle{}exécute à chaque fois que l\textquotesingle{}utilisateur quitte le formulaire d\textquotesingle{}inscription. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Register@{Register}}
+\index{Register@{Register}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Register()}{Register()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Boxes.\+View\+Models.\+Register\+View\+Model.\+Register (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_add19d4be0a438b916e9b6109f03b5f6f}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_add19d4be0a438b916e9b6109f03b5f6f}
+
+
+Enregistre un nouvel utilisateur. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Validate@{Validate}}
+\index{Validate@{Validate}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Validate()}{Validate()}}]{\setlength{\rightskip}{0pt plus 5cm}override void Boxes.\+View\+Models.\+Register\+View\+Model.\+Validate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a22d6527067ce51cae0e52ec7fb98fb6a}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a22d6527067ce51cae0e52ec7fb98fb6a}
+
+
+Effectue l\textquotesingle{}opération de validation.  
+
+
+
+Implémente \hyperlink{class_boxes_1_1_auxiliary_1_1_validation_1_1_validatable_view_model_base_a1309e6babfd5e01a5e3a792a5a1b4fa1}{Boxes.\+Auxiliary.\+Validation.\+Validatable\+View\+Model\+Base}.
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!birth\+Date@{birth\+Date}}
+\index{birth\+Date@{birth\+Date}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{birth\+Date}{birthDate}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+Time\+Offset Boxes.\+View\+Models.\+Register\+View\+Model.\+birth\+Date\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a6fd9dab40e9ba9e93904072a061f5a6a}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a6fd9dab40e9ba9e93904072a061f5a6a}
+
+
+Stock la valeur de la propriété {\ttfamily Birth\+Date}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!email@{email}}
+\index{email@{email}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{email}{email}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Register\+View\+Model.\+email\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a00629f6700b5704fe4c8c6dfded6d011}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a00629f6700b5704fe4c8c6dfded6d011}
+
+
+Stock la valeur de la propriété {\ttfamily Email}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!first\+Name@{first\+Name}}
+\index{first\+Name@{first\+Name}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{first\+Name}{firstName}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Register\+View\+Model.\+first\+Name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_ae36409fb1c802e10b570b441fd388884}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_ae36409fb1c802e10b570b441fd388884}
+
+
+Stock la valeur de la propriété {\ttfamily First\+Name}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!is\+Registering@{is\+Registering}}
+\index{is\+Registering@{is\+Registering}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{is\+Registering}{isRegistering}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Register\+View\+Model.\+is\+Registering\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a59a3575b50e2d42c2cf48d09421f4562}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a59a3575b50e2d42c2cf48d09421f4562}
+
+
+Stock la valeur de la propriété {\ttfamily Is\+Registering}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!last\+Name@{last\+Name}}
+\index{last\+Name@{last\+Name}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{last\+Name}{lastName}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Register\+View\+Model.\+last\+Name\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_ac5c719764dfe7bd968a92f012ef5e4b7}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_ac5c719764dfe7bd968a92f012ef5e4b7}
+
+
+Stock la valeur de la propriété {\ttfamily Last\+Name}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Localization\+Service} Boxes.\+View\+Models.\+Register\+View\+Model.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a7ebf08d118dd2ad8ef90d36373b1185f}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a7ebf08d118dd2ad8ef90d36373b1185f}
+
+
+Stock le service d\textquotesingle{}accès aux données de localization. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}I\+Navigation\+Service Boxes.\+View\+Models.\+Register\+View\+Model.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_afcceb72df99eab11056fff6f93847e17}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_afcceb72df99eab11056fff6f93847e17}
+
+
+Stock le service de navigation. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!password@{password}}
+\index{password@{password}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{password}{password}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Register\+View\+Model.\+password\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a3aead86ad1596454c581f6cc9fd02c76}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a3aead86ad1596454c581f6cc9fd02c76}
+
+
+Stock la valeur de la propriété {\ttfamily Password}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!password\+Confirmation@{password\+Confirmation}}
+\index{password\+Confirmation@{password\+Confirmation}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{password\+Confirmation}{passwordConfirmation}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Register\+View\+Model.\+password\+Confirmation\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a034d4b47eaa785324c2dd5f665feef66}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a034d4b47eaa785324c2dd5f665feef66}
+
+
+Stock la valeur de la propriété {\ttfamily Password\+Confirmation}. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!user\+Service@{user\+Service}}
+\index{user\+Service@{user\+Service}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{user\+Service}{userService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+User\+Service} Boxes.\+View\+Models.\+Register\+View\+Model.\+user\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_acb915d2826a23f07e311c904ddf6fac9}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_acb915d2826a23f07e311c904ddf6fac9}
+
+
+Stock le service d\textquotesingle{}accès aux données de l\textquotesingle{}entité User. 
+
+
+
+\subsection{Documentation des propriétés}
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Birth\+Date@{Birth\+Date}}
+\index{Birth\+Date@{Birth\+Date}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Birth\+Date}{BirthDate}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+Time\+Offset Boxes.\+View\+Models.\+Register\+View\+Model.\+Birth\+Date\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a6c9e918e6c3b4b4865c8ccd5956867ac}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a6c9e918e6c3b4b4865c8ccd5956867ac}
+
+
+Date de naissance entrée par l\textquotesingle{}utilisateur. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Email@{Email}}
+\index{Email@{Email}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Email}{Email}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Register\+View\+Model.\+Email\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_aaf670271c9923b35ba525b1d04785511}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_aaf670271c9923b35ba525b1d04785511}
+
+
+Adresse e-\/mail entrée par l\textquotesingle{}utilisateur. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!First\+Name@{First\+Name}}
+\index{First\+Name@{First\+Name}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{First\+Name}{FirstName}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Register\+View\+Model.\+First\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_ade9e9b19aa0dd12d6a2a602b31589028}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_ade9e9b19aa0dd12d6a2a602b31589028}
+
+
+Prénom entré par l\textquotesingle{}utilisateur. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Go\+Back\+Command@{Go\+Back\+Command}}
+\index{Go\+Back\+Command@{Go\+Back\+Command}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Go\+Back\+Command}{GoBackCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command Boxes.\+View\+Models.\+Register\+View\+Model.\+Go\+Back\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a995a3cce93db8b0f82262ce814c52514}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a995a3cce93db8b0f82262ce814c52514}
+
+
+Commande de retour à la page précédente. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Is\+Registering@{Is\+Registering}}
+\index{Is\+Registering@{Is\+Registering}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Is\+Registering}{IsRegistering}}]{\setlength{\rightskip}{0pt plus 5cm}bool Boxes.\+View\+Models.\+Register\+View\+Model.\+Is\+Registering\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_aadd1c445ed909526cf2ff9ffa1604e7c}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_aadd1c445ed909526cf2ff9ffa1604e7c}
+
+
+Est-\/ce que l\textquotesingle{}inscription de l\textquotesingle{}utilisateur est en cours ? 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Last\+Name@{Last\+Name}}
+\index{Last\+Name@{Last\+Name}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Last\+Name}{LastName}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Register\+View\+Model.\+Last\+Name\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_aa472c0e4d5e0b86954a8a9f8b6293c5f}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_aa472c0e4d5e0b86954a8a9f8b6293c5f}
+
+
+Nom entré par l\textquotesingle{}utilisateur. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Password@{Password}}
+\index{Password@{Password}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Password}{Password}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Register\+View\+Model.\+Password\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a88e8df0efe69ebd8fa951b76a2c8018c}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a88e8df0efe69ebd8fa951b76a2c8018c}
+
+
+Mot de passe entré par l\textquotesingle{}utilisateur. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Password\+Confirmation@{Password\+Confirmation}}
+\index{Password\+Confirmation@{Password\+Confirmation}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Password\+Confirmation}{PasswordConfirmation}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Register\+View\+Model.\+Password\+Confirmation\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a858d39f447598841d607c8299ff1abb5}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a858d39f447598841d607c8299ff1abb5}
+
+
+Mot de passe de confirmation entré par l\textquotesingle{}utilisateur. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Phone@{Phone}}
+\index{Phone@{Phone}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Phone}{Phone}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+View\+Models.\+Register\+View\+Model.\+Phone\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_ad1f7bd5d2949698e68fae56f4b87980e}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_ad1f7bd5d2949698e68fae56f4b87980e}
+
+
+Numéro de tél. entré par l\textquotesingle{}utilisateur. 
+
+\index{Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}!Register\+Command@{Register\+Command}}
+\index{Register\+Command@{Register\+Command}!Boxes\+::\+View\+Models\+::\+Register\+View\+Model@{Boxes\+::\+View\+Models\+::\+Register\+View\+Model}}
+\subsubsection[{\texorpdfstring{Register\+Command}{RegisterCommand}}]{\setlength{\rightskip}{0pt plus 5cm}Relay\+Command Boxes.\+View\+Models.\+Register\+View\+Model.\+Register\+Command\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private set]}}\hypertarget{class_boxes_1_1_view_models_1_1_register_view_model_a21f0b17057452c9ac974122df5fdbc0e}{}\label{class_boxes_1_1_view_models_1_1_register_view_model_a21f0b17057452c9ac974122df5fdbc0e}
+
+
+Commande d\textquotesingle{}inscription. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+View\+Models/\hyperlink{_register_view_model_8cs}{Register\+View\+Model.\+cs}\end{DoxyCompactItemize}

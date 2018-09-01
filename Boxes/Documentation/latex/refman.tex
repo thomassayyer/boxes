@@ -1,0 +1,294 @@
+\documentclass[twoside]{book}
+
+% Packages required by doxygen
+\usepackage{fixltx2e}
+\usepackage{calc}
+\usepackage{doxygen}
+\usepackage[export]{adjustbox} % also loads graphicx
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{makeidx}
+\usepackage{multicol}
+\usepackage{multirow}
+\PassOptionsToPackage{warn}{textcomp}
+\usepackage{textcomp}
+\usepackage[nointegrals]{wasysym}
+\usepackage[table]{xcolor}
+
+% NLS support packages
+\usepackage[french]{babel}
+
+% Font selection
+\usepackage[T1]{fontenc}
+\usepackage[scaled=.90]{helvet}
+\usepackage{courier}
+\usepackage{amssymb}
+\usepackage{sectsty}
+\renewcommand{\familydefault}{\sfdefault}
+\allsectionsfont{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\renewcommand{\DoxyLabelFont}{%
+  \fontseries{bc}\selectfont%
+  \color{darkgray}%
+}
+\newcommand{\+}{\discretionary{\mbox{\scriptsize$\hookleftarrow$}}{}{}}
+
+% Page & text layout
+\usepackage{geometry}
+\geometry{%
+  a4paper,%
+  top=2.5cm,%
+  bottom=2.5cm,%
+  left=2.5cm,%
+  right=2.5cm%
+}
+\tolerance=750
+\hfuzz=15pt
+\hbadness=750
+\setlength{\emergencystretch}{15pt}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{3ex plus 2ex minus 2ex}
+\makeatletter
+\renewcommand{\paragraph}{%
+  \@startsection{paragraph}{4}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@parafont%
+  }%
+}
+\renewcommand{\subparagraph}{%
+  \@startsection{subparagraph}{5}{0ex}{-1.0ex}{1.0ex}{%
+    \normalfont\normalsize\bfseries\SS@subparafont%
+  }%
+}
+\makeatother
+
+% Headers & footers
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead[LE]{\fancyplain{}{\bfseries\thepage}}
+\fancyhead[CE]{\fancyplain{}{}}
+\fancyhead[RE]{\fancyplain{}{\bfseries\leftmark}}
+\fancyhead[LO]{\fancyplain{}{\bfseries\rightmark}}
+\fancyhead[CO]{\fancyplain{}{}}
+\fancyhead[RO]{\fancyplain{}{\bfseries\thepage}}
+\fancyfoot[LE]{\fancyplain{}{}}
+\fancyfoot[CE]{\fancyplain{}{}}
+\fancyfoot[RE]{\fancyplain{}{\bfseries\scriptsize Généré par Doxygen }}
+\fancyfoot[LO]{\fancyplain{}{\bfseries\scriptsize Généré par Doxygen }}
+\fancyfoot[CO]{\fancyplain{}{}}
+\fancyfoot[RO]{\fancyplain{}{}}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\chaptermark}[1]{%
+  \markboth{#1}{}%
+}
+\renewcommand{\sectionmark}[1]{%
+  \markright{\thesection\ #1}%
+}
+
+% Indices & bibliography
+\usepackage{natbib}
+\usepackage[titles]{tocloft}
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{5}
+\makeindex
+
+% Hyperlinks (required, but should be loaded last)
+\usepackage{ifpdf}
+\ifpdf
+  \usepackage[pdftex,pagebackref=true]{hyperref}
+\else
+  \usepackage[ps2pdf,pagebackref=true]{hyperref}
+\fi
+\hypersetup{%
+  colorlinks=true,%
+  linkcolor=blue,%
+  citecolor=blue,%
+  unicode%
+}
+
+% Custom commands
+\newcommand{\clearemptydoublepage}{%
+  \newpage{\pagestyle{empty}\cleardoublepage}%
+}
+
+\usepackage{caption}
+\captionsetup{labelsep=space,justification=centering,font={bf},singlelinecheck=off,skip=4pt,position=top}
+
+%===== C O N T E N T S =====
+
+\begin{document}
+
+% Titlepage & ToC
+\hypersetup{pageanchor=false,
+             bookmarksnumbered=true,
+             pdfencoding=unicode
+            }
+\pagenumbering{roman}
+\begin{titlepage}
+\vspace*{7cm}
+\begin{center}%
+{\Large βoxes -\/ Réseau social \\[1ex]\large 1.\+1.\+1 }\\
+\vspace*{1cm}
+{\large Généré par Doxygen 1.8.11}\\
+\end{center}
+\end{titlepage}
+\clearemptydoublepage
+\tableofcontents
+\clearemptydoublepage
+\pagenumbering{arabic}
+\hypersetup{pageanchor=true}
+
+%--- Begin generated contents ---
+\chapter{Index des espaces de nommage}
+\input{namespaces}
+\chapter{Index hiérarchique}
+\input{hierarchy}
+\chapter{Index des classes}
+\input{annotated}
+\chapter{Index des fichiers}
+\input{files}
+\chapter{Documentation des espaces de nommage}
+\input{namespace_boxes}
+\input{namespace_boxes_1_1_auxiliary}
+\input{namespace_boxes_1_1_auxiliary_1_1_converters}
+\input{namespace_boxes_1_1_auxiliary_1_1_exceptions}
+\input{namespace_boxes_1_1_auxiliary_1_1_messaging}
+\input{namespace_boxes_1_1_auxiliary_1_1_validation}
+\input{namespace_boxes_1_1_models}
+\input{namespace_boxes_1_1_services}
+\input{namespace_boxes_1_1_services_1_1_box}
+\input{namespace_boxes_1_1_services_1_1_comment}
+\input{namespace_boxes_1_1_services_1_1_localization}
+\input{namespace_boxes_1_1_services_1_1_navigation}
+\input{namespace_boxes_1_1_services_1_1_post}
+\input{namespace_boxes_1_1_services_1_1_storage}
+\input{namespace_boxes_1_1_services_1_1_user}
+\input{namespace_boxes_1_1_view_models}
+\input{namespace_boxes_1_1_views}
+\chapter{Documentation des classes}
+\input{class_boxes_1_1_app}
+\input{class_boxes_1_1_models_1_1_box}
+\input{class_boxes_1_1_views_1_1_box_page}
+\input{class_boxes_1_1_services_1_1_box_1_1_box_service}
+\input{class_boxes_1_1_view_models_1_1_box_view_model}
+\input{class_boxes_1_1_models_1_1_comment}
+\input{class_boxes_1_1_services_1_1_comment_1_1_comment_service}
+\input{class_boxes_1_1_views_1_1_create_box_page}
+\input{class_boxes_1_1_view_models_1_1_create_box_view_model}
+\input{class_boxes_1_1_services_1_1_box_1_1_design_box_service}
+\input{class_boxes_1_1_services_1_1_comment_1_1_design_comment_service}
+\input{class_boxes_1_1_services_1_1_post_1_1_design_post_service}
+\input{class_boxes_1_1_services_1_1_storage_1_1_design_storage_service}
+\input{class_boxes_1_1_services_1_1_user_1_1_design_user_service}
+\input{class_boxes_1_1_views_1_1_discover_page}
+\input{class_boxes_1_1_view_models_1_1_discover_view_model}
+\input{class_boxes_1_1_views_1_1_edit_box_page}
+\input{class_boxes_1_1_view_models_1_1_edit_box_view_model}
+\input{class_boxes_1_1_auxiliary_1_1_messaging_1_1_generic_error_message}
+\input{class_boxes_1_1_views_1_1_home_page}
+\input{class_boxes_1_1_view_models_1_1_home_view_model}
+\input{class_boxes_1_1_services_1_1_http_service}
+\input{interface_boxes_1_1_services_1_1_box_1_1_i_box_service}
+\input{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service}
+\input{interface_boxes_1_1_services_1_1_localization_1_1_i_localization_service}
+\input{class_boxes_1_1_auxiliary_1_1_converters_1_1_inverse_visibility_converter}
+\input{interface_boxes_1_1_services_1_1_post_1_1_i_post_service}
+\input{class_boxes_1_1_auxiliary_1_1_messaging_1_1_is_back_button_visible_message}
+\input{interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service}
+\input{class_boxes_1_1_auxiliary_1_1_converters_1_1_item_clicked_converter}
+\input{interface_boxes_1_1_services_1_1_user_1_1_i_user_service}
+\input{interface_boxes_1_1_auxiliary_1_1_validation_1_1_i_validatable_view_model}
+\input{class_boxes_1_1_services_1_1_localization_1_1_localization_service}
+\input{class_boxes_1_1_views_1_1_login_page}
+\input{class_boxes_1_1_view_models_1_1_login_view_model}
+\input{class_boxes_1_1_auxiliary_1_1_converters_1_1_max_length_converter}
+\input{class_boxes_1_1_views_1_1_my_boxes_page}
+\input{class_boxes_1_1_view_models_1_1_my_boxes_view_model}
+\input{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service}
+\input{class_boxes_1_1_models_1_1_post}
+\input{class_boxes_1_1_views_1_1_post_page}
+\input{class_boxes_1_1_services_1_1_post_1_1_post_service}
+\input{class_boxes_1_1_view_models_1_1_post_view_model}
+\input{class_boxes_1_1_views_1_1_register_page}
+\input{class_boxes_1_1_view_models_1_1_register_view_model}
+\input{class_boxes_1_1_views_1_1_shell}
+\input{class_boxes_1_1_auxiliary_1_1_messaging_1_1_shell_title_message}
+\input{class_boxes_1_1_view_models_1_1_shell_view_model}
+\input{class_boxes_1_1_services_1_1_storage_1_1_storage_service}
+\input{class_boxes_1_1_models_1_1_user}
+\input{class_boxes_1_1_services_1_1_user_1_1_user_service}
+\input{class_boxes_1_1_auxiliary_1_1_validation_1_1_validatable_view_model_base}
+\input{class_boxes_1_1_auxiliary_1_1_messaging_1_1_validation_error_message}
+\input{class_boxes_1_1_view_models_1_1_view_model_locator}
+\input{class_boxes_1_1_auxiliary_1_1_converters_1_1_visibility_converter}
+\input{class_boxes_1_1_auxiliary_1_1_exceptions_1_1_web_service_exception}
+\chapter{Documentation des fichiers}
+\input{_app_8xaml_8cs}
+\input{_inverse_visibility_converter_8cs}
+\input{_item_clicked_converter_8cs}
+\input{_max_length_converter_8cs}
+\input{_visibility_converter_8cs}
+\input{_web_service_exception_8cs}
+\input{_generic_error_message_8cs}
+\input{_is_back_button_visible_message_8cs}
+\input{_shell_title_message_8cs}
+\input{_validation_error_message_8cs}
+\input{_i_validatable_view_model_8cs}
+\input{_validatable_view_model_base_8cs}
+\input{_box_8cs}
+\input{_comment_8cs}
+\input{_post_8cs}
+\input{_user_8cs}
+\input{_assembly_info_8cs}
+\input{_box_service_8cs}
+\input{_design_box_service_8cs}
+\input{_i_box_service_8cs}
+\input{_comment_service_8cs}
+\input{_design_comment_service_8cs}
+\input{_i_comment_service_8cs}
+\input{_http_service_8cs}
+\input{_i_localization_service_8cs}
+\input{_localization_service_8cs}
+\input{_navigation_service_8cs}
+\input{_design_post_service_8cs}
+\input{_i_post_service_8cs}
+\input{_post_service_8cs}
+\input{_design_storage_service_8cs}
+\input{_i_storage_service_8cs}
+\input{_storage_service_8cs}
+\input{_design_user_service_8cs}
+\input{_i_user_service_8cs}
+\input{_user_service_8cs}
+\input{_box_view_model_8cs}
+\input{_create_box_view_model_8cs}
+\input{_discover_view_model_8cs}
+\input{_edit_box_view_model_8cs}
+\input{_home_view_model_8cs}
+\input{_login_view_model_8cs}
+\input{_my_boxes_view_model_8cs}
+\input{_post_view_model_8cs}
+\input{_register_view_model_8cs}
+\input{_shell_view_model_8cs}
+\input{_view_model_locator_8cs}
+\input{_box_page_8xaml_8cs}
+\input{_create_box_page_8xaml_8cs}
+\input{_discover_page_8xaml_8cs}
+\input{_edit_box_page_8xaml_8cs}
+\input{_home_page_8xaml_8cs}
+\input{_login_page_8xaml_8cs}
+\input{_my_boxes_page_8xaml_8cs}
+\input{_post_page_8xaml_8cs}
+\input{_register_page_8xaml_8cs}
+\input{_shell_8xaml_8cs}
+%--- End generated contents ---
+
+% Index
+\backmatter
+\newpage
+\phantomsection
+\clearemptydoublepage
+\addcontentsline{toc}{chapter}{Index}
+\printindex
+
+\end{document}

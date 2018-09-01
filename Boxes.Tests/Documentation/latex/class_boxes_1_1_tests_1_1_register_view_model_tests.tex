@@ -1,0 +1,428 @@
+\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests}{}\section{Référence de la classe Boxes.\+Tests.\+Register\+View\+Model\+Tests}
+\label{class_boxes_1_1_tests_1_1_register_view_model_tests}\index{Boxes.\+Tests.\+Register\+View\+Model\+Tests@{Boxes.\+Tests.\+Register\+View\+Model\+Tests}}
+
+
+Effectue les tests unitaires qui concernent le Register\+View\+Model.  
+
+
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_ac533616780d9eefa72a51d2025a3ac5a}{Tests\+Initialize} ()
+\begin{DoxyCompactList}\small\item\em Effectue les initialisations qui doivent être exécutées avant chaque test. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_ae138690556afef1edc2de6b7aa73f409}{Tests\+Cleanup} ()
+\begin{DoxyCompactList}\small\item\em Effectue les nettoyages de variables devant être faits après l\textquotesingle{}exécution de chaque test. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a6542c339250306476f9a1717d65dc1f7}{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+First\+Name\+Is\+Null} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Prénom\char`\"{} est bien vidé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_ab3157e3c320d70e32088078addab9413}{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Last\+Name\+Is\+Null} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Nom\char`\"{} est bien vidé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a63f5afd45d175eb17e0979e064d4f403}{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Phone\+Is\+Null} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Numéro de tél.\char`\"{} est bien vidé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a1171e9477ca9c1b90880740f0bf34c4e}{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Birth\+Date\+Is\+Null} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Date de naissance\char`\"{} est bien vidé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a15c6b9db02a917578ca07267aaaf6ff4}{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Email\+Is\+Null} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Adresse email\char`\"{} est bien vidé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_ab211efb578d12bb20eabca228cc5751e}{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Is\+Null} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Mot de passe\char`\"{} est bien vidé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a81930cd634bf89550044e02ab43056de}{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Confirmation\+Is\+Null} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Confirmation\char`\"{} est bien vidé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_ae4143feab955f532160cc36f943f2645}{Register\+Command\+\_\+\+Is\+Registering\+\_\+\+Cannot\+Execute} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}inscription est en cours, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a1a773d94a57e92810afca4de22d09f04}{Register\+Command\+\_\+\+First\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute} (string first\+Name)
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de prénom, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_acb8965be90f1c2ffebd2d3ddfd11ca29}{Register\+Command\+\_\+\+Last\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute} (string last\+Name)
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de nom, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a2c365b78cd19824f6ed8427dd7646985}{Register\+Command\+\_\+\+Birth\+Date\+Is\+Null\+\_\+\+Cannot\+Execute} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de date de naissance, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_acb1b3f1f6282077c2bcc4d061cca2111}{Register\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute} (string email)
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas d\textquotesingle{}adresse email, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a6296fbf606faf1914ac8f778ba216f55}{Register\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute} (string password)
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de mot de passe, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a0259bf119ee45060b88a6ad27f8f6dcc}{Register\+Command\+\_\+\+Password\+Confirmation\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute} (string confirmation)
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de mo de passe de confirmation, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_acdf4564b1a3c9672cb5d4fb247938a11}{Register\+Command\+\_\+\+Is\+Not\+Registering\+Required\+Fields\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}inscription n\textquotesingle{}est pas en cours, la commande d\textquotesingle{}inscription peut s\textquotesingle{}exécuter. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a611e31c1b4d3547cf1836744ef72042a}{Register\+Command\+\_\+\+Phone\+Length\+Too\+Long\+\_\+\+Validation\+Error\+Message\+Sent} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre un numéro de téléphone trop long (c-\/à-\/d. suppérieur à 20 chiffres) un message contenant des résultats de validation est envoyé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a2eba1232bbe10748e9d9f8deec3c2348}{Register\+Command\+\_\+\+Phone\+Length\+Too\+Short\+\_\+\+Validation\+Error\+Message\+Sent} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre un numéro de téléphone trop court (c-\/à-\/d. inférieur à 10 chiffres) un message contenant des résultats de validation est envoyé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a06981702e2516f36fed3f32097ce4a40}{Register\+Command\+\_\+\+Email\+Is\+Not\+An\+Email\+\_\+\+Validation\+Error\+Message\+Sent} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas une adresse email valide, un message contenant des résultats de validation est envoyé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_afbe00afb0ad17ce977d8c44136b99606}{Register\+Command\+\_\+\+Passwords\+Not\+Corresponding\+\_\+\+Validation\+Error\+Message\+Sent} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre des mots de passe qui ne correspondent pas, un message contenant des résultats de validation est envoyé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a81c4e95045d61ecea88a7d82c2f3dbbc}{Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+User\+Not\+Created} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre des valeurs qui ne correspondent pas aux règles de saisies définies, aucun utilisateur n\textquotesingle{}est créé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a035b1f49da9e911a4edbc0497034ab97}{Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+Current\+Page\+Is\+Register} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre des valeurs qui ne correspondent pas aux règles de saisies définies, la page actuellement affichée est toujours la page d\textquotesingle{}inscription. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_ac160eca13893c7fe0c8df0c2a0faa116}{Register\+Command\+\_\+\+Valid\+Data\+\_\+\+User\+Created} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre des valeurs qui correspondent aux règles de saisies définies, ce dernier est bien créé. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a44f32fd8750164cd8c4175ac84323226}{Register\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur entre des valeurs qui correspondent aux règles de saisies définies, la page actuellement affichée est la page précédente. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a7ccccb692593a356b79cfecb0114ea46}{Go\+Back\+Command\+\_\+\+Leaving\+Register\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page} ()
+\begin{DoxyCompactList}\small\item\em Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription, la page actuellement affichée est \char`\"{}\+Root\+Page\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_user_service}{Fake\+User\+Service} \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_ab475cc520bf312586e83fd23a22dcf1c}{user\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de l\textquotesingle{}entité Models.\+User. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_navigation_service}{Fake\+Navigation\+Service} \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a2a1940ef43106495a7855ee63eda1583}{navigation\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service de navigation fictif. \end{DoxyCompactList}\item 
+\hyperlink{class_boxes_1_1_tests_1_1_mock_1_1_services_1_1_fake_localization_service}{Fake\+Localization\+Service} \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a0dcb3e380c02a5620a2f80a082331694}{localization\+Service}
+\begin{DoxyCompactList}\small\item\em Stock le service d\textquotesingle{}accès aux données fictives de localization. \end{DoxyCompactList}\item 
+Register\+View\+Model \hyperlink{class_boxes_1_1_tests_1_1_register_view_model_tests_a355429c3d088c1561b422af6cd0d7c98}{register\+View\+Model}
+\begin{DoxyCompactList}\small\item\em Stock le view model de la page d\textquotesingle{}inscription (ici le view model à tester). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Effectue les tests unitaires qui concernent le Register\+View\+Model. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Birth\+Date\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Birth\+Date\+Is\+Null}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Birth\+Date\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Birth\+Date\+Is\+Null}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Birth\+Date\+Is\+Null()}{Cleanup_NavigationFromRegister_BirthDateIsNull()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Birth\+Date\+Is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a1171e9477ca9c1b90880740f0bf34c4e}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a1171e9477ca9c1b90880740f0bf34c4e}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Date de naissance\char`\"{} est bien vidé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Email\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Email\+Is\+Null}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Email\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Email\+Is\+Null}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Email\+Is\+Null()}{Cleanup_NavigationFromRegister_EmailIsNull()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Email\+Is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a15c6b9db02a917578ca07267aaaf6ff4}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a15c6b9db02a917578ca07267aaaf6ff4}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Adresse email\char`\"{} est bien vidé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+First\+Name\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+First\+Name\+Is\+Null}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+First\+Name\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+First\+Name\+Is\+Null}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+First\+Name\+Is\+Null()}{Cleanup_NavigationFromRegister_FirstNameIsNull()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+First\+Name\+Is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a6542c339250306476f9a1717d65dc1f7}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a6542c339250306476f9a1717d65dc1f7}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Prénom\char`\"{} est bien vidé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Last\+Name\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Last\+Name\+Is\+Null}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Last\+Name\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Last\+Name\+Is\+Null}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Last\+Name\+Is\+Null()}{Cleanup_NavigationFromRegister_LastNameIsNull()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Last\+Name\+Is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_ab3157e3c320d70e32088078addab9413}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_ab3157e3c320d70e32088078addab9413}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Nom\char`\"{} est bien vidé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Confirmation\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Confirmation\+Is\+Null}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Confirmation\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Confirmation\+Is\+Null}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Confirmation\+Is\+Null()}{Cleanup_NavigationFromRegister_PasswordConfirmationIsNull()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Confirmation\+Is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a81930cd634bf89550044e02ab43056de}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a81930cd634bf89550044e02ab43056de}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Confirmation\char`\"{} est bien vidé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Is\+Null}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Is\+Null}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Is\+Null()}{Cleanup_NavigationFromRegister_PasswordIsNull()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Password\+Is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_ab211efb578d12bb20eabca228cc5751e}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_ab211efb578d12bb20eabca228cc5751e}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Mot de passe\char`\"{} est bien vidé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Phone\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Phone\+Is\+Null}}
+\index{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Phone\+Is\+Null@{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Phone\+Is\+Null}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Phone\+Is\+Null()}{Cleanup_NavigationFromRegister_PhoneIsNull()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Cleanup\+\_\+\+Navigation\+From\+Register\+\_\+\+Phone\+Is\+Null (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a63f5afd45d175eb17e0979e064d4f403}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a63f5afd45d175eb17e0979e064d4f403}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription le champ \char`\"{}\+Numéro de tél.\char`\"{} est bien vidé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Go\+Back\+Command\+\_\+\+Leaving\+Register\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page@{Go\+Back\+Command\+\_\+\+Leaving\+Register\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page}}
+\index{Go\+Back\+Command\+\_\+\+Leaving\+Register\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page@{Go\+Back\+Command\+\_\+\+Leaving\+Register\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Go\+Back\+Command\+\_\+\+Leaving\+Register\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page()}{GoBackCommand_LeavingRegisterPage_CurrentPageIsRootPage()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Go\+Back\+Command\+\_\+\+Leaving\+Register\+Page\+\_\+\+Current\+Page\+Is\+Root\+Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a7ccccb692593a356b79cfecb0114ea46}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a7ccccb692593a356b79cfecb0114ea46}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur quitte la page d\textquotesingle{}inscription, la page actuellement affichée est \char`\"{}\+Root\+Page\char`\"{}. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Birth\+Date\+Is\+Null\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Birth\+Date\+Is\+Null\+\_\+\+Cannot\+Execute}}
+\index{Register\+Command\+\_\+\+Birth\+Date\+Is\+Null\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Birth\+Date\+Is\+Null\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Birth\+Date\+Is\+Null\+\_\+\+Cannot\+Execute()}{RegisterCommand_BirthDateIsNull_CannotExecute()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Birth\+Date\+Is\+Null\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a2c365b78cd19824f6ed8427dd7646985}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a2c365b78cd19824f6ed8427dd7646985}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de date de naissance, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Email\+Is\+Not\+An\+Email\+\_\+\+Validation\+Error\+Message\+Sent@{Register\+Command\+\_\+\+Email\+Is\+Not\+An\+Email\+\_\+\+Validation\+Error\+Message\+Sent}}
+\index{Register\+Command\+\_\+\+Email\+Is\+Not\+An\+Email\+\_\+\+Validation\+Error\+Message\+Sent@{Register\+Command\+\_\+\+Email\+Is\+Not\+An\+Email\+\_\+\+Validation\+Error\+Message\+Sent}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Email\+Is\+Not\+An\+Email\+\_\+\+Validation\+Error\+Message\+Sent()}{RegisterCommand_EmailIsNotAnEmail_ValidationErrorMessageSent()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Email\+Is\+Not\+An\+Email\+\_\+\+Validation\+Error\+Message\+Sent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a06981702e2516f36fed3f32097ce4a40}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a06981702e2516f36fed3f32097ce4a40}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas une adresse email valide, un message contenant des résultats de validation est envoyé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}}
+\index{Register\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute(string email)}{RegisterCommand_EmailIsNullOrWhiteSpace_CannotExecute(string email)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Email\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+\item[{string}]{email}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_acb1b3f1f6282077c2bcc4d061cca2111}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_acb1b3f1f6282077c2bcc4d061cca2111}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas d\textquotesingle{}adresse email, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em email} & Email à tester. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+First\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+First\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}}
+\index{Register\+Command\+\_\+\+First\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+First\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+First\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute(string first\+Name)}{RegisterCommand_FirstNameIsNullOrWhiteSpace_CannotExecute(string firstName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+First\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+\item[{string}]{first\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a1a773d94a57e92810afca4de22d09f04}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a1a773d94a57e92810afca4de22d09f04}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de prénom, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em first\+Name} & Prénom à tester. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+Current\+Page\+Is\+Register@{Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+Current\+Page\+Is\+Register}}
+\index{Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+Current\+Page\+Is\+Register@{Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+Current\+Page\+Is\+Register}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+Current\+Page\+Is\+Register()}{RegisterCommand_InvalidData_CurrentPageIsRegister()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+Current\+Page\+Is\+Register (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a035b1f49da9e911a4edbc0497034ab97}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a035b1f49da9e911a4edbc0497034ab97}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre des valeurs qui ne correspondent pas aux règles de saisies définies, la page actuellement affichée est toujours la page d\textquotesingle{}inscription. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+User\+Not\+Created@{Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+User\+Not\+Created}}
+\index{Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+User\+Not\+Created@{Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+User\+Not\+Created}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+User\+Not\+Created()}{RegisterCommand_InvalidData_UserNotCreated()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Invalid\+Data\+\_\+\+User\+Not\+Created (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a81c4e95045d61ecea88a7d82c2f3dbbc}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a81c4e95045d61ecea88a7d82c2f3dbbc}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre des valeurs qui ne correspondent pas aux règles de saisies définies, aucun utilisateur n\textquotesingle{}est créé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Is\+Not\+Registering\+Required\+Fields\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute@{Register\+Command\+\_\+\+Is\+Not\+Registering\+Required\+Fields\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute}}
+\index{Register\+Command\+\_\+\+Is\+Not\+Registering\+Required\+Fields\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute@{Register\+Command\+\_\+\+Is\+Not\+Registering\+Required\+Fields\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Is\+Not\+Registering\+Required\+Fields\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute()}{RegisterCommand_IsNotRegisteringRequiredFieldsNotNullOrWhiteSpace_CanExecute()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Is\+Not\+Registering\+Required\+Fields\+Not\+Null\+Or\+White\+Space\+\_\+\+Can\+Execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_acdf4564b1a3c9672cb5d4fb247938a11}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_acdf4564b1a3c9672cb5d4fb247938a11}
+
+
+Vérifie que lorsque l\textquotesingle{}inscription n\textquotesingle{}est pas en cours, la commande d\textquotesingle{}inscription peut s\textquotesingle{}exécuter. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Is\+Registering\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Is\+Registering\+\_\+\+Cannot\+Execute}}
+\index{Register\+Command\+\_\+\+Is\+Registering\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Is\+Registering\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Is\+Registering\+\_\+\+Cannot\+Execute()}{RegisterCommand_IsRegistering_CannotExecute()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Is\+Registering\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_ae4143feab955f532160cc36f943f2645}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_ae4143feab955f532160cc36f943f2645}
+
+
+Vérifie que lorsque l\textquotesingle{}inscription est en cours, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Last\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Last\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}}
+\index{Register\+Command\+\_\+\+Last\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Last\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Last\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute(string last\+Name)}{RegisterCommand_LastNameIsNullOrWhiteSpace_CannotExecute(string lastName)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Last\+Name\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+\item[{string}]{last\+Name}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_acb8965be90f1c2ffebd2d3ddfd11ca29}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_acb8965be90f1c2ffebd2d3ddfd11ca29}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de nom, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em last\+Name} & Nom à tester. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Password\+Confirmation\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Password\+Confirmation\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}}
+\index{Register\+Command\+\_\+\+Password\+Confirmation\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Password\+Confirmation\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Password\+Confirmation\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute(string confirmation)}{RegisterCommand_PasswordConfirmationIsNullOrWhiteSpace_CannotExecute(string confirmation)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Password\+Confirmation\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+\item[{string}]{confirmation}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a0259bf119ee45060b88a6ad27f8f6dcc}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a0259bf119ee45060b88a6ad27f8f6dcc}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de mo de passe de confirmation, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em confirmation} & Mot de passe de confirmation à tester. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}}
+\index{Register\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute@{Register\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute(string password)}{RegisterCommand_PasswordIsNullOrWhiteSpace_CannotExecute(string password)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Password\+Is\+Null\+Or\+White\+Space\+\_\+\+Cannot\+Execute (
+\begin{DoxyParamCaption}
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a6296fbf606faf1914ac8f778ba216f55}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a6296fbf606faf1914ac8f778ba216f55}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur n\textquotesingle{}entre pas de mot de passe, la commande d\textquotesingle{}inscription ne peut s\textquotesingle{}exécuter. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em password} & Mot de passe à tester. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Passwords\+Not\+Corresponding\+\_\+\+Validation\+Error\+Message\+Sent@{Register\+Command\+\_\+\+Passwords\+Not\+Corresponding\+\_\+\+Validation\+Error\+Message\+Sent}}
+\index{Register\+Command\+\_\+\+Passwords\+Not\+Corresponding\+\_\+\+Validation\+Error\+Message\+Sent@{Register\+Command\+\_\+\+Passwords\+Not\+Corresponding\+\_\+\+Validation\+Error\+Message\+Sent}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Passwords\+Not\+Corresponding\+\_\+\+Validation\+Error\+Message\+Sent()}{RegisterCommand_PasswordsNotCorresponding_ValidationErrorMessageSent()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Passwords\+Not\+Corresponding\+\_\+\+Validation\+Error\+Message\+Sent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_afbe00afb0ad17ce977d8c44136b99606}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_afbe00afb0ad17ce977d8c44136b99606}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre des mots de passe qui ne correspondent pas, un message contenant des résultats de validation est envoyé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Phone\+Length\+Too\+Long\+\_\+\+Validation\+Error\+Message\+Sent@{Register\+Command\+\_\+\+Phone\+Length\+Too\+Long\+\_\+\+Validation\+Error\+Message\+Sent}}
+\index{Register\+Command\+\_\+\+Phone\+Length\+Too\+Long\+\_\+\+Validation\+Error\+Message\+Sent@{Register\+Command\+\_\+\+Phone\+Length\+Too\+Long\+\_\+\+Validation\+Error\+Message\+Sent}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Phone\+Length\+Too\+Long\+\_\+\+Validation\+Error\+Message\+Sent()}{RegisterCommand_PhoneLengthTooLong_ValidationErrorMessageSent()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Phone\+Length\+Too\+Long\+\_\+\+Validation\+Error\+Message\+Sent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a611e31c1b4d3547cf1836744ef72042a}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a611e31c1b4d3547cf1836744ef72042a}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre un numéro de téléphone trop long (c-\/à-\/d. suppérieur à 20 chiffres) un message contenant des résultats de validation est envoyé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Phone\+Length\+Too\+Short\+\_\+\+Validation\+Error\+Message\+Sent@{Register\+Command\+\_\+\+Phone\+Length\+Too\+Short\+\_\+\+Validation\+Error\+Message\+Sent}}
+\index{Register\+Command\+\_\+\+Phone\+Length\+Too\+Short\+\_\+\+Validation\+Error\+Message\+Sent@{Register\+Command\+\_\+\+Phone\+Length\+Too\+Short\+\_\+\+Validation\+Error\+Message\+Sent}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Phone\+Length\+Too\+Short\+\_\+\+Validation\+Error\+Message\+Sent()}{RegisterCommand_PhoneLengthTooShort_ValidationErrorMessageSent()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Phone\+Length\+Too\+Short\+\_\+\+Validation\+Error\+Message\+Sent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a2eba1232bbe10748e9d9f8deec3c2348}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a2eba1232bbe10748e9d9f8deec3c2348}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre un numéro de téléphone trop court (c-\/à-\/d. inférieur à 10 chiffres) un message contenant des résultats de validation est envoyé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page@{Register\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page}}
+\index{Register\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page@{Register\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page()}{RegisterCommand_ValidData_CurrentPageIsRootPage()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Valid\+Data\+\_\+\+Current\+Page\+Is\+Root\+Page (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a44f32fd8750164cd8c4175ac84323226}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a44f32fd8750164cd8c4175ac84323226}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre des valeurs qui correspondent aux règles de saisies définies, la page actuellement affichée est la page précédente. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Register\+Command\+\_\+\+Valid\+Data\+\_\+\+User\+Created@{Register\+Command\+\_\+\+Valid\+Data\+\_\+\+User\+Created}}
+\index{Register\+Command\+\_\+\+Valid\+Data\+\_\+\+User\+Created@{Register\+Command\+\_\+\+Valid\+Data\+\_\+\+User\+Created}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Register\+Command\+\_\+\+Valid\+Data\+\_\+\+User\+Created()}{RegisterCommand_ValidData_UserCreated()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Register\+Command\+\_\+\+Valid\+Data\+\_\+\+User\+Created (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_ac160eca13893c7fe0c8df0c2a0faa116}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_ac160eca13893c7fe0c8df0c2a0faa116}
+
+
+Vérifie que lorsque l\textquotesingle{}utilisateur entre des valeurs qui correspondent aux règles de saisies définies, ce dernier est bien créé. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Tests\+Cleanup@{Tests\+Cleanup}}
+\index{Tests\+Cleanup@{Tests\+Cleanup}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Cleanup()}{TestsCleanup()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Tests\+Cleanup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_ae138690556afef1edc2de6b7aa73f409}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_ae138690556afef1edc2de6b7aa73f409}
+
+
+Effectue les nettoyages de variables devant être faits après l\textquotesingle{}exécution de chaque test. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!Tests\+Initialize@{Tests\+Initialize}}
+\index{Tests\+Initialize@{Tests\+Initialize}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{Tests\+Initialize()}{TestsInitialize()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+Tests\+Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_ac533616780d9eefa72a51d2025a3ac5a}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_ac533616780d9eefa72a51d2025a3ac5a}
+
+
+Effectue les initialisations qui doivent être exécutées avant chaque test. 
+
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!localization\+Service@{localization\+Service}}
+\index{localization\+Service@{localization\+Service}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{localization\+Service}{localizationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Localization\+Service} Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+localization\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a0dcb3e380c02a5620a2f80a082331694}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a0dcb3e380c02a5620a2f80a082331694}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de localization. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!navigation\+Service@{navigation\+Service}}
+\index{navigation\+Service@{navigation\+Service}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{navigation\+Service}{navigationService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+Navigation\+Service} Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+navigation\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a2a1940ef43106495a7855ee63eda1583}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a2a1940ef43106495a7855ee63eda1583}
+
+
+Stock le service de navigation fictif. 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!register\+View\+Model@{register\+View\+Model}}
+\index{register\+View\+Model@{register\+View\+Model}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{register\+View\+Model}{registerViewModel}}]{\setlength{\rightskip}{0pt plus 5cm}Register\+View\+Model Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+register\+View\+Model\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_a355429c3d088c1561b422af6cd0d7c98}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_a355429c3d088c1561b422af6cd0d7c98}
+
+
+Stock le view model de la page d\textquotesingle{}inscription (ici le view model à tester). 
+
+\index{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}!user\+Service@{user\+Service}}
+\index{user\+Service@{user\+Service}!Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests@{Boxes\+::\+Tests\+::\+Register\+View\+Model\+Tests}}
+\subsubsection[{\texorpdfstring{user\+Service}{userService}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Fake\+User\+Service} Boxes.\+Tests.\+Register\+View\+Model\+Tests.\+user\+Service\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_register_view_model_tests_ab475cc520bf312586e83fd23a22dcf1c}{}\label{class_boxes_1_1_tests_1_1_register_view_model_tests_ab475cc520bf312586e83fd23a22dcf1c}
+
+
+Stock le service d\textquotesingle{}accès aux données fictives de l\textquotesingle{}entité Models.\+User. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes.\+Tests/\hyperlink{_register_view_model_tests_8cs}{Register\+View\+Model\+Tests.\+cs}\end{DoxyCompactItemize}

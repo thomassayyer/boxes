@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['deleteasync',['DeleteAsync',['../class_boxes_1_1_services_1_1_box_1_1_box_service.html#a16d678fa58baae07fbb4d548b149c278',1,'Boxes.Services.Box.BoxService.DeleteAsync()'],['../class_boxes_1_1_services_1_1_box_1_1_design_box_service.html#a652cd05fbd8c183e45139670533a7f8d',1,'Boxes.Services.Box.DesignBoxService.DeleteAsync()'],['../interface_boxes_1_1_services_1_1_box_1_1_i_box_service.html#a9389dc7e0db5c6042a5c60bf20874a3c',1,'Boxes.Services.Box.IBoxService.DeleteAsync()'],['../class_boxes_1_1_services_1_1_http_service.html#ac710b86113bdd643909d124f6cd10637',1,'Boxes.Services.HttpService.DeleteAsync()']]],
+  ['deletebox',['DeleteBox',['../class_boxes_1_1_view_models_1_1_box_view_model.html#a14df8064b707b4fb149140d0c36bd6d4',1,'Boxes::ViewModels::BoxViewModel']]],
+  ['deleteboxcommand',['DeleteBoxCommand',['../class_boxes_1_1_view_models_1_1_box_view_model.html#a066ae0af03eb9916946d060252f46b0a',1,'Boxes::ViewModels::BoxViewModel']]],
+  ['description',['description',['../class_boxes_1_1_view_models_1_1_box_view_model.html#a822fd258489309723c493ce381df9a2e',1,'Boxes.ViewModels.BoxViewModel.description()'],['../class_boxes_1_1_view_models_1_1_create_box_view_model.html#a5c0d7b44f13add99fc34e13bc57be38a',1,'Boxes.ViewModels.CreateBoxViewModel.description()'],['../class_boxes_1_1_view_models_1_1_edit_box_view_model.html#a6f5f86d4704d201e886e8a92dd897889',1,'Boxes.ViewModels.EditBoxViewModel.description()'],['../class_boxes_1_1_models_1_1_box.html#ab5b608a65148d5428899e34640e5fe75',1,'Boxes.Models.Box.Description()'],['../class_boxes_1_1_view_models_1_1_box_view_model.html#ade800bd7096f87f32f5089ab1fb631d0',1,'Boxes.ViewModels.BoxViewModel.Description()'],['../class_boxes_1_1_view_models_1_1_create_box_view_model.html#a695ac15cd94011bd2fc5f4922a8b26ba',1,'Boxes.ViewModels.CreateBoxViewModel.Description()'],['../class_boxes_1_1_view_models_1_1_edit_box_view_model.html#a4639fb722a8e57e315ad69ad20906c4a',1,'Boxes.ViewModels.EditBoxViewModel.Description()']]],
+  ['designboxservice',['DesignBoxService',['../class_boxes_1_1_services_1_1_box_1_1_design_box_service.html',1,'Boxes::Services::Box']]],
+  ['designboxservice_2ecs',['DesignBoxService.cs',['../_design_box_service_8cs.html',1,'']]],
+  ['designcommentservice',['DesignCommentService',['../class_boxes_1_1_services_1_1_comment_1_1_design_comment_service.html',1,'Boxes::Services::Comment']]],
+  ['designcommentservice_2ecs',['DesignCommentService.cs',['../_design_comment_service_8cs.html',1,'']]],
+  ['designpostservice',['DesignPostService',['../class_boxes_1_1_services_1_1_post_1_1_design_post_service.html',1,'Boxes::Services::Post']]],
+  ['designpostservice_2ecs',['DesignPostService.cs',['../_design_post_service_8cs.html',1,'']]],
+  ['designstorageservice',['DesignStorageService',['../class_boxes_1_1_services_1_1_storage_1_1_design_storage_service.html',1,'Boxes::Services::Storage']]],
+  ['designstorageservice',['DesignStorageService',['../class_boxes_1_1_services_1_1_storage_1_1_design_storage_service.html#a6dc72623a7623a0844a127673b89528b',1,'Boxes::Services::Storage::DesignStorageService']]],
+  ['designstorageservice_2ecs',['DesignStorageService.cs',['../_design_storage_service_8cs.html',1,'']]],
+  ['designuserservice',['DesignUserService',['../class_boxes_1_1_services_1_1_user_1_1_design_user_service.html',1,'Boxes::Services::User']]],
+  ['designuserservice_2ecs',['DesignUserService.cs',['../_design_user_service_8cs.html',1,'']]],
+  ['detachuserasync',['DetachUserAsync',['../class_boxes_1_1_services_1_1_box_1_1_box_service.html#a0e27813284c325af2a7ea267c34a8d95',1,'Boxes.Services.Box.BoxService.DetachUserAsync()'],['../class_boxes_1_1_services_1_1_box_1_1_design_box_service.html#ab875aa0bdcf1be02e8fe377e83fb68d8',1,'Boxes.Services.Box.DesignBoxService.DetachUserAsync()'],['../interface_boxes_1_1_services_1_1_box_1_1_i_box_service.html#a280988e4102350d8c6b452a29f0d45dc',1,'Boxes.Services.Box.IBoxService.DetachUserAsync()']]],
+  ['discoverpage',['DiscoverPage',['../class_boxes_1_1_views_1_1_discover_page.html#aebc5e2b68f1a2453fc944c8294357cda',1,'Boxes::Views::DiscoverPage']]],
+  ['discoverpage',['DiscoverPage',['../class_boxes_1_1_views_1_1_discover_page.html',1,'Boxes::Views']]],
+  ['discoverpage_2examl_2ecs',['DiscoverPage.xaml.cs',['../_discover_page_8xaml_8cs.html',1,'']]],
+  ['discoverviewmodel',['DiscoverViewModel',['../class_boxes_1_1_view_models_1_1_discover_view_model.html#ae702aa7d97660570ac5febc56b780eb9',1,'Boxes::ViewModels::DiscoverViewModel']]],
+  ['discoverviewmodel',['DiscoverViewModel',['../class_boxes_1_1_view_models_1_1_discover_view_model.html',1,'Boxes::ViewModels']]],
+  ['discoverviewmodel_2ecs',['DiscoverViewModel.cs',['../_discover_view_model_8cs.html',1,'']]],
+  ['discovervm',['DiscoverVM',['../class_boxes_1_1_view_models_1_1_view_model_locator.html#a9a81399827716e28c9fdc4dafb2819ab',1,'Boxes::ViewModels::ViewModelLocator']]]
+];

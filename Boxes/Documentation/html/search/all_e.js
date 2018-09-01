@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['readsetting_3c_20t_20_3e',['ReadSetting&lt; T &gt;',['../class_boxes_1_1_services_1_1_storage_1_1_design_storage_service.html#ad239cf0434c97667ce1d1c6ec0fba063',1,'Boxes.Services.Storage.DesignStorageService.ReadSetting&lt; T &gt;()'],['../interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service.html#a00a4da789711b03b8e7c8fdaec087d47',1,'Boxes.Services.Storage.IStorageService.ReadSetting&lt; T &gt;()'],['../class_boxes_1_1_services_1_1_storage_1_1_storage_service.html#a401d9d4c2a4c67aa05134cc5f174ffa8',1,'Boxes.Services.Storage.StorageService.ReadSetting&lt; T &gt;()']]],
+  ['register',['Register',['../class_boxes_1_1_view_models_1_1_login_view_model.html#a6dcfc414b7b38fac178af6bea17cc55b',1,'Boxes.ViewModels.LoginViewModel.Register()'],['../class_boxes_1_1_view_models_1_1_register_view_model.html#add19d4be0a438b916e9b6109f03b5f6f',1,'Boxes.ViewModels.RegisterViewModel.Register()']]],
+  ['registercommand',['RegisterCommand',['../class_boxes_1_1_view_models_1_1_login_view_model.html#ac9703766c99fbb8a8ecfbac2a2e0dd06',1,'Boxes.ViewModels.LoginViewModel.RegisterCommand()'],['../class_boxes_1_1_view_models_1_1_register_view_model.html#a21f0b17057452c9ac974122df5fdbc0e',1,'Boxes.ViewModels.RegisterViewModel.RegisterCommand()']]],
+  ['registerpage',['RegisterPage',['../class_boxes_1_1_views_1_1_register_page.html',1,'Boxes::Views']]],
+  ['registerpage',['RegisterPage',['../class_boxes_1_1_views_1_1_register_page.html#ad45cbf1be91ccae925a0fd311a780f21',1,'Boxes::Views::RegisterPage']]],
+  ['registerpage_2examl_2ecs',['RegisterPage.xaml.cs',['../_register_page_8xaml_8cs.html',1,'']]],
+  ['registerpage_5fbackrequested',['RegisterPage_BackRequested',['../class_boxes_1_1_views_1_1_register_page.html#a6e16482dc7aa14ff623fb2793e2921c0',1,'Boxes::Views::RegisterPage']]],
+  ['registerviewmodel',['RegisterViewModel',['../class_boxes_1_1_view_models_1_1_register_view_model.html',1,'Boxes::ViewModels']]],
+  ['registerviewmodel',['RegisterViewModel',['../class_boxes_1_1_view_models_1_1_register_view_model.html#a4b1dc5b91c6d02f442729cec8b04a399',1,'Boxes::ViewModels::RegisterViewModel']]],
+  ['registerviewmodel_2ecs',['RegisterViewModel.cs',['../_register_view_model_8cs.html',1,'']]],
+  ['registervm',['RegisterVM',['../class_boxes_1_1_view_models_1_1_view_model_locator.html#a54c1906124307af1f1f1ebce6c641b2a',1,'Boxes::ViewModels::ViewModelLocator']]],
+  ['reloadboxes',['ReloadBoxes',['../class_boxes_1_1_view_models_1_1_my_boxes_view_model.html#ab7b3cd98fa29390b1b517491e754f3cd',1,'Boxes::ViewModels::MyBoxesViewModel']]],
+  ['reloadcomments',['ReloadComments',['../class_boxes_1_1_view_models_1_1_post_view_model.html#a3ceff0a86b3a432381812b4c7d9ea47b',1,'Boxes::ViewModels::PostViewModel']]],
+  ['reloadposts',['ReloadPosts',['../class_boxes_1_1_view_models_1_1_box_view_model.html#a4c35e7b854c81c282304a92f3fb3e523',1,'Boxes.ViewModels.BoxViewModel.ReloadPosts()'],['../class_boxes_1_1_view_models_1_1_home_view_model.html#a72d97f5c62e4819aebba4bbae3110785',1,'Boxes.ViewModels.HomeViewModel.ReloadPosts()']]],
+  ['reloadtopboxes',['ReloadTopBoxes',['../class_boxes_1_1_view_models_1_1_discover_view_model.html#a1f7528d73c0ea98bec7b2370787686aa',1,'Boxes::ViewModels::DiscoverViewModel']]],
+  ['removesetting',['RemoveSetting',['../class_boxes_1_1_services_1_1_storage_1_1_design_storage_service.html#ad570a657f66837a7b769399d1e410a32',1,'Boxes.Services.Storage.DesignStorageService.RemoveSetting()'],['../interface_boxes_1_1_services_1_1_storage_1_1_i_storage_service.html#a7138e8e5d1d8f31e227b7765f2206e11',1,'Boxes.Services.Storage.IStorageService.RemoveSetting()'],['../class_boxes_1_1_services_1_1_storage_1_1_storage_service.html#a3942ae238059a248a89ff00cfa9551b3',1,'Boxes.Services.Storage.StorageService.RemoveSetting()']]],
+  ['resourceloader',['resourceLoader',['../class_boxes_1_1_services_1_1_localization_1_1_localization_service.html#a08210154e775a307b685e9cb8a01c9b4',1,'Boxes::Services::Localization::LocalizationService']]],
+  ['rootframe',['RootFrame',['../class_boxes_1_1_services_1_1_navigation_1_1_navigation_service.html#a6735d62868cecd7fdb84b66bb7995abf',1,'Boxes.Services.Navigation.NavigationService.RootFrame()'],['../class_boxes_1_1_views_1_1_shell.html#a0497de869176bf216e46152a376dcf30',1,'Boxes.Views.Shell.RootFrame()']]]
+];

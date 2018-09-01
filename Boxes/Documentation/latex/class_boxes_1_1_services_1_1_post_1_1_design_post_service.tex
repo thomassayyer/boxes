@@ -1,0 +1,81 @@
+\hypertarget{class_boxes_1_1_services_1_1_post_1_1_design_post_service}{}\section{Référence de la classe Boxes.\+Services.\+Post.\+Design\+Post\+Service}
+\label{class_boxes_1_1_services_1_1_post_1_1_design_post_service}\index{Boxes.\+Services.\+Post.\+Design\+Post\+Service@{Boxes.\+Services.\+Post.\+Design\+Post\+Service}}
+
+
+Service de design du model \hyperlink{class_boxes_1_1_models_1_1_post}{Models.\+Post}.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Services.\+Post.\+Design\+Post\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_services_1_1_post_1_1_design_post_service}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \hyperlink{class_boxes_1_1_models_1_1_post}{Models.\+Post} $>$ \hyperlink{class_boxes_1_1_services_1_1_post_1_1_design_post_service_acc006b582ba20352816a2a3c04f58f57}{Create\+Async} (\hyperlink{class_boxes_1_1_models_1_1_post}{Models.\+Post} post)
+\item 
+Task$<$ List$<$ \hyperlink{class_boxes_1_1_models_1_1_post}{Models.\+Post} $>$ $>$ \hyperlink{class_boxes_1_1_services_1_1_post_1_1_design_post_service_a13733d14a56f618f93abed97aece7a67}{Get\+By\+Box\+Async} (\hyperlink{class_boxes_1_1_models_1_1_box}{Models.\+Box} box)
+\begin{DoxyCompactList}\small\item\em Récupère les post d\textquotesingle{}une boite en paramètre.  \end{DoxyCompactList}\item 
+Task$<$ List$<$ \hyperlink{class_boxes_1_1_models_1_1_post}{Models.\+Post} $>$ $>$ \hyperlink{class_boxes_1_1_services_1_1_post_1_1_design_post_service_afbd34f884dcc265524f55636448e581b}{Get\+By\+User\+Async} (\hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User} user)
+\begin{DoxyCompactList}\small\item\em Récupère les posts des boites auxquelles l\textquotesingle{}utilisateur en paramètre s\textquotesingle{}est abonné et/ou qu\textquotesingle{}il a créées.  \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Service de design du model \hyperlink{class_boxes_1_1_models_1_1_post}{Models.\+Post}. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service@{Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service}!Create\+Async@{Create\+Async}}
+\index{Create\+Async@{Create\+Async}!Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service@{Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service}}
+\subsubsection[{\texorpdfstring{Create\+Async(\+Models.\+Post post)}{CreateAsync(Models.Post post)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<${\bf Models.\+Post}$>$ Boxes.\+Services.\+Post.\+Design\+Post\+Service.\+Create\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+Post}}]{post}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_post_1_1_design_post_service_acc006b582ba20352816a2a3c04f58f57}{}\label{class_boxes_1_1_services_1_1_post_1_1_design_post_service_acc006b582ba20352816a2a3c04f58f57}
+Enregistre un nouveau post.  
+\begin{DoxyExceptions}{Exceptions}
+{\em Not\+Implemented\+Exception} & Levée pour chaque appel à cette méthode en mode design. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_post_1_1_i_post_service_a4ba485f8a097660c10ababae89b7e418}{Boxes.\+Services.\+Post.\+I\+Post\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service@{Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service}!Get\+By\+Box\+Async@{Get\+By\+Box\+Async}}
+\index{Get\+By\+Box\+Async@{Get\+By\+Box\+Async}!Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service@{Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service}}
+\subsubsection[{\texorpdfstring{Get\+By\+Box\+Async(\+Models.\+Box box)}{GetByBoxAsync(Models.Box box)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<$List$<${\bf Models.\+Post}$>$ $>$ Boxes.\+Services.\+Post.\+Design\+Post\+Service.\+Get\+By\+Box\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+Box}}]{box}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_post_1_1_design_post_service_a13733d14a56f618f93abed97aece7a67}{}\label{class_boxes_1_1_services_1_1_post_1_1_design_post_service_a13733d14a56f618f93abed97aece7a67}
+
+
+Récupère les post d\textquotesingle{}une boite en paramètre.  
+
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_post_1_1_i_post_service_a70b3b6831547dadf5069a25bcdf2c97c}{Boxes.\+Services.\+Post.\+I\+Post\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service@{Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service}!Get\+By\+User\+Async@{Get\+By\+User\+Async}}
+\index{Get\+By\+User\+Async@{Get\+By\+User\+Async}!Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service@{Boxes\+::\+Services\+::\+Post\+::\+Design\+Post\+Service}}
+\subsubsection[{\texorpdfstring{Get\+By\+User\+Async(\+Models.\+User user)}{GetByUserAsync(Models.User user)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<$List$<${\bf Models.\+Post}$>$ $>$ Boxes.\+Services.\+Post.\+Design\+Post\+Service.\+Get\+By\+User\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+User}}]{user}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_post_1_1_design_post_service_afbd34f884dcc265524f55636448e581b}{}\label{class_boxes_1_1_services_1_1_post_1_1_design_post_service_afbd34f884dcc265524f55636448e581b}
+
+
+Récupère les posts des boites auxquelles l\textquotesingle{}utilisateur en paramètre s\textquotesingle{}est abonné et/ou qu\textquotesingle{}il a créées.  
+
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_post_1_1_i_post_service_adb0e10d59b98f1b2b62e6ce456a59d9b}{Boxes.\+Services.\+Post.\+I\+Post\+Service}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+Services/\+Post/\hyperlink{_design_post_service_8cs}{Design\+Post\+Service.\+cs}\end{DoxyCompactItemize}

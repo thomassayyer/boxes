@@ -1,0 +1,135 @@
+﻿<Page x:Class="Boxes.Views.PostPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:Boxes.Views"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      mc:Ignorable="d"
+      DataContext="{Binding PostVM, Source={StaticResource Locator}}"
+      RequestedTheme="Light">
+
+    <Page.Resources>
+        <DataTemplate x:Key="CommentsDataTemplate">
+            <Grid Background="White"
+                  CornerRadius="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <TextBlock Grid.ColumnSpan="2"
+                           Margin="10,0,10,15"
+                           Grid.Row="1"
+                           TextWrapping="Wrap"
+                           Text="{Binding Content}" />
+                <TextBlock Grid.Column="1"
+                           Margin="0,10,10,0"
+                           TextWrapping="Wrap"
+                           Text="{Binding CreatedAt}"
+                           VerticalAlignment="Top"
+                           RenderTransformOrigin="0.039,0.52"
+                           HorizontalAlignment="Right"
+                           FontSize="{StaticResource SmallFontSize}"
+                           Foreground="{StaticResource SmallBrush}" />
+                <TextBlock HorizontalAlignment="Left"
+                           Margin="10"
+                           TextWrapping="Wrap"
+                           Text="{Binding Author}"
+                           FontSize="{StaticResource LargeFontSize}" />
+            </Grid>
+        </DataTemplate>
+    </Page.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+        <Grid Background="{StaticResource BackgroundBrush}">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <StackPanel Orientation="Vertical"
+                        Padding="10"
+                        Background="White">
+                <TextBlock TextWrapping="Wrap"
+                           Text="{Binding Content, Mode=OneWay}" />
+                <TextBlock Text="{Binding CreatedAt, Mode=OneWay}"
+                           HorizontalAlignment="Right"
+                           Margin="0,10,0,0"
+                           FontSize="{StaticResource SmallFontSize}"
+                           Foreground="{StaticResource SmallBrush}" />
+            </StackPanel>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <TextBox PlaceholderText="Un commentaire ?"
+                         x:Uid="CommentTextBox"
+                         x:Name="CommentTextBox"
+                         Margin="10,10,0,10"
+                         BorderThickness="2,2,0,2" />
+                <Button Width="48"
+                        Height="48"
+                        Style="{StaticResource PrimaryButtonStyle}"
+                        Command="{Binding CreateCommentCommand}"
+                        CommandParameter="{Binding Text, ElementName=CommentTextBox}"
+                        Margin="0,10,10,10"
+                        Grid.Column="1">
+                    <Button.Content>
+                        <Grid>
+                            <ProgressRing Height="10"
+                                          Width="10"
+                                          VerticalAlignment="Center"
+                                          HorizontalAlignment="Center"
+                                          Foreground="White"
+                                          IsActive="{Binding IsCommenting, Mode=OneWay}"
+                                          Visibility="{Binding IsCommenting, Converter={StaticResource VisibilityConverter}, Mode=OneWay}" />
+                            <FontIcon Glyph=""
+                                      FontFamily="Segoe MDL2 Assets"
+                                      Visibility="{Binding IsCommenting, Mode=OneWay, Converter={StaticResource InverseVisibilityConverter}}" />
+                        </Grid>
+                    </Button.Content>
+                </Button>
+            </Grid>
+
+            <Grid Grid.Row="2"
+                  Margin="0,10,0,0">
+
+                <ListView ItemsSource="{Binding Comments, Mode=OneWay}"
+                          SelectionMode="None"
+                          IsItemClickEnabled="False"
+                          Visibility="{Binding IsLoading, Mode=OneWay, Converter={StaticResource InverseVisibilityConverter}}"
+                          ItemTemplate="{StaticResource CommentsDataTemplate}"
+                          ScrollViewer.VerticalScrollMode="Disabled">
+
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment"
+                                    Value="Stretch" />
+                            <Setter Property="Margin"
+                                    Value="0,0,0,10" />
+                        </Style>
+                    </ListView.ItemContainerStyle>
+
+                </ListView>
+
+                <ProgressRing Foreground="{StaticResource PrimaryBrush}"
+                              IsActive="{Binding IsLoading, Mode=OneWay}"
+                              Visibility="{Binding IsLoading, Mode=OneWay, Converter={StaticResource VisibilityConverter}}"
+                              Width="48"
+                              Height="48" />
+
+            </Grid>
+
+        </Grid>
+
+    </ScrollViewer>
+
+</Page>

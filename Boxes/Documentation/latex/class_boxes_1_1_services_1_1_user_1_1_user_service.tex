@@ -1,0 +1,66 @@
+\hypertarget{class_boxes_1_1_services_1_1_user_1_1_user_service}{}\section{Référence de la classe Boxes.\+Services.\+User.\+User\+Service}
+\label{class_boxes_1_1_services_1_1_user_1_1_user_service}\index{Boxes.\+Services.\+User.\+User\+Service@{Boxes.\+Services.\+User.\+User\+Service}}
+
+
+Service d\textquotesingle{}accès aux données de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User}.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Services.\+User.\+User\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_services_1_1_user_1_1_user_service}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ \hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User} $>$ \hyperlink{class_boxes_1_1_services_1_1_user_1_1_user_service_a16cddcf857e84cbe91e6080a0c069ea6}{Create\+Async} (\hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User} user)
+\item 
+async Task$<$ \hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User} $>$ \hyperlink{class_boxes_1_1_services_1_1_user_1_1_user_service_a78cf446a883eba4bef411c128794a624}{Get\+By\+Email\+Password\+Async} (string email, string password)
+\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Service d\textquotesingle{}accès aux données de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_user}{Models.\+User}. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Services\+::\+User\+::\+User\+Service@{Boxes\+::\+Services\+::\+User\+::\+User\+Service}!Create\+Async@{Create\+Async}}
+\index{Create\+Async@{Create\+Async}!Boxes\+::\+Services\+::\+User\+::\+User\+Service@{Boxes\+::\+Services\+::\+User\+::\+User\+Service}}
+\subsubsection[{\texorpdfstring{Create\+Async(\+Models.\+User user)}{CreateAsync(Models.User user)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<${\bf Models.\+User}$>$ Boxes.\+Services.\+User.\+User\+Service.\+Create\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+User}}]{user}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_user_1_1_user_service_a16cddcf857e84cbe91e6080a0c069ea6}{}\label{class_boxes_1_1_services_1_1_user_1_1_user_service_a16cddcf857e84cbe91e6080a0c069ea6}
+Enregistre un nouvel utilisateur.  
+\begin{DoxyExceptions}{Exceptions}
+{\em Web\+Service\+Exception} & Levée si le web service n\textquotesingle{}est pas en mesure de nous délivrer l\textquotesingle{}utilisateur créé ou qu\textquotesingle{}il renvoi un code d\textquotesingle{}erreur (500, 503, 404, ...). \\
+\hline
+\end{DoxyExceptions}
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_user_1_1_i_user_service_a880f9da1dd444fda122508bf67cb46f7}{Boxes.\+Services.\+User.\+I\+User\+Service}.
+
+\index{Boxes\+::\+Services\+::\+User\+::\+User\+Service@{Boxes\+::\+Services\+::\+User\+::\+User\+Service}!Get\+By\+Email\+Password\+Async@{Get\+By\+Email\+Password\+Async}}
+\index{Get\+By\+Email\+Password\+Async@{Get\+By\+Email\+Password\+Async}!Boxes\+::\+Services\+::\+User\+::\+User\+Service@{Boxes\+::\+Services\+::\+User\+::\+User\+Service}}
+\subsubsection[{\texorpdfstring{Get\+By\+Email\+Password\+Async(string email, string password)}{GetByEmailPasswordAsync(string email, string password)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<${\bf Models.\+User}$>$ Boxes.\+Services.\+User.\+User\+Service.\+Get\+By\+Email\+Password\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{email, }
+\item[{string}]{password}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_user_1_1_user_service_a78cf446a883eba4bef411c128794a624}{}\label{class_boxes_1_1_services_1_1_user_1_1_user_service_a78cf446a883eba4bef411c128794a624}
+Récupère un utilisateur en fonction de son email et de son mot de passe.  
+\begin{DoxyExceptions}{Exceptions}
+{\em Web\+Service\+Exception} & Levée si le web service n\textquotesingle{}est pas en mesure de nous délivrer l\textquotesingle{}utilisateur correspondant à l\textquotesingle{}email et le mot de passe en paramètre ou qu\textquotesingle{}il renvoi un code d\textquotesingle{}erreur (500, 503, 404, ...). \\
+\hline
+\end{DoxyExceptions}
+
+
+Implémente \hyperlink{interface_boxes_1_1_services_1_1_user_1_1_i_user_service_af1d3d64ca48c7bf548203f6fa170f9d8}{Boxes.\+Services.\+User.\+I\+User\+Service}.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+Services/\+User/\hyperlink{_user_service_8cs}{User\+Service.\+cs}\end{DoxyCompactItemize}

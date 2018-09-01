@@ -1,0 +1,2 @@
+C:\Users\thoma\OneDrive\Documents\Visual Studio 2015\Projects\Boxes\Boxes.Tests\Boxes.Tests.csproj;x86
+C:\Users\thoma\OneDrive\Documents\Visual Studio 2015\Projects\Boxes\Boxes\Boxes.csproj;x86

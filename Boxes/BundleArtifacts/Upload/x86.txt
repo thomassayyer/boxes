@@ -1,0 +1,2 @@
+MainPackage=C:\Users\thoma\OneDrive\Documents\Visual Studio 2015\Projects\Boxes\Boxes\bin\x86\Release\Upload\Boxes_1.1.1.0_x86.appx
+SymbolPackage=C:\Users\thoma\OneDrive\Documents\Visual Studio 2015\Projects\Boxes\Boxes\AppPackages\Boxes_1.1.1.0\Boxes_1.1.1.0_x86.appxsym

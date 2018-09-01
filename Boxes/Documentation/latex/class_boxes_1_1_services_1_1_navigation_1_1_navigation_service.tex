@@ -1,0 +1,182 @@
+\hypertarget{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service}{}\section{Référence de la classe Boxes.\+Services.\+Navigation.\+Navigation\+Service}
+\label{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service}\index{Boxes.\+Services.\+Navigation.\+Navigation\+Service@{Boxes.\+Services.\+Navigation.\+Navigation\+Service}}
+
+
+Service de navigation pour applications universelles utilisant un shell.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Services.\+Navigation.\+Navigation\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a25ba7c409be2fdd20a4e0e89e73fa604}{Navigation\+Service} ()
+\begin{DoxyCompactList}\small\item\em Constructeur non paramétré qui initialise les collections. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a356a6266e3489ea34daa0194060e9479}{Go\+Back} ()
+\begin{DoxyCompactList}\small\item\em Si possible, affiche la page précédente (de la pile de navigation). \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a611e1366caa613a1c58011d69750dc18}{Navigate\+To} (string page\+Key)
+\begin{DoxyCompactList}\small\item\em Affiche la page correspondante à la clé donnée. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a250bfa141ce7c4a8a1da8c65e06b0681}{Navigate\+To} (string page\+Key, object parameter)
+\begin{DoxyCompactList}\small\item\em Affiche la page correspondante à la clé donnée en lui passant un paramètre. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a72db0b266a8b1b3371269a0712483fff}{Configure} (string page\+Key, Type page\+Type, bool shell)
+\begin{DoxyCompactList}\small\item\em Ajoute une paire clé/page au service de navigation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Propriétés}
+\begin{DoxyCompactItemize}
+\item 
+Frame \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_ab894fb70e405311074f5e0122fece0ff}{Shell\+Frame}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Frame du contenu du shell. \end{DoxyCompactList}\item 
+Frame \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a6735d62868cecd7fdb84b66bb7995abf}{Root\+Frame}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Frame principale. \end{DoxyCompactList}\item 
+string \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_ab080fe0a7b5e990934e11b55a03bbf28}{Current\+Page\+Key}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Clé de la page actuellement affichée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ string, Type $>$ \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_ab47e2610acc4784083f0fc7706653b18}{pages\+By\+Key}
+\begin{DoxyCompactList}\small\item\em Contient les types des pages sur lesquelles naviguer avec leur clé associé. \end{DoxyCompactList}\item 
+List$<$ string $>$ \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_af210b37736b21117084b53510c225b89}{shell\+Pages}
+\begin{DoxyCompactList}\small\item\em Pages étants destinées à être affichées dans le shell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Service de navigation pour applications universelles utilisant un shell. 
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}!Navigation\+Service@{Navigation\+Service}}
+\index{Navigation\+Service@{Navigation\+Service}!Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Navigation\+Service()}{NavigationService()}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+Services.\+Navigation.\+Navigation\+Service.\+Navigation\+Service (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a25ba7c409be2fdd20a4e0e89e73fa604}{}\label{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a25ba7c409be2fdd20a4e0e89e73fa604}
+
+
+Constructeur non paramétré qui initialise les collections. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}!Configure@{Configure}}
+\index{Configure@{Configure}!Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Configure(string page\+Key, Type page\+Type, bool shell)}{Configure(string pageKey, Type pageType, bool shell)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Services.\+Navigation.\+Navigation\+Service.\+Configure (
+\begin{DoxyParamCaption}
+\item[{string}]{page\+Key, }
+\item[{Type}]{page\+Type, }
+\item[{bool}]{shell}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a72db0b266a8b1b3371269a0712483fff}{}\label{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a72db0b266a8b1b3371269a0712483fff}
+
+
+Ajoute une paire clé/page au service de navigation. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em page\+Key} & La clé qui sera utilisé ensuite dans \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a611e1366caa613a1c58011d69750dc18}{Navigate\+To(string)} ou \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a250bfa141ce7c4a8a1da8c65e06b0681}{Navigate\+To(string, object)}. \\
+\hline
+{\em page\+Type} & Type de la page correspondante à la clé. \\
+\hline
+{\em shell} & Est-\/ce que cette page est destinée à une navigation interne dans le shell ? \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}!Go\+Back@{Go\+Back}}
+\index{Go\+Back@{Go\+Back}!Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Go\+Back()}{GoBack()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Services.\+Navigation.\+Navigation\+Service.\+Go\+Back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a356a6266e3489ea34daa0194060e9479}{}\label{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a356a6266e3489ea34daa0194060e9479}
+
+
+Si possible, affiche la page précédente (de la pile de navigation). 
+
+\index{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}!Navigate\+To@{Navigate\+To}}
+\index{Navigate\+To@{Navigate\+To}!Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Navigate\+To(string page\+Key)}{NavigateTo(string pageKey)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Services.\+Navigation.\+Navigation\+Service.\+Navigate\+To (
+\begin{DoxyParamCaption}
+\item[{string}]{page\+Key}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a611e1366caa613a1c58011d69750dc18}{}\label{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a611e1366caa613a1c58011d69750dc18}
+
+
+Affiche la page correspondante à la clé donnée. 
+
+Ne pas oublier d\textquotesingle{}appeler \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a72db0b266a8b1b3371269a0712483fff}{Configure(string, Type, bool)}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em page\+Key} & Clé de la page à afficher. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}!Navigate\+To@{Navigate\+To}}
+\index{Navigate\+To@{Navigate\+To}!Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Navigate\+To(string page\+Key, object parameter)}{NavigateTo(string pageKey, object parameter)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Services.\+Navigation.\+Navigation\+Service.\+Navigate\+To (
+\begin{DoxyParamCaption}
+\item[{string}]{page\+Key, }
+\item[{object}]{parameter}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a250bfa141ce7c4a8a1da8c65e06b0681}{}\label{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a250bfa141ce7c4a8a1da8c65e06b0681}
+
+
+Affiche la page correspondante à la clé donnée en lui passant un paramètre. 
+
+Ne pas oublier d\textquotesingle{}appeler \hyperlink{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a72db0b266a8b1b3371269a0712483fff}{Configure(string, Type, bool)}. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em page\+Key} & Clé de la page à afficher. \\
+\hline
+{\em parameter} & Paramètres à transmettre à la nouvelle page. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}!pages\+By\+Key@{pages\+By\+Key}}
+\index{pages\+By\+Key@{pages\+By\+Key}!Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{pages\+By\+Key}{pagesByKey}}]{\setlength{\rightskip}{0pt plus 5cm}Dictionary$<$string, Type$>$ Boxes.\+Services.\+Navigation.\+Navigation\+Service.\+pages\+By\+Key\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_ab47e2610acc4784083f0fc7706653b18}{}\label{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_ab47e2610acc4784083f0fc7706653b18}
+
+
+Contient les types des pages sur lesquelles naviguer avec leur clé associé. 
+
+\index{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}!shell\+Pages@{shell\+Pages}}
+\index{shell\+Pages@{shell\+Pages}!Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{shell\+Pages}{shellPages}}]{\setlength{\rightskip}{0pt plus 5cm}List$<$string$>$ Boxes.\+Services.\+Navigation.\+Navigation\+Service.\+shell\+Pages\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_af210b37736b21117084b53510c225b89}{}\label{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_af210b37736b21117084b53510c225b89}
+
+
+Pages étants destinées à être affichées dans le shell. 
+
+
+
+\subsection{Documentation des propriétés}
+\index{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}!Current\+Page\+Key@{Current\+Page\+Key}}
+\index{Current\+Page\+Key@{Current\+Page\+Key}!Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Current\+Page\+Key}{CurrentPageKey}}]{\setlength{\rightskip}{0pt plus 5cm}string Boxes.\+Services.\+Navigation.\+Navigation\+Service.\+Current\+Page\+Key\hspace{0.3cm}{\ttfamily [get]}}\hypertarget{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_ab080fe0a7b5e990934e11b55a03bbf28}{}\label{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_ab080fe0a7b5e990934e11b55a03bbf28}
+
+
+Clé de la page actuellement affichée. 
+
+\index{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}!Root\+Frame@{Root\+Frame}}
+\index{Root\+Frame@{Root\+Frame}!Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Root\+Frame}{RootFrame}}]{\setlength{\rightskip}{0pt plus 5cm}Frame Boxes.\+Services.\+Navigation.\+Navigation\+Service.\+Root\+Frame\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}\hypertarget{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a6735d62868cecd7fdb84b66bb7995abf}{}\label{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_a6735d62868cecd7fdb84b66bb7995abf}
+
+
+Frame principale. 
+
+\index{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}!Shell\+Frame@{Shell\+Frame}}
+\index{Shell\+Frame@{Shell\+Frame}!Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service@{Boxes\+::\+Services\+::\+Navigation\+::\+Navigation\+Service}}
+\subsubsection[{\texorpdfstring{Shell\+Frame}{ShellFrame}}]{\setlength{\rightskip}{0pt plus 5cm}Frame Boxes.\+Services.\+Navigation.\+Navigation\+Service.\+Shell\+Frame\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [private]}}\hypertarget{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_ab894fb70e405311074f5e0122fece0ff}{}\label{class_boxes_1_1_services_1_1_navigation_1_1_navigation_service_ab894fb70e405311074f5e0122fece0ff}
+
+
+Frame du contenu du shell. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+Services/\+Navigation/\hyperlink{_navigation_service_8cs}{Navigation\+Service.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\hypertarget{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service}{}\section{Référence de l\textquotesingle{}interface Boxes.\+Services.\+Comment.\+I\+Comment\+Service}
+\label{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service}\index{Boxes.\+Services.\+Comment.\+I\+Comment\+Service@{Boxes.\+Services.\+Comment.\+I\+Comment\+Service}}
+
+
+Définit les méthodes pour accéder aux données de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_comment}{Models.\+Comment}.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Services.\+Comment.\+I\+Comment\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.860465cm]{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+Task$<$ \hyperlink{class_boxes_1_1_models_1_1_comment}{Models.\+Comment} $>$ \hyperlink{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service_a12facb39d0bff06586f111fa6d0f302a}{Create\+Async} (\hyperlink{class_boxes_1_1_models_1_1_comment}{Models.\+Comment} comment)
+\begin{DoxyCompactList}\small\item\em Enregistre un nouveau commentaire. \end{DoxyCompactList}\item 
+Task$<$ List$<$ \hyperlink{class_boxes_1_1_models_1_1_comment}{Models.\+Comment} $>$ $>$ \hyperlink{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service_ad375a764e72487c3665ffcaeb7176d2f}{Get\+By\+Post\+Async} (\hyperlink{class_boxes_1_1_models_1_1_post}{Models.\+Post} post)
+\begin{DoxyCompactList}\small\item\em Récupère les commentaire d\textquotesingle{}un post. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Définit les méthodes pour accéder aux données de l\textquotesingle{}entité \hyperlink{class_boxes_1_1_models_1_1_comment}{Models.\+Comment}. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Services\+::\+Comment\+::\+I\+Comment\+Service@{Boxes\+::\+Services\+::\+Comment\+::\+I\+Comment\+Service}!Create\+Async@{Create\+Async}}
+\index{Create\+Async@{Create\+Async}!Boxes\+::\+Services\+::\+Comment\+::\+I\+Comment\+Service@{Boxes\+::\+Services\+::\+Comment\+::\+I\+Comment\+Service}}
+\subsubsection[{\texorpdfstring{Create\+Async(\+Models.\+Comment comment)}{CreateAsync(Models.Comment comment)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<${\bf Models.\+Comment}$>$ Boxes.\+Services.\+Comment.\+I\+Comment\+Service.\+Create\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+Comment}}]{comment}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service_a12facb39d0bff06586f111fa6d0f302a}{}\label{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service_a12facb39d0bff06586f111fa6d0f302a}
+
+
+Enregistre un nouveau commentaire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em comment} & Commentaire à créer. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Le commentaire fraichement créé. 
+\end{DoxyReturn}
+
+
+Implémenté dans \hyperlink{class_boxes_1_1_services_1_1_comment_1_1_comment_service_adffedabf789162e69424662fe12c74d1}{Boxes.\+Services.\+Comment.\+Comment\+Service}, et \hyperlink{class_boxes_1_1_services_1_1_comment_1_1_design_comment_service_aac0a94144f815e0af97a289ba92c7a41}{Boxes.\+Services.\+Comment.\+Design\+Comment\+Service}.
+
+\index{Boxes\+::\+Services\+::\+Comment\+::\+I\+Comment\+Service@{Boxes\+::\+Services\+::\+Comment\+::\+I\+Comment\+Service}!Get\+By\+Post\+Async@{Get\+By\+Post\+Async}}
+\index{Get\+By\+Post\+Async@{Get\+By\+Post\+Async}!Boxes\+::\+Services\+::\+Comment\+::\+I\+Comment\+Service@{Boxes\+::\+Services\+::\+Comment\+::\+I\+Comment\+Service}}
+\subsubsection[{\texorpdfstring{Get\+By\+Post\+Async(\+Models.\+Post post)}{GetByPostAsync(Models.Post post)}}]{\setlength{\rightskip}{0pt plus 5cm}Task$<$List$<${\bf Models.\+Comment}$>$ $>$ Boxes.\+Services.\+Comment.\+I\+Comment\+Service.\+Get\+By\+Post\+Async (
+\begin{DoxyParamCaption}
+\item[{{\bf Models.\+Post}}]{post}
+\end{DoxyParamCaption}
+)}\hypertarget{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service_ad375a764e72487c3665ffcaeb7176d2f}{}\label{interface_boxes_1_1_services_1_1_comment_1_1_i_comment_service_ad375a764e72487c3665ffcaeb7176d2f}
+
+
+Récupère les commentaire d\textquotesingle{}un post. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em post} & \hyperlink{namespace_boxes_1_1_services_1_1_post}{Post} duquel récupérer les commentaire. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Les commentaire du post. 
+\end{DoxyReturn}
+
+
+Implémenté dans \hyperlink{class_boxes_1_1_services_1_1_comment_1_1_comment_service_a0335da3b3e22c9a7f96ef0fc0f2a9a40}{Boxes.\+Services.\+Comment.\+Comment\+Service}, et \hyperlink{class_boxes_1_1_services_1_1_comment_1_1_design_comment_service_a1bf5da1e81436f15c184721ee504d630}{Boxes.\+Services.\+Comment.\+Design\+Comment\+Service}.
+
+
+
+La documentation de cette interface a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+Services/\+Comment/\hyperlink{_i_comment_service_8cs}{I\+Comment\+Service.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+MainPackage=C:\Users\thoma\OneDrive\Documents\Visual Studio 2015\Projects\Boxes\Boxes\bin\ARM\Release\Boxes_1.1.1.0_ARM.appx
+SymbolPackage=C:\Users\thoma\OneDrive\Documents\Visual Studio 2015\Projects\Boxes\Boxes\AppPackages\Boxes_1.1.1.0_Test\Boxes_1.1.1.0_ARM.appxsym
+ResourcePack=C:\Users\thoma\OneDrive\Documents\Visual Studio 2015\Projects\Boxes\Boxes\bin\ARM\Release\Boxes_1.1.1.0_language-fr.appx
+ResourcePack=C:\Users\thoma\OneDrive\Documents\Visual Studio 2015\Projects\Boxes\Boxes\bin\ARM\Release\Boxes_1.1.1.0_scale-100.appx
+ResourcePack=C:\Users\thoma\OneDrive\Documents\Visual Studio 2015\Projects\Boxes\Boxes\bin\ARM\Release\Boxes_1.1.1.0_scale-125.appx
+ResourcePack=C:\Users\thoma\OneDrive\Documents\Visual Studio 2015\Projects\Boxes\Boxes\bin\ARM\Release\Boxes_1.1.1.0_scale-150.appx
+ResourcePack=C:\Users\thoma\OneDrive\Documents\Visual Studio 2015\Projects\Boxes\Boxes\bin\ARM\Release\Boxes_1.1.1.0_scale-400.appx

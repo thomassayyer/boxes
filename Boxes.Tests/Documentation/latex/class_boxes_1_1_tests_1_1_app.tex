@@ -1,0 +1,111 @@
+\hypertarget{class_boxes_1_1_tests_1_1_app}{}\section{Référence de la classe Boxes.\+Tests.\+App}
+\label{class_boxes_1_1_tests_1_1_app}\index{Boxes.\+Tests.\+App@{Boxes.\+Tests.\+App}}
+
+
+Fournit un comportement spécifique à l\textquotesingle{}application afin de compléter la classe Application par défaut.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Tests.\+App\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_tests_1_1_app}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_tests_1_1_app_a1999af5186e3e336921b3dc46b9043e8}{App} ()
+\begin{DoxyCompactList}\small\item\em Initialise l\textquotesingle{}objet d\textquotesingle{}application de singleton. Il s\textquotesingle{}agit de la première ligne du code créé à être exécutée. Elle correspond donc à l\textquotesingle{}équivalent logique de main() ou Win\+Main(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_boxes_1_1_tests_1_1_app_a3afb9340185c08861e8e4d76d5ea17e0}{On\+Launched} (Launch\+Activated\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Invoqué lorsque l\textquotesingle{}application est lancée normalement par l\textquotesingle{}utilisateur final. D\textquotesingle{}autres points d\textquotesingle{}entrée seront utilisés par exemple au moment du lancement de l\textquotesingle{}application pour l\textquotesingle{}ouverture d\textquotesingle{}un fichier spécifique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_app_a5f7bad7719ca5b36161ff193dc2cced0}{On\+Navigation\+Failed} (object sender, Navigation\+Failed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Appelé lorsque la navigation vers une page donnée échoue \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_tests_1_1_app_abb66fa16524f69671eb35df599664463}{On\+Suspending} (object sender, Suspending\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Appelé lorsque l\textquotesingle{}exécution de l\textquotesingle{}application est suspendue. L\textquotesingle{}état de l\textquotesingle{}application est enregistré sans savoir si l\textquotesingle{}application pourra se fermer ou reprendre sans endommager le contenu de la mémoire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fournit un comportement spécifique à l\textquotesingle{}application afin de compléter la classe Application par défaut. 
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+Tests\+::\+App@{Boxes\+::\+Tests\+::\+App}!App@{App}}
+\index{App@{App}!Boxes\+::\+Tests\+::\+App@{Boxes\+::\+Tests\+::\+App}}
+\subsubsection[{\texorpdfstring{App()}{App()}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+Tests.\+App.\+App (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_tests_1_1_app_a1999af5186e3e336921b3dc46b9043e8}{}\label{class_boxes_1_1_tests_1_1_app_a1999af5186e3e336921b3dc46b9043e8}
+
+
+Initialise l\textquotesingle{}objet d\textquotesingle{}application de singleton. Il s\textquotesingle{}agit de la première ligne du code créé à être exécutée. Elle correspond donc à l\textquotesingle{}équivalent logique de main() ou Win\+Main(). 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Tests\+::\+App@{Boxes\+::\+Tests\+::\+App}!On\+Launched@{On\+Launched}}
+\index{On\+Launched@{On\+Launched}!Boxes\+::\+Tests\+::\+App@{Boxes\+::\+Tests\+::\+App}}
+\subsubsection[{\texorpdfstring{On\+Launched(\+Launch\+Activated\+Event\+Args e)}{OnLaunched(LaunchActivatedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}override void Boxes.\+Tests.\+App.\+On\+Launched (
+\begin{DoxyParamCaption}
+\item[{Launch\+Activated\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_boxes_1_1_tests_1_1_app_a3afb9340185c08861e8e4d76d5ea17e0}{}\label{class_boxes_1_1_tests_1_1_app_a3afb9340185c08861e8e4d76d5ea17e0}
+
+
+Invoqué lorsque l\textquotesingle{}application est lancée normalement par l\textquotesingle{}utilisateur final. D\textquotesingle{}autres points d\textquotesingle{}entrée seront utilisés par exemple au moment du lancement de l\textquotesingle{}application pour l\textquotesingle{}ouverture d\textquotesingle{}un fichier spécifique. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em e} & Détails concernant la requête et le processus de lancement. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+App@{Boxes\+::\+Tests\+::\+App}!On\+Navigation\+Failed@{On\+Navigation\+Failed}}
+\index{On\+Navigation\+Failed@{On\+Navigation\+Failed}!Boxes\+::\+Tests\+::\+App@{Boxes\+::\+Tests\+::\+App}}
+\subsubsection[{\texorpdfstring{On\+Navigation\+Failed(object sender, Navigation\+Failed\+Event\+Args e)}{OnNavigationFailed(object sender, NavigationFailedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+App.\+On\+Navigation\+Failed (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Navigation\+Failed\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_app_a5f7bad7719ca5b36161ff193dc2cced0}{}\label{class_boxes_1_1_tests_1_1_app_a5f7bad7719ca5b36161ff193dc2cced0}
+
+
+Appelé lorsque la navigation vers une page donnée échoue 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sender} & Frame à l\textquotesingle{}origine de l\textquotesingle{}échec de navigation. \\
+\hline
+{\em e} & Détails relatifs à l\textquotesingle{}échec de navigation. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+Tests\+::\+App@{Boxes\+::\+Tests\+::\+App}!On\+Suspending@{On\+Suspending}}
+\index{On\+Suspending@{On\+Suspending}!Boxes\+::\+Tests\+::\+App@{Boxes\+::\+Tests\+::\+App}}
+\subsubsection[{\texorpdfstring{On\+Suspending(object sender, Suspending\+Event\+Args e)}{OnSuspending(object sender, SuspendingEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+Tests.\+App.\+On\+Suspending (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Suspending\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_tests_1_1_app_abb66fa16524f69671eb35df599664463}{}\label{class_boxes_1_1_tests_1_1_app_abb66fa16524f69671eb35df599664463}
+
+
+Appelé lorsque l\textquotesingle{}exécution de l\textquotesingle{}application est suspendue. L\textquotesingle{}état de l\textquotesingle{}application est enregistré sans savoir si l\textquotesingle{}application pourra se fermer ou reprendre sans endommager le contenu de la mémoire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sender} & Source de la requête de suspension. \\
+\hline
+{\em e} & Détails de la requête de suspension. \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes.\+Tests/\hyperlink{_unit_test_app_8xaml_8cs}{Unit\+Test\+App.\+xaml.\+cs}\end{DoxyCompactItemize}

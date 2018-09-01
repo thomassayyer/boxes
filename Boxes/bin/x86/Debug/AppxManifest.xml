@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <!--
+    LE FICHIER MANIFESTE DE CE PACKAGE A ÉTÉ GÉNÉRÉ PAR LE PROCESSUS DE GÉNÉRATION.
+
+    Les modifications apportées à ce fichier seront perdues lors de la régénération. Pour corriger les erreurs présentes dans ce fichier, modifiez le fichier source .appxmanifest.
+
+    Pour plus d'informations sur les fichiers manifeste, consultez http://go.microsoft.com/fwlink/?LinkID=241727
+  -->
+  <Identity Name="4985ThomasSAYER.567396D1A9C62" Publisher="CN=DD1DE32E-520F-4810-BBCE-B156C9F0D6EA" Version="1.1.1.0" ProcessorArchitecture="x86" />
+  <mp:PhoneIdentity PhoneProductId="b1c5417a-4282-4a9d-9627-9e1b2ebc8421" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Boxes.</DisplayName>
+    <PublisherDisplayName>Thomas SAYER</PublisherDisplayName>
+    <Logo>Auxiliary\Resources\Images\NewStoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10240.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="EN-US" />
+    <Resource Language="FR" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="Boxes.exe" EntryPoint="Boxes.App">
+      <uap:VisualElements DisplayName="Boxes" Square150x150Logo="Auxiliary\Resources\Images\Square150x150Logo.png" Square44x44Logo="Auxiliary\Resources\Images\Square44x44Logo.png" Description="ms-resource:AppDescription" BackgroundColor="#4E65AD">
+        <uap:DefaultTile Wide310x150Logo="Auxiliary\Resources\Images\Wide310x150Logo.png" Square71x71Logo="Auxiliary\Resources\Images\Square71x71Logo.png" ShortName="Boxes" Square310x310Logo="Auxiliary\Resources\Images\Square310x310Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Auxiliary\Resources\Images\SplashScreen.png" BackgroundColor="#4E65AD" />
+        <uap:InitialRotationPreference>
+          <uap:Rotation Preference="portrait" />
+          <uap:Rotation Preference="portraitFlipped" />
+        </uap:InitialRotationPreference>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
+    <build:Item Name="VisualStudio" Version="14.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Community 2015" />
+    <build:Item Name="OperatingSystem" Version="10.0.14342.1000 (rs1_release.160506-1708)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25123.0" />
+    <build:Item Name="ProjectGUID" Value="{307AF2C3-9E98-46E2-A4E5-35A41C61435B}" />
+    <build:Item Name="OptimizingToolset" Value="None" />
+    <build:Item Name="TargetRuntime" Value="Managed" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.24720.0" />
+    <build:Item Name="WindowsMobile" Version="10.0.10586.0" />
+    <build:Item Name="MakePri.exe" Version="10.0.10586.15 (th2_release.151119-1817)" />
+  </build:Metadata>
+</Package>

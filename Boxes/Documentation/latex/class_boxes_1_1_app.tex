@@ -1,0 +1,137 @@
+\hypertarget{class_boxes_1_1_app}{}\section{Référence de la classe Boxes.\+App}
+\label{class_boxes_1_1_app}\index{Boxes.\+App@{Boxes.\+App}}
+
+
+Fournit un comportement spécifique à l\textquotesingle{}application afin de compléter la classe Application par défaut.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+App\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_boxes_1_1_app}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_boxes_1_1_app_a2137586b520cfb163d9278187027fc62}{App} ()
+\begin{DoxyCompactList}\small\item\em Initialise l\textquotesingle{}objet d\textquotesingle{}application de singleton. Il s\textquotesingle{}agit de la première ligne du code créé à être exécutée. Elle correspond donc à l\textquotesingle{}équivalent logique de main() ou Win\+Main(). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres protégées}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_boxes_1_1_app_acf01405b132b027d95ec0b761416e384}{On\+Launched} (Launch\+Activated\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Invoqué lorsque l\textquotesingle{}application est lancée normalement par l\textquotesingle{}utilisateur final. D\textquotesingle{}autres points d\textquotesingle{}entrée seront utilisés par exemple au moment du lancement de l\textquotesingle{}application pour l\textquotesingle{}ouverture d\textquotesingle{}un fichier spécifique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Fonctions membres privées}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_boxes_1_1_app_a8e739ea3879e4d556acc04312bb19e04}{On\+Navigation\+Failed} (object sender, Navigation\+Failed\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Appelé lorsque la navigation vers une page donnée échoue \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_app_ac5bc5c73c1fd8c07fd3c8f39799cea6e}{On\+Suspending} (object sender, Suspending\+Event\+Args e)
+\begin{DoxyCompactList}\small\item\em Appelé lorsque l\textquotesingle{}exécution de l\textquotesingle{}application est suspendue. L\textquotesingle{}état de l\textquotesingle{}application est enregistré sans savoir si l\textquotesingle{}application pourra se fermer ou reprendre sans endommager le contenu de la mémoire. \end{DoxyCompactList}\item 
+void \hyperlink{class_boxes_1_1_app_a5f5216a17874d327f729f926a0421339}{Initialize\+Title\+Bar} ()
+\begin{DoxyCompactList}\small\item\em Initialise la barre de titre. \end{DoxyCompactList}\item 
+async void \hyperlink{class_boxes_1_1_app_ac9c47d1ed1666dc83f77b5a0b1825b55}{Initialize\+Status\+Bar} ()
+\begin{DoxyCompactList}\small\item\em Initialise la barre de statut. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Fournit un comportement spécifique à l\textquotesingle{}application afin de compléter la classe Application par défaut. 
+
+
+
+\subsection{Documentation des constructeurs et destructeur}
+\index{Boxes\+::\+App@{Boxes\+::\+App}!App@{App}}
+\index{App@{App}!Boxes\+::\+App@{Boxes\+::\+App}}
+\subsubsection[{\texorpdfstring{App()}{App()}}]{\setlength{\rightskip}{0pt plus 5cm}Boxes.\+App.\+App (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_app_a2137586b520cfb163d9278187027fc62}{}\label{class_boxes_1_1_app_a2137586b520cfb163d9278187027fc62}
+
+
+Initialise l\textquotesingle{}objet d\textquotesingle{}application de singleton. Il s\textquotesingle{}agit de la première ligne du code créé à être exécutée. Elle correspond donc à l\textquotesingle{}équivalent logique de main() ou Win\+Main(). 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+App@{Boxes\+::\+App}!Initialize\+Status\+Bar@{Initialize\+Status\+Bar}}
+\index{Initialize\+Status\+Bar@{Initialize\+Status\+Bar}!Boxes\+::\+App@{Boxes\+::\+App}}
+\subsubsection[{\texorpdfstring{Initialize\+Status\+Bar()}{InitializeStatusBar()}}]{\setlength{\rightskip}{0pt plus 5cm}async void Boxes.\+App.\+Initialize\+Status\+Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_app_ac9c47d1ed1666dc83f77b5a0b1825b55}{}\label{class_boxes_1_1_app_ac9c47d1ed1666dc83f77b5a0b1825b55}
+
+
+Initialise la barre de statut. 
+
+\index{Boxes\+::\+App@{Boxes\+::\+App}!Initialize\+Title\+Bar@{Initialize\+Title\+Bar}}
+\index{Initialize\+Title\+Bar@{Initialize\+Title\+Bar}!Boxes\+::\+App@{Boxes\+::\+App}}
+\subsubsection[{\texorpdfstring{Initialize\+Title\+Bar()}{InitializeTitleBar()}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+App.\+Initialize\+Title\+Bar (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_app_a5f5216a17874d327f729f926a0421339}{}\label{class_boxes_1_1_app_a5f5216a17874d327f729f926a0421339}
+
+
+Initialise la barre de titre. 
+
+\index{Boxes\+::\+App@{Boxes\+::\+App}!On\+Launched@{On\+Launched}}
+\index{On\+Launched@{On\+Launched}!Boxes\+::\+App@{Boxes\+::\+App}}
+\subsubsection[{\texorpdfstring{On\+Launched(\+Launch\+Activated\+Event\+Args e)}{OnLaunched(LaunchActivatedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}override void Boxes.\+App.\+On\+Launched (
+\begin{DoxyParamCaption}
+\item[{Launch\+Activated\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_boxes_1_1_app_acf01405b132b027d95ec0b761416e384}{}\label{class_boxes_1_1_app_acf01405b132b027d95ec0b761416e384}
+
+
+Invoqué lorsque l\textquotesingle{}application est lancée normalement par l\textquotesingle{}utilisateur final. D\textquotesingle{}autres points d\textquotesingle{}entrée seront utilisés par exemple au moment du lancement de l\textquotesingle{}application pour l\textquotesingle{}ouverture d\textquotesingle{}un fichier spécifique. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em e} & Détails concernant la requête et le processus de lancement. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+App@{Boxes\+::\+App}!On\+Navigation\+Failed@{On\+Navigation\+Failed}}
+\index{On\+Navigation\+Failed@{On\+Navigation\+Failed}!Boxes\+::\+App@{Boxes\+::\+App}}
+\subsubsection[{\texorpdfstring{On\+Navigation\+Failed(object sender, Navigation\+Failed\+Event\+Args e)}{OnNavigationFailed(object sender, NavigationFailedEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+App.\+On\+Navigation\+Failed (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Navigation\+Failed\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_app_a8e739ea3879e4d556acc04312bb19e04}{}\label{class_boxes_1_1_app_a8e739ea3879e4d556acc04312bb19e04}
+
+
+Appelé lorsque la navigation vers une page donnée échoue 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sender} & Frame à l\textquotesingle{}origine de l\textquotesingle{}échec de navigation. \\
+\hline
+{\em e} & Détails relatifs à l\textquotesingle{}échec de navigation. \\
+\hline
+\end{DoxyParams}
+\index{Boxes\+::\+App@{Boxes\+::\+App}!On\+Suspending@{On\+Suspending}}
+\index{On\+Suspending@{On\+Suspending}!Boxes\+::\+App@{Boxes\+::\+App}}
+\subsubsection[{\texorpdfstring{On\+Suspending(object sender, Suspending\+Event\+Args e)}{OnSuspending(object sender, SuspendingEventArgs e)}}]{\setlength{\rightskip}{0pt plus 5cm}void Boxes.\+App.\+On\+Suspending (
+\begin{DoxyParamCaption}
+\item[{object}]{sender, }
+\item[{Suspending\+Event\+Args}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_app_ac5bc5c73c1fd8c07fd3c8f39799cea6e}{}\label{class_boxes_1_1_app_ac5bc5c73c1fd8c07fd3c8f39799cea6e}
+
+
+Appelé lorsque l\textquotesingle{}exécution de l\textquotesingle{}application est suspendue. L\textquotesingle{}état de l\textquotesingle{}application est enregistré sans savoir si l\textquotesingle{}application pourra se fermer ou reprendre sans endommager le contenu de la mémoire. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em sender} & Source de la requête de suspension. \\
+\hline
+{\em e} & Détails de la requête de suspension. \\
+\hline
+\end{DoxyParams}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\hyperlink{_app_8xaml_8cs}{App.\+xaml.\+cs}\end{DoxyCompactItemize}

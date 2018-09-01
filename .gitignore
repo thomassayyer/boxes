@@ -1,0 +1,5 @@
+*.sln
+.vs
+.sonar
+SonarQube
+sonar-project.properties

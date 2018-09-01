@@ -1,0 +1,143 @@
+\hypertarget{class_boxes_1_1_services_1_1_http_service}{}\section{Référence de la classe Boxes.\+Services.\+Http\+Service}
+\label{class_boxes_1_1_services_1_1_http_service}\index{Boxes.\+Services.\+Http\+Service@{Boxes.\+Services.\+Http\+Service}}
+
+
+Classe de base pour tout les services ayant besoins de communiquer avec le Web\+Service.  
+
+
+Graphe d\textquotesingle{}héritage de Boxes.\+Services.\+Http\+Service\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.068702cm]{class_boxes_1_1_services_1_1_http_service}
+\end{center}
+\end{figure}
+\subsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+async Task$<$ Http\+Response\+Message $>$ \hyperlink{class_boxes_1_1_services_1_1_http_service_a2cab0d00215bd550dfa0800dc76a72c5}{Post\+Async} (string url, Dictionary$<$ string, string $>$ pairs)
+\begin{DoxyCompactList}\small\item\em Exécute une requête H\+T\+TP de type P\+O\+ST. \end{DoxyCompactList}\item 
+async Task$<$ Http\+Response\+Message $>$ \hyperlink{class_boxes_1_1_services_1_1_http_service_aaffa530898c661e176158c89c288655f}{Get\+Async} (string url)
+\begin{DoxyCompactList}\small\item\em Exécute une requête H\+T\+TP de type G\+ET. \end{DoxyCompactList}\item 
+async Task$<$ Http\+Response\+Message $>$ \hyperlink{class_boxes_1_1_services_1_1_http_service_a1351153d159242142dff860106115010}{Put\+Async} (string url, Dictionary$<$ string, string $>$ pairs)
+\begin{DoxyCompactList}\small\item\em Exécute une requête H\+T\+TP de type P\+UT. \end{DoxyCompactList}\item 
+async Task$<$ Http\+Response\+Message $>$ \hyperlink{class_boxes_1_1_services_1_1_http_service_ac710b86113bdd643909d124f6cd10637}{Delete\+Async} (string url)
+\begin{DoxyCompactList}\small\item\em Exécute une requête H\+T\+TP de type D\+E\+L\+E\+TE. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Attributs privés}
+\begin{DoxyCompactItemize}
+\item 
+const string \hyperlink{class_boxes_1_1_services_1_1_http_service_a4f422d76e5a21603d2b9531fa6d7704a}{api\+Key} = \char`\"{}41q99x\+Sw\+S8ne\+Fbu\+Vo\+Q\+U\+L\+T\+Y4\+Ggj\+R\+H\+P\+Vl6\char`\"{}
+\begin{DoxyCompactList}\small\item\em Clé d\textquotesingle{}A\+PI qui permet de se connecter au web service. \end{DoxyCompactList}\item 
+const string \hyperlink{class_boxes_1_1_services_1_1_http_service_a3a5a8c4bbef22defc61fed8d9b8ec3f7}{base\+Url} = \char`\"{}http\+://boxes.\+hol.\+es/public/api/\char`\"{} + api\+Key
+\begin{DoxyCompactList}\small\item\em U\+RL de base du web service. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Description détaillée}
+Classe de base pour tout les services ayant besoins de communiquer avec le Web\+Service. 
+
+
+
+\subsection{Documentation des fonctions membres}
+\index{Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}!Delete\+Async@{Delete\+Async}}
+\index{Delete\+Async@{Delete\+Async}!Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}}
+\subsubsection[{\texorpdfstring{Delete\+Async(string url)}{DeleteAsync(string url)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Http\+Response\+Message$>$ Boxes.\+Services.\+Http\+Service.\+Delete\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{url}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_http_service_ac710b86113bdd643909d124f6cd10637}{}\label{class_boxes_1_1_services_1_1_http_service_ac710b86113bdd643909d124f6cd10637}
+
+
+Exécute une requête H\+T\+TP de type D\+E\+L\+E\+TE. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em url} & U\+RL de l\textquotesingle{}action du web service à exécuter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Réponse du web service. 
+\end{DoxyReturn}
+\index{Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}!Get\+Async@{Get\+Async}}
+\index{Get\+Async@{Get\+Async}!Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}}
+\subsubsection[{\texorpdfstring{Get\+Async(string url)}{GetAsync(string url)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Http\+Response\+Message$>$ Boxes.\+Services.\+Http\+Service.\+Get\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{url}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_http_service_aaffa530898c661e176158c89c288655f}{}\label{class_boxes_1_1_services_1_1_http_service_aaffa530898c661e176158c89c288655f}
+
+
+Exécute une requête H\+T\+TP de type G\+ET. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em url} & U\+RL de l\textquotesingle{}action du service à exécuter. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Réponse du web service. 
+\end{DoxyReturn}
+\index{Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}!Post\+Async@{Post\+Async}}
+\index{Post\+Async@{Post\+Async}!Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}}
+\subsubsection[{\texorpdfstring{Post\+Async(string url, Dictionary$<$ string, string $>$ pairs)}{PostAsync(string url, Dictionary< string, string > pairs)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Http\+Response\+Message$>$ Boxes.\+Services.\+Http\+Service.\+Post\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{url, }
+\item[{Dictionary$<$ string, string $>$}]{pairs}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_http_service_a2cab0d00215bd550dfa0800dc76a72c5}{}\label{class_boxes_1_1_services_1_1_http_service_a2cab0d00215bd550dfa0800dc76a72c5}
+
+
+Exécute une requête H\+T\+TP de type P\+O\+ST. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em url} & U\+RL de l\textquotesingle{}action du service web à exécuter. \\
+\hline
+{\em pairs} & Paramètres de la requête H\+T\+TP. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Réponse du web service. 
+\end{DoxyReturn}
+\index{Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}!Put\+Async@{Put\+Async}}
+\index{Put\+Async@{Put\+Async}!Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}}
+\subsubsection[{\texorpdfstring{Put\+Async(string url, Dictionary$<$ string, string $>$ pairs)}{PutAsync(string url, Dictionary< string, string > pairs)}}]{\setlength{\rightskip}{0pt plus 5cm}async Task$<$Http\+Response\+Message$>$ Boxes.\+Services.\+Http\+Service.\+Put\+Async (
+\begin{DoxyParamCaption}
+\item[{string}]{url, }
+\item[{Dictionary$<$ string, string $>$}]{pairs}
+\end{DoxyParamCaption}
+)}\hypertarget{class_boxes_1_1_services_1_1_http_service_a1351153d159242142dff860106115010}{}\label{class_boxes_1_1_services_1_1_http_service_a1351153d159242142dff860106115010}
+
+
+Exécute une requête H\+T\+TP de type P\+UT. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em url} & U\+RL de l\textquotesingle{}action du web service à exécuter. \\
+\hline
+{\em pairs} & Paramètres de la requête H\+T\+TP. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+Réponse du web service. 
+\end{DoxyReturn}
+
+
+\subsection{Documentation des données membres}
+\index{Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}!api\+Key@{api\+Key}}
+\index{api\+Key@{api\+Key}!Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}}
+\subsubsection[{\texorpdfstring{api\+Key}{apiKey}}]{\setlength{\rightskip}{0pt plus 5cm}const string Boxes.\+Services.\+Http\+Service.\+api\+Key = \char`\"{}41q99x\+Sw\+S8ne\+Fbu\+Vo\+Q\+U\+L\+T\+Y4\+Ggj\+R\+H\+P\+Vl6\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_services_1_1_http_service_a4f422d76e5a21603d2b9531fa6d7704a}{}\label{class_boxes_1_1_services_1_1_http_service_a4f422d76e5a21603d2b9531fa6d7704a}
+
+
+Clé d\textquotesingle{}A\+PI qui permet de se connecter au web service. 
+
+\index{Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}!base\+Url@{base\+Url}}
+\index{base\+Url@{base\+Url}!Boxes\+::\+Services\+::\+Http\+Service@{Boxes\+::\+Services\+::\+Http\+Service}}
+\subsubsection[{\texorpdfstring{base\+Url}{baseUrl}}]{\setlength{\rightskip}{0pt plus 5cm}const string Boxes.\+Services.\+Http\+Service.\+base\+Url = \char`\"{}http\+://boxes.\+hol.\+es/public/api/\char`\"{} + api\+Key\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_boxes_1_1_services_1_1_http_service_a3a5a8c4bbef22defc61fed8d9b8ec3f7}{}\label{class_boxes_1_1_services_1_1_http_service_a3a5a8c4bbef22defc61fed8d9b8ec3f7}
+
+
+U\+RL de base du web service. 
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/thoma/\+One\+Drive/\+Documents/\+Visual Studio 2015/\+Projects/\+Boxes/\+Boxes/\+Services/\hyperlink{_http_service_8cs}{Http\+Service.\+cs}\end{DoxyCompactItemize}
